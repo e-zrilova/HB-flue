@@ -1,0 +1,102 @@
+.best-seller
+  margin-bottom: 156px
+  &__container
+    max-width: 1218px
+    width: 100%
+    flex-direction: column
+  &__title-wrapper
+    display: flex
+    justify-content: space-between
+  &__title
+    position: relative
+    font-weight: 600
+    font-size: 40px
+    line-height: 49px
+    margin-top: 13px
+    margin-bottom: 62px
+    &::before
+      content: " "
+      position: absolute
+      width: 74px
+      height: 5px
+      background-color: $primary
+      top: -30%
+      left: 0
+  &__slider
+    max-width: 1218px
+    width: 100%
+  &__btn
+    padding: 17px 17px 10px 15px
+    border: 1px solid $grey
+    border-radius: 4px
+    &--prev
+
+  &__btn-wrapper
+
+  &__icon-next
+    transform: rotate(180deg)
+
+  &__icon-next, &__icon-prev
+    width: 22px
+    height: 22px
+  &__slide
+    display: flex
+    align-items: flex-start
+    max-width: 282px
+    height: 400px
+    width: 100%
+    border: 1px solid $grey
+    border-radius: 4px
+    padding: 21px 31px 30px 35px
+  &__border
+    position: absolute
+    top: 59%
+    left: 10%
+    width: 156px
+    height: 1px
+    border: 1px solid $grey
+  &__circle
+    position: absolute
+    right: 11%
+    top: 52%
+    padding: 16px
+    background-color: $slate-grey
+    border-radius: 50%
+    line-height: 0
+  &__cart-icon
+    width: 24px
+    height: 24px
+    fill: $light
+  &__item
+    position: absolute
+    top: 60%
+    padding: 10px 10px 10px 0px
+    &-title
+      margin-bottom: 0
+      font-weight: bold
+      font-size: 14px
+      line-height: 22px
+      color: $carrot
+    &-description
+      display: block
+      margin-bottom: 19px
+      font-weight: 500
+      font-size: 16px
+      line-height: 22px
+  &__price-wrapper
+    display: flex
+  &__price-tag
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    color: $primary
+    margin-right: 2px
+    &--bold
+      color: $black
+      margin-right: 76px
+  &__price-delete
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 17px
+    color: $grey-light

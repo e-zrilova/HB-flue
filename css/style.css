@@ -655,6 +655,7 @@ input {
 
 .first-screen {
   margin: 0 auto;
+  margin-bottom: 169px;
 }
 
 .first-screen__container {
@@ -773,5 +774,142 @@ input {
 .first-screen__item-6 {
   right: 10%;
   top: 19%;
+}
+
+.best-seller {
+  margin-bottom: 156px;
+}
+
+.best-seller__container {
+  max-width: 1218px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.best-seller__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-seller__title {
+  position: relative;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  margin-top: 13px;
+  margin-bottom: 62px;
+}
+
+.best-seller__title::before {
+  content: " ";
+  position: absolute;
+  width: 74px;
+  height: 5px;
+  background-color: #E33E54;
+  top: -30%;
+  left: 0;
+}
+
+.best-seller__slider {
+  max-width: 1218px;
+  width: 100%;
+}
+
+.best-seller__btn {
+  padding: 17px 17px 10px 15px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.best-seller__icon-next {
+  transform: rotate(180deg);
+}
+
+.best-seller__icon-next, .best-seller__icon-prev {
+  width: 22px;
+  height: 22px;
+}
+
+.best-seller__slide {
+  display: flex;
+  align-items: flex-start;
+  max-width: 282px;
+  height: 400px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 21px 31px 30px 35px;
+}
+
+.best-seller__border {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+  width: 156px;
+  height: 1px;
+  border: 1px solid #E5E5E5;
+}
+
+.best-seller__circle {
+  position: absolute;
+  right: 11%;
+  top: 52%;
+  padding: 16px;
+  background-color: #215359;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.best-seller__cart-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.best-seller__item {
+  position: absolute;
+  top: 60%;
+  padding: 10px 10px 10px 0px;
+}
+
+.best-seller__item-title {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #EA6628;
+}
+
+.best-seller__item-description {
+  display: block;
+  margin-bottom: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.best-seller__price-wrapper {
+  display: flex;
+}
+
+.best-seller__price-tag {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #E33E54;
+  margin-right: 2px;
+}
+
+.best-seller__price-tag--bold {
+  color: #000000;
+  margin-right: 76px;
+}
+
+.best-seller__price-delete {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B1B1B1;
 }
 /*# sourceMappingURL=style.css.map */
