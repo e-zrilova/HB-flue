@@ -336,4 +336,442 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+.button {
+  padding: 15px 0;
+  border-radius: 4px;
+  background-color: #215359;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  min-width: 240px;
+  width: 100%;
+}
+
+.button--primary {
+  margin-left: 16px;
+  background-color: #EA6628;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Heavy.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  margin: 0 auto;
+  margin-bottom: 95px;
+}
+
+.header__wrapper {
+  max-width: 1785px;
+  width: 100%;
+  align-items: center;
+  padding-top: 26px;
+}
+
+.header__logo {
+  margin-right: 40px;
+}
+
+.header__burger-button {
+  margin-right: 26px;
+}
+
+.header__navigation {
+  max-width: 627px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  margin-right: 94px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  text-transform: uppercase;
+  color: #4C858B;
+}
+
+.header__link--primary {
+  color: #000000;
+}
+
+.header__phone {
+  color: #4C858B;
+  margin-right: 77px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__phone-number {
+  color: #000000;
+  font-weight: 700;
+  margin-left: 11px;
+}
+
+.header__call {
+  color: #AE2236;
+  border-bottom: 1px dashed #AE2236;
+  margin-right: 61px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.header__social {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.header__social-vk {
+  width: 20px;
+  height: 12px;
+  margin-right: 12px;
+}
+
+.header__social-telegram {
+  width: 19px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+.header__social-instagram {
+  margin-right: 18px;
+}
+
+.header__social-instagram, .header__social-whatsapp {
+  width: 15px;
+  height: 16px;
+}
+
+.header__search, .header__favourites, .header__shopping-cart {
+  border: 1px solid #E5E5E5;
+  border-radius: 50%;
+}
+
+.header__search {
+  line-height: 0;
+  padding: 17px;
+  margin-right: 16px;
+}
+
+.header__search-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.header__favourites {
+  padding: 15px 15px 12px 15px;
+  margin-right: 10px;
+}
+
+.header__favourites-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.header__shopping-cart {
+  padding: 15px 15px 12px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.header__shopping-cart::after {
+  content: "10";
+  background-color: #E33E54;
+  padding: 3px 4px 5px 4px;
+  font-family: Lato;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 13px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header__shopping-cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.first-screen {
+  margin: 0 auto;
+}
+
+.first-screen__container {
+  max-width: 1670px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.first-screen__banner-text {
+  margin-right: 184px;
+  padding-left: 33px;
+  padding-top: 65px;
+}
+
+.first-screen__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  margin: 0;
+}
+
+.first-screen__percent {
+  color: #E33E54;
+}
+
+.first-screen__description {
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.first-screen__requirement {
+  margin-bottom: 90px;
+  margin-top: 10px;
+}
+
+.first-screen__price-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.first-screen__price {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4C858B;
+}
+
+.first-screen__price-tag {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+  color: #E33E54;
+  margin-right: 16px;
+}
+
+.first-screen__price-tag--bold {
+  color: #000000;
+  margin-right: 41px;
+}
+
+.first-screen__price-delete {
+  font-size: 25px;
+  line-height: 30px;
+  color: #B1B1B1;
+}
+
+.first-screen__wrapper {
+  display: flex;
+}
+
+.first-screen__content {
+  display: flex;
+  position: relative;
+}
+
+.first-screen__blob-primary {
+  width: 990px;
+  height: 700px;
+}
+
+.first-screen__item-1, .first-screen__item-2, .first-screen__item-1, .first-screen__item-3, .first-screen__item-4, .first-screen__item-5, .first-screen__item-6 {
+  position: absolute;
+}
+
+.first-screen__item-1 {
+  top: 8px;
+  left: -50px;
+}
+
+.first-screen__item-2 {
+  top: 10%;
+  left: 23%;
+}
+
+.first-screen__item-3 {
+  top: 0%;
+  left: 27%;
+}
+
+.first-screen__item-4 {
+  bottom: 0%;
+  right: -8%;
+}
+
+.first-screen__item-5, .first-screen__item-6 {
+  width: 78px;
+  height: 19px;
+}
+
+.first-screen__item-5 {
+  top: 52%;
+  left: -5%;
+}
+
+.first-screen__item-6 {
+  right: 10%;
+  top: 19%;
+}
 /*# sourceMappingURL=style.css.map */

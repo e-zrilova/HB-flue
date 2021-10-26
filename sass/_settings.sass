@@ -3,6 +3,7 @@
 body
   font: 100% $font-primary
   font-style: normal
+  font-weight: 400
 img
   height: auto
 a
@@ -12,6 +13,26 @@ ul
   padding: 0
   list-style: none
 button
+  background-color: transparent
+  background-repeat: no-repeat
+  border: none
   cursor: pointer
+  outline: none
 input
   outline: none
+.container
+  margin: auto
+  display: flex
+.button
+  padding: 15px 0
+  border-radius: 4px
+  background-color: $slate-grey
+  font-weight: 700
+  font-size: 16px
+  line-height: 20px
+  color: $light
+  min-width: 240px
+  width: 100%
+  &--primary
+    margin-left: 16px
+    background-color: $carrot
