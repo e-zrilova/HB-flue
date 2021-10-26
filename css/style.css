@@ -831,20 +831,19 @@ input {
 }
 
 .best-seller__slide {
-  display: flex;
-  align-items: flex-start;
-  max-width: 282px;
-  height: 400px;
+  max-width: 282p;
   width: 100%;
   border: 1px solid #E5E5E5;
   border-radius: 4px;
   padding: 21px 31px 30px 35px;
 }
 
+.best-seller__slide-img {
+  display: block;
+}
+
 .best-seller__border {
-  position: absolute;
-  top: 59%;
-  left: 10%;
+  display: block;
   width: 156px;
   height: 1px;
   border: 1px solid #E5E5E5;
@@ -853,7 +852,7 @@ input {
 .best-seller__circle {
   position: absolute;
   right: 11%;
-  top: 52%;
+  top: 51%;
   padding: 16px;
   background-color: #215359;
   border-radius: 50%;
@@ -867,8 +866,6 @@ input {
 }
 
 .best-seller__item {
-  position: absolute;
-  top: 60%;
   padding: 10px 10px 10px 0px;
 }
 
@@ -902,7 +899,7 @@ input {
 
 .best-seller__price-tag--bold {
   color: #000000;
-  margin-right: 76px;
+  margin-right: 64px;
 }
 
 .best-seller__price-delete {
