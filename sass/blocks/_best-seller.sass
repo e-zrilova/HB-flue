@@ -1,8 +1,7 @@
 .best-seller
   margin-bottom: 156px
   &__container
-    max-width: 1218px
-    width: 100%
+    display: flex
     flex-direction: column
   &__title-wrapper
     display: flex
@@ -30,12 +29,8 @@
     border: 1px solid $grey
     border-radius: 4px
     &--prev
-
-  &__btn-wrapper
-
   &__icon-next
     transform: rotate(180deg)
-
   &__icon-next, &__icon-prev
     width: 22px
     height: 22px
@@ -52,7 +47,7 @@
     width: 149px
     height: 1px
     border: 1px solid $grey
-  &__circle
+  &__card-btn
     position: absolute
     right: 11%
     top: 50%
@@ -68,13 +63,13 @@
     padding: 10px 10px 10px 0px
     &-title
       margin-bottom: 0
-      font-weight: bold
+      font-weight: 700
       font-size: 14px
       line-height: 22px
       color: $carrot
     &-description
       display: block
-      margin-bottom: 19px
+      margin: 0
       font-weight: 500
       font-size: 16px
       line-height: 22px
@@ -86,12 +81,14 @@
     line-height: 24px
     color: $primary
     margin-right: 2px
+    margin-bottom: 0
     &--bold
       color: $black
       margin-right: 64px
   &__price-delete
     display: flex
-    align-items: center
+    align-items: flex-end
     font-size: 14px
     line-height: 17px
     color: $grey-light
+    margin: 0

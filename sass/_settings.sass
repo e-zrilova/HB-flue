@@ -21,8 +21,9 @@ button
 input
   outline: none
 .container
+  max-width: 1218px
+  width: 100
   margin: auto
-  display: flex
 .button
   padding: 18px 0
   border-radius: 4px
@@ -32,7 +33,12 @@ input
   line-height: 20px
   color: $light
   min-width: 240px
-  width: 100%
   &--primary
     margin-left: 16px
     background-color: $carrot
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  clip: rect(0 0 0 0)
