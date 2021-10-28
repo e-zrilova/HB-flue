@@ -379,7 +379,7 @@ input {
   margin: auto;
 }
 
-.button {
+.link {
   padding: 18px 0;
   border-radius: 4px;
   background-color: #215359;
@@ -388,10 +388,10 @@ input {
   line-height: 20px;
   color: #ffffff;
   min-width: 240px;
+  text-align: center;
 }
 
-.button--primary {
-  margin-left: 16px;
+.link--primary {
   background-color: #EA6628;
 }
 
@@ -747,6 +747,10 @@ input {
   color: #B1B1B1;
 }
 
+.first-screen__link {
+  margin-right: 16px;
+}
+
 .first-screen__wrapper {
   display: flex;
 }
@@ -802,11 +806,6 @@ input {
 
 .best-seller {
   margin-bottom: 156px;
-}
-
-.best-seller__container {
-  display: flex;
-  flex-direction: column;
 }
 
 .best-seller__title-wrapper {
