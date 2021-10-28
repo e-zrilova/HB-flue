@@ -9,7 +9,12 @@
   &__logo
     margin-right: 40px
   &__burger-button
-    margin-right: 26px
+    margin-right: 38px
+    line-height: 0
+    padding: 17px
+  &__burger-menu
+    width: 22px
+    height: 22px
   &__navigation
     max-width: 627px
     width: 100%
@@ -63,7 +68,8 @@
       height: 16px
   &__search,
   &__favourites,
-  &__shopping-cart
+  &__shopping-cart,
+  &__burger-button
     border: 1px solid $grey
     border-radius: 50%
   &__search
@@ -80,23 +86,30 @@
       width: 23px
       height: 23px
   &__shopping-cart
-    padding: 15px 15px 12px 15px
     position: relative
     z-index: 1
+    padding: 15px 15px 12px 15px
+
     &::after
-      content: "10"
-      background-color: $primary
-      padding: 3px 4px 5px 4px
-      font-family: Lato
-      font-weight: 800
-      font-size: 11px
-      line-height: 13px
-      border-radius: 50%
-      color: $light
+      content: ""
       position: absolute
       top: 0
       right: 0
       z-index: 2
+      width: 21px
+      height: 21px
+      background-color: $primary
+      border-radius: 50%
     &-icon
       width: 24px
       height: 24px
+    &-count
+      position: absolute
+      top: 9%
+      right: 9%
+      z-index: 3
+      color: $light
+      font-family: $font-secondary
+      font-weight: 800
+      font-size: 11px
+      line-height: 13px
