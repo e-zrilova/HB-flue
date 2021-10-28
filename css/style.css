@@ -721,6 +721,11 @@ input {
   margin-bottom: 22px;
 }
 
+.first-screen__price-wrapper p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .first-screen__price {
   font-weight: 800;
   font-size: 16px;
