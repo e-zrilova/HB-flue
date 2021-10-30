@@ -1,0 +1,116 @@
+.header
+  margin: 0 auto
+  margin-bottom: 95px
+  &__wrapper
+    max-width: 1820px
+    display: flex
+    align-items: center
+    padding-top: 26px
+  &__logo
+    margin-right: 48px
+  &__burger-button
+    margin-right: 30px
+    line-height: 0
+    padding: 17px
+  &__burger-menu
+    width: 22px
+    height: 22px
+  &__navigation
+    max-width: 627px
+    width: 100%
+    font-weight: 700
+    font-size: 16px
+    line-height: 23px
+    margin-right: 97px
+  &__menu
+    display: flex
+    justify-content: space-between
+  &__item
+  &__link
+    text-transform: uppercase
+    color: $turquoise-blue
+    &:hover
+      color: $black
+  &__phone
+    color: $turquoise-blue
+    margin-right: 71px
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.08em
+    &-number
+      color: $black
+      font-weight: 700
+      margin-left: 5px
+  &__call
+    color: $maroon
+    border-bottom: 1px dashed $maroon
+    margin-right: 61px
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+    padding-bottom: 4px
+  &__social
+    display: flex
+    align-items: flex-end
+    margin-right: 66px
+    &-vk
+      width: 20px
+      height: 12px
+      margin-right: 12px
+    &-telegram
+      width: 19px
+      height: 20px
+      margin-right: 16px
+    &-instagram
+      margin-right: 18px
+    &-instagram,
+    &-whatsapp
+      width: 15px
+      height: 16px
+  &__search,
+  &__favourites,
+  &__shopping-cart,
+  &__burger-button
+    border: 1px solid $grey
+    border-radius: 50%
+  &__search
+    line-height: 0
+    padding: 12px
+    margin-right: 16px
+    &-icon
+      width: 22px
+      height: 22px
+  &__favourites
+    padding: 15px 15px 12px 15px
+    margin-right: 10px
+    &-icon
+      width: 23px
+      height: 23px
+  &__shopping-cart
+    position: relative
+    z-index: 1
+    padding: 15px 15px 12px 15px
+    &::after
+      content: ""
+      position: absolute
+      top: 5%
+      left: 70%
+      z-index: 2
+      width: 21px
+      height: 21px
+      background-color: $primary
+      border-radius: 50%
+    &-icon
+      width: 24px
+      height: 24px
+    &-count
+      position: absolute
+      top: 10%
+      left: 78%
+      z-index: 3
+      color: $light
+      font-family: $font-secondary
+      font-weight: 800
+      font-size: 11px
+      line-height: 13px

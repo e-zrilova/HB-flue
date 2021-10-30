@@ -1,0 +1,95 @@
+.best-seller
+  margin-bottom: 156px
+  &__container
+    max-width: 1250px
+  &__title-wrapper
+    display: flex
+    justify-content: space-between
+  &__title
+    position: relative
+    font-weight: 600
+    font-size: 40px
+    line-height: 49px
+    margin-top: 13px
+    margin-bottom: 62px
+    &::before
+      content: " "
+      position: absolute
+      width: 74px
+      height: 5px
+      background-color: $primary
+      left: 0
+      bottom: calc(100% + 23%)
+  &__slider
+    max-width: 1218px
+    width: 100%
+  &__btn
+    padding: 17px 17px 10px 15px
+    border: 1px solid $grey
+    border-radius: 4px
+    &--prev
+  &__icon-next
+    transform: rotate(180deg)
+  &__icon-next, &__icon-prev
+    width: 22px
+    height: 22px
+  &__slide
+    border: 1px solid $grey
+    border-radius: 4px
+    padding: 21px 31px 20px 35px
+    &-img
+      display: block
+      position: relative
+  &__card-btn
+    position: absolute
+    right: 11%
+    top: 52%
+    padding: 16px
+    background-color: $slate-grey
+    border-radius: 50%
+    line-height: 0
+  &__cart-icon
+    width: 24px
+    height: 24px
+    fill: $light
+  &__item
+    padding: 10px 10px 10px 0px
+    &::before
+      content: " "
+      position: absolute
+      top: 59%
+      left: 12%
+      width: 143px
+      border: 1px solid $grey
+    &-title
+      margin-bottom: 7px
+      font-weight: 700
+      font-size: 14px
+      line-height: 22px
+      color: $carrot
+    &-description
+      display: block
+      margin: 0
+      font-weight: 500
+      font-size: 16px
+      line-height: 22px
+  &__price-wrapper
+    display: flex
+  &__price-tag
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    color: $primary
+    margin-right: 2px
+    margin-bottom: 0
+    margin-top: 14px
+    &--bold
+      color: $black
+      margin-right: 64px
+  &__price-delete
+    display: flex
+    align-items: flex-end
+    font-size: 14px
+    line-height: 17px
+    color: $grey-light
+    margin: 0
