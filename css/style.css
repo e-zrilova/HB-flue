@@ -342,9 +342,7 @@ template {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font: normal 400 16px/1.5 Montserrat, sans-serif;
 }
 
 img {
@@ -377,6 +375,8 @@ input {
   max-width: 1218px;
   width: 100%;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-title {
@@ -555,18 +555,18 @@ input {
 }
 
 .header__wrapper {
-  max-width: 1785px;
+  max-width: 1820px;
   display: flex;
   align-items: center;
   padding-top: 26px;
 }
 
 .header__logo {
-  margin-right: 46px;
+  margin-right: 48px;
 }
 
 .header__burger-button {
-  margin-right: 27px;
+  margin-right: 30px;
   line-height: 0;
   padding: 17px;
 }
@@ -601,7 +601,7 @@ input {
 
 .header__phone {
   color: #4C858B;
-  margin-right: 77px;
+  margin-right: 71px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.08em;
@@ -616,17 +616,18 @@ input {
 .header__call {
   color: #AE2236;
   border-bottom: 1px dashed #AE2236;
-  margin-right: 56px;
+  margin-right: 61px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+  padding-bottom: 4px;
 }
 
 .header__social {
   display: flex;
-  align-items: center;
-  margin-right: 60px;
+  align-items: flex-end;
+  margin-right: 66px;
 }
 
 .header__social-vk {
@@ -657,7 +658,7 @@ input {
 
 .header__search {
   line-height: 0;
-  padding: 17px;
+  padding: 12px;
   margin-right: 16px;
 }
 
@@ -685,8 +686,8 @@ input {
 .header__shopping-cart::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5%;
+  left: 70%;
   z-index: 2;
   width: 21px;
   height: 21px;
@@ -701,8 +702,8 @@ input {
 
 .header__shopping-cart-count {
   position: absolute;
-  top: 9%;
-  right: 9%;
+  top: 10%;
+  left: 78%;
   z-index: 3;
   color: #ffffff;
   font-family: Lato, sans-serif;
@@ -724,7 +725,7 @@ input {
 
 .first-screen__banner-text {
   margin-right: 184px;
-  padding-left: 33px;
+  padding-left: 19px;
   padding-top: 65px;
 }
 
@@ -733,7 +734,7 @@ input {
   font-size: 80px;
   line-height: 98px;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 }
 
 .first-screen__percent {
@@ -744,12 +745,13 @@ input {
   font-size: 35px;
   line-height: 43px;
   margin: 0;
+  margin-bottom: 6px;
 }
 
 .first-screen__text-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 84px;
+  margin-bottom: 90px;
 }
 
 .first-screen__requirement {
@@ -760,7 +762,7 @@ input {
 .first-screen__price-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .first-screen__price-wrapper p {
@@ -783,7 +785,7 @@ input {
   line-height: 61px;
   color: #E33E54;
   margin-top: 0;
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 .first-screen__price-tag--bold {
@@ -856,7 +858,11 @@ input {
 }
 
 .best-seller {
-  margin-bottom: 260px;
+  margin-bottom: 156px;
+}
+
+.best-seller__container {
+  max-width: 1250px;
 }
 
 .best-seller__title-wrapper {
