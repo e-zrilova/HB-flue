@@ -18,9 +18,10 @@ const bestSellerSwiper = new Swiper('.best-seller__slider', {
 
 const workSwiper = new Swiper('.work__slider', {
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+
 
   keyboard: {
     enabled: true,

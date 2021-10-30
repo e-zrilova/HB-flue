@@ -1,0 +1,86 @@
+.work
+  max-width: 1737px
+  width: 100%
+  margin-bottom: 200px
+  &__container
+    position:
+    display: flex
+    flex-direction: row-reverse
+    transform: translateX(-10%)
+  &__title-wrapper
+    max-width: 350px
+    width: 100%
+    text-align: right
+  &__title
+    font-weight: 600
+    font-size: 40px
+    line-height: 50px
+    margin-top: 66px
+    &-text
+      font-weight: 700
+      font-size: 40px
+      color: $turquoise-blue
+  &__description
+    font-size: 16px
+    line-height: 30px
+    margin-bottom: 52px
+  &__slider
+    position: relative
+    max-width: 1250px
+    width: 100%
+    margin-right: 133px
+    &__bg
+      position: absolute
+      right: 23%
+      bottom: -10%
+      z-index: 1
+      width: 763px
+      height: 642px
+  &__slide
+    max-width: 400px
+    width: 100%
+    padding: 38px 35px 32px 35px
+    background-color: $light
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    &-img
+      width: 100%
+  &__item
+    &-title
+      margin-top: 30px
+      margin-bottom: 14px
+      font-weight: 600
+      font-size: 20px
+      line-height: 20px
+    &-description
+      font-weight: 300
+      font-size: 14px
+      line-height: 22px
+      max-width: 333px
+      width: 100%
+      text-align: left
+    &-features
+      display: flex
+      justify-content: space-between
+    &-description, &-features, &-name, &-value
+      margin: 0
+    &-name
+      position: relative
+      font-weight: 500
+      font-size: 14px
+      line-height: 17px
+      color: $grey-light
+      margin-bottom: 13px
+      &::after
+        content: ""
+        content: ""
+        position: absolute
+        top: 11px
+        width: 208px
+        border-bottom: 1px dashed $grey
+    &-value
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: $turquoise-blue
+      &-primary
+        color: $maroon
