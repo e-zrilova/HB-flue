@@ -858,7 +858,7 @@ input {
 }
 
 .best-seller {
-  margin-bottom: 156px;
+  margin-bottom: 260px;
 }
 
 .best-seller__container {
@@ -1168,5 +1168,9 @@ input {
   height: 22px;
   top: 60%;
   left: -5%;
+}
+
+.advantages__container {
+  max-width: 1246px;
 }
 /*# sourceMappingURL=style.css.map */
