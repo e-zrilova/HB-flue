@@ -342,9 +342,7 @@ template {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font: normal 400 16px/1.5 Montserrat, sans-serif;
 }
 
 img {
