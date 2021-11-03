@@ -6,7 +6,7 @@ const bestSellerSwiper = new Swiper('.best-seller__slider', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
   navigation: {
     nextEl: '.best-seller__btn--next',
@@ -25,7 +25,7 @@ const workSwiper = new Swiper('.work__slider', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
   navigation: {
     nextEl: '.work__slider-btn--next',

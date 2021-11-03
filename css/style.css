@@ -351,6 +351,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 ul {
@@ -881,7 +882,7 @@ input {
   padding: 21px 31px 20px 35px;
 }
 
-.best-seller__slide-img {
+.best-seller__link-img {
   display: block;
   position: relative;
 }
@@ -889,7 +890,7 @@ input {
 .best-seller__card-btn {
   position: absolute;
   right: 11%;
-  top: 52%;
+  top: 51%;
   padding: 16px;
   background-color: #215359;
   border-radius: 50%;
@@ -902,6 +903,12 @@ input {
   fill: #ffffff;
 }
 
+.best-seller__link {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 7px;
+}
+
 .best-seller__item {
   padding: 10px 10px 10px 0px;
 }
@@ -909,7 +916,7 @@ input {
 .best-seller__item::before {
   content: " ";
   position: absolute;
-  top: 59%;
+  top: 58%;
   left: 12%;
   width: 143px;
   border: 1px solid #E5E5E5;
