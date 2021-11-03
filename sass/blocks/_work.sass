@@ -1,12 +1,18 @@
 .work
-  max-width: 1737px
-  width: 100%
-  margin-bottom: 200px
+  padding-bottom: 200px
+  margin-bottom: 190px
   &__container
-    position:
+    position: relative
     display: flex
     flex-direction: row-reverse
-    transform: translateX(-10%)
+    &-bg
+      position: absolute
+      right: 33%
+      top: -8%
+      z-index: 1
+      width: 763px
+      height: 642px
+      fill: $slate-grey
   &__title-wrapper
     max-width: 350px
     width: 100%
@@ -15,7 +21,7 @@
     font-weight: 600
     font-size: 40px
     line-height: 50px
-    margin-top: 66px
+    margin: 66px 0 24px 0
     &-text
       font-weight: 700
       font-size: 40px
@@ -23,24 +29,16 @@
   &__description
     font-size: 16px
     line-height: 30px
-    margin-bottom: 52px
+    margin-bottom: 56px
   &__slider
-    position: relative
-    max-width: 1250px
+    position: absolute
     width: 100%
-    margin-right: 133px
-    &__bg
-      position: absolute
-      right: 23%
-      bottom: -10%
-      z-index: 1
-      width: 763px
-      height: 642px
-      fill: $slate-grey
+    transform: translateX(-39%)
+
   &__slide
     max-width: 400px
     width: 100%
-    padding: 38px 35px 32px 35px
+    padding: 31px 35px 32px 28px
     background-color: $light
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
     &-img
