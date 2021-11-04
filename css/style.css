@@ -386,7 +386,6 @@ input {
   font-size: 40px;
   line-height: 49px;
   margin-top: 13px;
-  margin-bottom: 62px;
 }
 
 .container-title::before {
@@ -862,6 +861,10 @@ input {
   margin-bottom: 260px;
 }
 
+.best-seller__title {
+  margin-bottom: 62px;
+}
+
 .best-seller__title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1082,25 +1085,18 @@ input {
 }
 
 .calculate {
-  margin-left: 18%;
   margin-bottom: 283px;
 }
 
 .calculate__container {
   display: flex;
-  max-width: 1514px;
+  border: 1px solid blue;
 }
 
 .calculate__container-left {
   max-width: 629px;
   width: 100%;
-  margin-right: 130px;
-}
-
-.calculate__container-right {
-  position: relative;
-  max-width: 800px;
-  width: 100%;
+  border: 1px solid red;
 }
 
 .calculate__title {
@@ -1127,15 +1123,14 @@ input {
 
 .calculate__bg {
   position: absolute;
-  top: 6%;
-  left: 3%;
+  transform: translate(116%, 4%);
   width: 665px;
   height: 584px;
 }
 
 .calculate__img {
   position: absolute;
-  left: 23%;
+  transform: translateX(222%);
 }
 
 .calculate__subtitle {
@@ -1155,23 +1150,76 @@ input {
 }
 
 .calculate__item-1 {
-  right: 62%;
-  bottom: 69%;
+  transform: translate(246%, -15%);
 }
 
 .calculate__item-2 {
-  left: 61%;
-  top: 95%;
+  transform: translate(405%, 264%);
 }
 
 .calculate__item-3 {
   width: 77px;
   height: 22px;
-  top: 60%;
-  left: -5%;
+  transform: translate(922%, 1146%);
 }
 
-.advantages__container {
-  max-width: 1246px;
+.advantages {
+  margin-bottom: 100px;
+}
+
+.advantages__title {
+  margin-bottom: 39px;
+}
+
+.advantages__list {
+  columns: 2;
+  column-gap: 30px;
+}
+
+.advantages__item {
+  max-width: 590px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__item-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.advantages__item-description {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.advantages__wrapper {
+  max-width: 386px;
+  width: 100%;
+}
+
+.advantages__wrapper-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 177px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.advantages__img {
+  width: 70px;
+  height: 70px;
+  width: 100%;
+}
+
+.advantages__img-border {
+  position: absolute;
+  width: 179px;
+  height: 141px;
 }
 /*# sourceMappingURL=style.css.map */
