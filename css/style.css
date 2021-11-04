@@ -1090,13 +1090,11 @@ input {
 
 .calculate__container {
   display: flex;
-  border: 1px solid blue;
 }
 
 .calculate__container-left {
   max-width: 629px;
   width: 100%;
-  border: 1px solid red;
 }
 
 .calculate__title {
