@@ -345,10 +345,6 @@ body {
   font: normal 400 16px/1.5 Montserrat, sans-serif;
 }
 
-img {
-  height: auto;
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -1224,7 +1220,7 @@ input {
 
 .service {
   padding-bottom: 240px;
-  margin-bottom: 123px;
+  margin-bottom: 150px;
 }
 
 .service__container {
@@ -1361,5 +1357,68 @@ input {
 
 .service__form-password {
   margin-right: 12px;
+}
+
+.about-us {
+  margin-bottom: 136px;
+}
+
+.about-us__wrapper {
+  display: flex;
+  margin-bottom: 37px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.about-us__title {
+  margin-bottom: 66px;
+}
+
+.about-us__text {
+  max-width: 522px;
+  margin-right: 74px;
+}
+
+.about-us__description {
+  margin: 0;
+}
+
+.about-us__link {
+  font-weight: 700;
+  color: #E33E54;
+}
+
+.about-us__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__item {
+  max-width: 282px;
+  width: 100%;
+}
+
+.about-us__item-img {
+  width: 79px;
+  height: 79px;
+}
+
+.about-us__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.about-us__item-description {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.about-us__slogan {
+  font-weight: 700;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
