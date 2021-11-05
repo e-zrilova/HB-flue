@@ -433,6 +433,55 @@ input {
   height: 22px;
 }
 
+.requisition {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  padding: 62px 55px 59px 59px;
+  top: 97%;
+  left: 9%;
+}
+
+.requisition__form-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.requisition__form-subtitle {
+  font-weight: 700;
+  color: #EA6628;
+  margin-top: 0;
+}
+
+.requisition__form-description {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.requisition__form-name, .requisition__form-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B1B1B1;
+  border: 1px solid #E5E5E5;
+  padding: 17px 17px 17px 17px;
+  min-width: 240px;
+  border-radius: 4px;
+}
+
+.requisition__form-name {
+  margin-right: 10px;
+}
+
+.requisition__form-phone {
+  margin-right: 12px;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2");
@@ -624,6 +673,10 @@ input {
   display: flex;
   align-items: flex-end;
   margin-right: 66px;
+}
+
+.header__social-vk, .header__social-telegram, .header__social-instagram, .header__social-whatsapp {
+  fill: #4C858B;
 }
 
 .header__social-vk {
@@ -1310,55 +1363,6 @@ input {
   fill: #4C858B;
 }
 
-.service__wrapper {
-  position: absolute;
-  background: #ffffff;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
-  padding: 57px 55px 59px 59px;
-  top: 97%;
-  left: 9%;
-}
-
-.service__form-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.service__form-subtitle {
-  font-weight: 700;
-  color: #EA6628;
-  margin-top: 0;
-}
-
-.service__form-description {
-  font-size: 16px;
-  line-height: 30px;
-  margin-top: 0;
-  margin-bottom: 21px;
-}
-
-.service__form-name, .service__form-password {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  color: #B1B1B1;
-  border: 1px solid #E5E5E5;
-  padding: 17px 17px 17px 17px;
-  min-width: 240px;
-  border-radius: 4px;
-}
-
-.service__form-name {
-  margin-right: 10px;
-}
-
-.service__form-password {
-  margin-right: 12px;
-}
-
 .about-us {
   margin-bottom: 136px;
 }
@@ -1426,7 +1430,7 @@ input {
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 74px;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
 
 .infographic__container {
@@ -1521,5 +1525,95 @@ input {
   z-index: 2;
   bottom: -12%;
   left: 518px;
+}
+
+.call-back {
+  padding-bottom: 400px;
+  margin-bottom: 100px;
+}
+
+.call-back__container {
+  position: relative;
+}
+
+.call-back__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.call-back__subtitle {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 9px;
+}
+
+.call-back__social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+}
+
+.call-back__social-vk, .call-back__social-telegram, .call-back__social-instagram, .call-back__social-whatsapp {
+  fill: #EA6628;
+}
+
+.call-back__social-vk {
+  width: 23px;
+  height: 23px;
+  margin-right: 36px;
+}
+
+.call-back__social-telegram {
+  width: 22px;
+  height: 23px;
+  margin-right: 42px;
+}
+
+.call-back__social-instagram {
+  margin-right: 44px;
+}
+
+.call-back__social-instagram, .call-back__social-whatsapp {
+  width: 18px;
+  height: 19px;
+}
+
+.call-back__question-list {
+  columns: 2;
+  column-gap: 0;
+  max-width: 862px;
+  margin: 0 auto;
+}
+
+.call-back__question-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 23px;
+}
+
+.call-back__question-item::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #E33E54;
+  top: 35%;
+  left: -6%;
+}
+
+.call-back__requisition {
+  top: 111%;
+  left: 15%;
+  padding: 58px 55px 59px 62px;
 }
 /*# sourceMappingURL=style.css.map */
