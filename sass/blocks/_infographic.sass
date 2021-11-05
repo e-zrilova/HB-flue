@@ -1,0 +1,70 @@
+.infographic
+  font-size: 16px
+  line-height: 30px
+  margin-bottom: 74px
+  padding-bottom: 60px
+  &__container
+    display: flex
+  &__title
+    margin-bottom: 143px
+  &__list
+    display: flex
+    flex-wrap: wrap
+    max-width: 600px
+    width: 100%
+
+  &__item
+    position: relative
+    max-width: 281px
+    min-height: 140px
+    width: 100%
+    border: 1px solid $grey
+    border-radius: 4px
+    padding: 10px 28px 5px 32px
+    margin-bottom: 70px
+    &:nth-child(odd)
+      margin-right: 33px
+    &-description
+      margin-top: 40px
+      margin-bottom: 0
+    &-wrapper
+      position: absolute
+      top: -26%
+      left: 8%
+      background-color: $light
+      padding: 0 10px
+    &-title
+      font-weight: 700
+      font-size: 60px
+      line-height: 73px
+      margin: 0
+      color: $carrot
+  &__wrapper
+    position: relative
+  &-bg
+    position: absolute
+    top: -22%
+    left: 108px
+    z-index: 1
+    width: 626px
+    height: 584px
+    fill: $slate-grey
+  &__img
+    position: absolute
+    top: -35%
+    left: 265px
+    z-index: 2
+  &__item-1, &__item-2, &__item-3
+    position: absolute
+  &__item-1
+    top: -21%
+    left: 41px
+  &__item-2
+    width: 77px
+    height: 22px
+    top: 42%
+    left: 14px
+  &__item-3
+    z-index: 2
+    bottom: -12%
+    left: 518px

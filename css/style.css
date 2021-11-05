@@ -980,7 +980,7 @@ input {
   z-index: 1;
   width: 763px;
   height: 642px;
-  fill: #215359;
+  fill: #4C858B;
 }
 
 .work__title-wrapper {
@@ -1420,5 +1420,106 @@ input {
 .about-us__slogan {
   font-weight: 700;
   margin-top: 30px;
+}
+
+.infographic {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 74px;
+  padding-bottom: 60px;
+}
+
+.infographic__container {
+  display: flex;
+}
+
+.infographic__title {
+  margin-bottom: 143px;
+}
+
+.infographic__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+}
+
+.infographic__item {
+  position: relative;
+  max-width: 281px;
+  min-height: 140px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 10px 28px 5px 32px;
+  margin-bottom: 70px;
+}
+
+.infographic__item:nth-child(odd) {
+  margin-right: 33px;
+}
+
+.infographic__item-description {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.infographic__item-wrapper {
+  position: absolute;
+  top: -26%;
+  left: 8%;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+
+.infographic__item-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  margin: 0;
+  color: #EA6628;
+}
+
+.infographic__wrapper {
+  position: relative;
+}
+
+.infographic-bg {
+  position: absolute;
+  top: -22%;
+  left: 108px;
+  z-index: 1;
+  width: 626px;
+  height: 584px;
+  fill: #215359;
+}
+
+.infographic__img {
+  position: absolute;
+  top: -35%;
+  left: 265px;
+  z-index: 2;
+}
+
+.infographic__item-1, .infographic__item-2, .infographic__item-3 {
+  position: absolute;
+}
+
+.infographic__item-1 {
+  top: -21%;
+  left: 41px;
+}
+
+.infographic__item-2 {
+  width: 77px;
+  height: 22px;
+  top: 42%;
+  left: 14px;
+}
+
+.infographic__item-3 {
+  z-index: 2;
+  bottom: -12%;
+  left: 518px;
 }
 /*# sourceMappingURL=style.css.map */
