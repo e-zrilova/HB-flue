@@ -9,66 +9,64 @@
     max-width: 1218px
     width: 100%
   &__slide
+    padding: 21px 31px 20px 35px
     border: 1px solid $grey
     border-radius: 4px
-    padding: 21px 31px 20px 35px
   &__link-img
-    display: block
     position: relative
+    display: block
   &__card-btn
     position: absolute
-    right: 11%
-    top: 51%
     padding: 16px
+    line-height: 0
     background-color: $slate-grey
     border-radius: 50%
-    line-height: 0
+    transform: translate(159px, -27px)
   &__cart-icon
     width: 24px
     height: 24px
     fill: $light
   &__link
     display: block
-    margin-top: 9px
-    margin-bottom: 7px
+    margin-top: 15px
+    margin-bottom: 5px
   &__item
     padding: 10px 10px 10px 0px
     &::before
-      content: " "
+      content: ""
       position: absolute
-      top: 58%
-      left: 12%
-      width: 143px
+      width: 153px
       border: 1px solid $grey
+      transform: translate(-5px, -9px)
     &-title
       margin-bottom: 7px
-      font-weight: 700
       font-size: 14px
       line-height: 22px
+      font-weight: 700
       color: $carrot
     &-description
       display: block
       margin: 0
-      font-weight: 500
       font-size: 16px
       line-height: 22px
+      font-weight: 500
   &__price-wrapper
     display: flex
   &__price-tag
-    font-weight: 700
-    font-size: 20px
-    line-height: 24px
-    color: $primary
     margin-right: 2px
     margin-bottom: 0
     margin-top: 14px
+    font-size: 20px
+    line-height: 24px
+    font-weight: 700
+    color: $primary
     &--bold
-      color: $black
       margin-right: 64px
+      color: $black
   &__price-delete
     display: flex
-    align-items: flex-end
+    margin: 0
     font-size: 14px
     line-height: 17px
     color: $grey-light
-    margin: 0
+    align-items: flex-end

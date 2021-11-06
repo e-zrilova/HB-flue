@@ -2,62 +2,61 @@
   margin: 0 auto
   margin-bottom: 169px
   &__container
-    max-width: 1670px
     display: flex
+    max-width: 1670px
     justify-content: space-between
   &__banner-text
     margin-right: 184px
-    padding-left: 19px
     padding-top: 65px
+    padding-left: 19px
   &__title
-    font-weight: 700
-    font-size: 80px
-    line-height: 98px
     margin: 0
     margin-bottom: 3px
+    font-size: 80px
+    line-height: 98px
+    font-weight: 700
   &__percent
     color: $primary
   &__description
-    font-size: 35px
-    line-height: 43px
     margin: 0
     margin-bottom: 6px
+    font-size: 35px
+    line-height: 43px
   &__text-wrapper
     display: flex
-    align-items: center
     margin-bottom: 90px
+    align-items: center
   &__requirement
     display: block
     margin: 0 5px 0 0
   &__price-wrapper
     display: flex
-    align-items: center
     margin-bottom: 24px
+    align-items: center
     p
       margin-top: 0
       margin-bottom: 0
   &__price
-    font-weight: 800
+    margin: 0
     font-size: 16px
     line-height: 23px
+    font-weight: 800
     color: $turquoise-blue
-    margin: 0
-    margin-right: 10px
     &-tag
-      font-weight: 800
-      font-size: 50px
-      line-height: 61px
-      color: $primary
       margin-top: 0
       margin-right: 13px
+      font-size: 50px
+      line-height: 61px
+      font-weight: 800
+      color: $primary
       &--bold
-        color: $black
         margin-right: 40px
+        color: $black
   &__price-delete
+    margin-top: 0
     font-size: 25px
     line-height: 30px
     color: $grey-light
-    margin-top: 0
   &__link
     margin-right: 16px
   &__wrapper
@@ -69,33 +68,21 @@
     width: 990px
     height: 700px
     fill: $primary
-  &__item-1,
-  &__item-2,
-  &__item-1,
-  &__item-3,
-  &__item-4,
-  &__item-5,
-  &__item-6
+  &__item
     position: absolute
-  &__item-1,
-    top: 8px
-    left: -50px
-  &__item-2
-    top: 10%
-    left: 23%
-  &__item-3
-    top: 0%
-    left: 27%
-  &__item-4
-    bottom: 0%
-    right: -8%
-  &__item-5,
-  &__item-6
-    width: 78px
-    height: 19px
-  &__item-5
-    top: 52%
-    left: -5%
-  &__item-6
-    right: 10%
-    top: 19%
+    &--1,
+      transform: translate(-47px, 11px)
+    &--2
+      transform: translate(225px, 76px)
+    &--3
+      transform: translate(90%, 2%)
+    &--4
+      transform: translate(767px, 551px)
+    &--5,
+    &--6
+      width: 78px
+      height: 19px
+    &--5
+      transform: translate(-47px, 369px)
+    &--6
+      transform: translate(814px, 134px)

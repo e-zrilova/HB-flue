@@ -1,64 +1,61 @@
 .service
-  padding-bottom: 240px
-  margin-bottom: 150px
+  margin-bottom: 128px
   &__container
-    display: flex
-    padding-left: 169px
     position: relative
+    padding-left: 175px
+  &__block
+    display: flex
   &__text-wrapper
-    text-align: left
-    margin-left: 61px
+    margin-left: 60px
   &__title
-    font-weight: 600
-    font-size: 40px
-    line-height: 63px
     margin-top: 92px
     margin-bottom: 19px
+    font-size: 40px
+    line-height: 63px
+    font-weight: 600
   &__caption
-    font-weight: 800
     font-size: 50px
     line-height: 63px
+    font-weight: 800
     text-transform: uppercase
     color: $primary
   &__phone-text
+    margin-bottom: 33px
     font-size: 16px
     line-height: 30px
     color: $umber
-    margin-bottom: 37px
   &__phone
-    font-weight: 600
+    margin-left: 10px
     font-size: 25px
     line-height: 30px
+    font-weight: 600
     color: $umber
-    margin-left: 15px
     &-number
-      font-weight: 600
       font-size: 25px
       line-height: 30px
+      font-weight: 600
       color: $turquoise-blue
   &__img
-    width: 100%
     &-arrow
       position: absolute
-      left: 83%
-      top: 91%
       z-index: 2
+      transform: translate(861px, -46px)
   &__description
     font-size: 16px
     line-height: 30px
-  &__item-1, &__item-2
+  &__item
     position: absolute
     z-index: 2
-    transform: translate(-59%, 55%)
-  &__item-2
-    width: 77px
-    height: 22px
-    left: -11%
-    top: 71%
+    &--1
+      transform: translate(-60%, -262%)
+    &--2
+      width: 77px
+      height: 22px
+      transform: translate(-366px, -123px)
   &__blob-primary
     position: absolute
+    z-index: -1
     width: 766px
     height: 541px
-    z-index: -1
-    transform: translate(-42%, 14%)
+    transform: translate(-42%, -74%)
     fill: $turquoise-blue
