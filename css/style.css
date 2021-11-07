@@ -1479,11 +1479,12 @@ input {
 
 .infographic__wrapper {
   position: relative;
+  width: 100%;
 }
 
 .infographic-bg {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   width: 626px;
   height: 584px;
   fill: #215359;
@@ -1492,8 +1493,7 @@ input {
 
 .infographic__img {
   position: absolute;
-  z-index: 2;
-  transform: translate(78%, -27%);
+  transform: translate(76%, -26%);
 }
 
 .infographic__item-decor {
