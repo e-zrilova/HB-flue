@@ -1210,15 +1210,16 @@ input {
 }
 
 .advantages__list {
-  columns: 2;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 -15px;
 }
 
 .advantages__item {
   display: flex;
-  max-width: 590px;
-  width: 100%;
+  width: calc(50% - 30px);
   align-items: center;
+  margin: 0 15px;
 }
 
 .advantages__item-title {

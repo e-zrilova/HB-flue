@@ -4,13 +4,14 @@
   &__title
     margin-bottom: 46px
   &__list
-    columns: 2
-    column-gap: 30px
+    flex-wrap: wrap
+    display: flex
+    margin: 0 -15px
   &__item
     display: flex
-    max-width: 590px
-    width: 100%
+    width: calc(50% - 30px)
     align-items: center
+    margin: 0 15px
     &-title
       margin-top: 28px
       margin-bottom: 10px
