@@ -358,6 +358,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -663,7 +665,7 @@ input {
 
 .header__call {
   margin-right: 63px;
-  padding-bottom: 4px;
+  padding: 5px 0;
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
@@ -1274,8 +1276,12 @@ input {
   display: flex;
 }
 
+.service__wrapper-decor {
+  width: 100%;
+}
+
 .service__text-wrapper {
-  margin-left: 60px;
+  margin-left: 58px;
 }
 
 .service__title {
