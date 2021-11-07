@@ -395,11 +395,11 @@ input {
   height: 5px;
   background-color: #E33E54;
   left: 0;
-  bottom: calc(100% + 23%);
+  bottom: 123%;
 }
 
 .btn {
-  padding: 18px 8px;
+  padding: 18px 24px;
   border-radius: 4px;
   background-color: #215359;
   font-weight: 700;
@@ -438,7 +438,7 @@ input {
 }
 
 .requisition {
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
   padding: 60px 55px 59px 57px;
   transform: translate(-7%, -5%);
@@ -1094,7 +1094,13 @@ input {
 .work__item-features {
   display: flex;
   margin-bottom: 13px;
-  justify-content: space-between;
+}
+
+.work__item-features::before {
+  content: "";
+  border-bottom: 1px dashed #E5E5E5;
+  order: 2;
+  flex-grow: 1;
 }
 
 .work__item-name {
@@ -1103,11 +1109,7 @@ input {
   line-height: 17px;
   font-weight: 500;
   color: #B1B1B1;
-}
-
-.work__item-border {
-  flex-grow: 1;
-  border-bottom: 1px dashed #E5E5E5;
+  order: 1;
 }
 
 .work__item-value {
@@ -1115,6 +1117,7 @@ input {
   line-height: 17px;
   font-weight: 600;
   color: #4C858B;
+  order: 3;
 }
 
 .work__item-value-primary {
@@ -1122,7 +1125,7 @@ input {
 }
 
 .calculate {
-  margin-bottom: 283px;
+  margin-bottom: 299px;
 }
 
 .calculate__container {
@@ -1169,7 +1172,7 @@ input {
 }
 
 .calculate__subtitle {
-  margin-bottom: 95px;
+  margin-bottom: 112px;
   margin-top: 0;
 }
 
@@ -1199,11 +1202,11 @@ input {
 }
 
 .advantages {
-  margin-bottom: 86px;
+  margin-bottom: 82px;
 }
 
 .advantages__title {
-  margin-bottom: 43px;
+  margin-bottom: 46px;
 }
 
 .advantages__list {
@@ -1413,8 +1416,6 @@ input {
 .infographic {
   margin-bottom: 74px;
   padding-bottom: 63px;
-  font-size: 16px;
-  line-height: 30px;
 }
 
 .infographic__container {
@@ -1450,6 +1451,8 @@ input {
 .infographic__item-description {
   margin-top: 40px;
   margin-bottom: 0;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .infographic__item-wrapper {
@@ -1505,17 +1508,17 @@ input {
   transform: translate(519px, 324px);
 }
 
-.call-back {
+.callback {
   margin-bottom: 100px;
   padding-bottom: 400px;
 }
 
-.call-back__container {
+.callback__container {
   position: relative;
 }
 
-.call-back__title {
-  margin-bottom: 31px;
+.callback__title {
+  margin-bottom: 8px;
   font-size: 50px;
   line-height: 40px;
   font-weight: 800;
@@ -1523,8 +1526,9 @@ input {
   text-transform: uppercase;
 }
 
-.call-back__subtitle {
+.callback__subtitle {
   margin-top: 9px;
+  margin-bottom: 33px;
   font-size: 22px;
   line-height: 40px;
   font-weight: 300;
@@ -1532,38 +1536,48 @@ input {
   text-transform: lowercase;
 }
 
-.call-back__social-list {
+.callback__social-list {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
 }
 
-.call-back__social-vk, .call-back__social-telegram, .call-back__social-instagram, .call-back__social-whatsapp {
+.callback__social-list::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #E5E5E5;
+  max-width: 594px;
+  width: 100%;
+  transform: translate(0%, 53px);
+}
+
+.callback__social-vk, .callback__social-telegram, .callback__social-instagram, .callback__social-whatsapp {
   fill: #EA6628;
 }
 
-.call-back__social-vk {
+.callback__social-vk {
   width: 23px;
   height: 23px;
   margin-right: 36px;
 }
 
-.call-back__social-telegram {
+.callback__social-telegram {
   width: 22px;
   height: 23px;
   margin-right: 42px;
 }
 
-.call-back__social-instagram {
+.callback__social-instagram {
   margin-right: 44px;
 }
 
-.call-back__social-instagram, .call-back__social-whatsapp {
+.callback__social-instagram, .callback__social-whatsapp {
   width: 18px;
   height: 19px;
 }
 
-.call-back__question-list {
+.callback__question-list {
   max-width: 862px;
   margin: 0 auto;
   columns: 2;
@@ -1571,7 +1585,7 @@ input {
   list-style: disc;
 }
 
-.call-back__question-item {
+.callback__question-item {
   position: relative;
   margin-left: 25px;
   margin-top: 2px;
@@ -1580,13 +1594,13 @@ input {
   font-weight: 500;
 }
 
-.call-back__question-item::marker {
+.callback__question-item::marker {
   font-size: 30px;
   line-height: 0;
   color: #E33E54;
 }
 
-.call-back__requisition {
+.callback__requisition {
   padding: 59px 53px 59px 62px;
   transform: translate(20%, 11%);
 }

@@ -1,10 +1,10 @@
-.call-back
+.callback
   margin-bottom: 100px
   padding-bottom: 400px
   &__container
     position: relative
   &__title
-    margin-bottom: 31px
+    margin-bottom: 8px
     font-size: 50px
     line-height: 40px
     font-weight: 800
@@ -12,15 +12,24 @@
     text-transform: uppercase
   &__subtitle
     margin-top: 9px
+    margin-bottom: 33px
     font-size: 22px
     line-height: 40px
     font-weight: 300
     text-align: center
     text-transform: lowercase
   &__social-list
+    position: relative
     display: flex
     justify-content: center
-    margin-bottom: 57px
+    margin-bottom: 55px
+    &::after
+      content: ""
+      position: absolute
+      border: 1px solid $grey
+      max-width: 594px
+      width: 100%
+      transform: translate(0%, 53px)
   &__social-vk, &__social-telegram, &__social-instagram, &__social-whatsapp
     fill: $carrot
   &__social-vk

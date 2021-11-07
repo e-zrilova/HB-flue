@@ -60,20 +60,26 @@
     &-features
       display: flex
       margin-bottom: 13px
-      justify-content: space-between
+      &::before
+        content: ""
+        border-bottom: 1px dashed $grey
+        order: 2
+        flex-grow: 1
     &-name
       position: relative
       font-size: 14px
       line-height: 17px
       font-weight: 500
       color: $grey-light
-    &-border
-      flex-grow: 1
-      border-bottom: 1px dashed $grey
+      order: 1
+    // &-border
+    //   flex-grow: 1
+    //   border-bottom: 1px dashed $grey
     &-value
       font-size: 14px
       line-height: 17px
       font-weight: 600
       color: $turquoise-blue
+      order: 3
       &-primary
         color: $maroon
