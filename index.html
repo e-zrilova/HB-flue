@@ -35,36 +35,36 @@
       <div class="header__social">
         <a href="https://vk.com/" class="header__social-link" target="_blank">
           <svg class="header__social-vk">
-            <use href="../../img/sprite.svg#vk" />
+            <use href="/img/sprite.svg#vk" />
           </svg></a>
         <a href="https://telegram.org/" class="header__social-link" target="_blank"><svg
             class="header__social-telegram">
-            <use href="../../img/sprite.svg#telegram" />
+            <use href="/img/sprite.svg#telegram" />
           </svg></a>
         <a href="https://instagram.com/" class="header__social-link" target="_blank"> <svg
             class="header__social-instagram">
-            <use href="../../img/sprite.svg#instagram" />
+            <use href="/img/sprite.svg#instagram" />
           </svg></a>
         <a href="https://whatsapp.com/" class="header__social-link" target="_blank"><svg
             class="header__social-whatsapp">
-            <use href="../../img/sprite.svg#whatsapp" />
+            <use href="/img/sprite.svg#whatsapp" />
           </svg></a>
 
       </div>
       <div class="header__buttons">
         <button class="header__search" type="button">
           <svg class=" header__search-icon">
-            <use href="../../img/sprite.svg#loupe" />
+            <use href="/img/sprite.svg#loupe" />
           </svg>
         </button>
         <button class="header__favourites" type="button">
           <svg class="header__favourites-icon">
-            <use href="../../img/sprite.svg#heart" />
+            <use href="/img/sprite.svg#heart" />
           </svg>
         </button>
         <button class="header__shopping-cart" type="button">
           <svg class=" header__shopping-cart-icon">
-            <use href="../../img/sprite.svg#shopping-cart" />
+            <use href="/img/sprite.svg#shopping-cart" />
           </svg>
           <span class="header__shopping-cart-count">10</span>
         </button>
@@ -89,27 +89,28 @@
             <p class="first-screen__price-delete"><s>15 995 &nbsp; ₽</s></p>
           </div>
           <div class="first-screen__wrapper">
-            <a class="link first-screen__link" href="#"> в каталог</a>
-            <a class="link link--primary" href="#"> монтаж</a>
+            <a class="btn first-screen__link" href="#"> в каталог</a>
+            <a class="btn btn--primary" href="#"> монтаж</a>
           </div>
         </div>
         <div class="first-screen__content">
           <svg class="first-screen__blob-primary">
-            <use href="../../img/sprite.svg#blob-primary" />
+            <use href="/img/sprite.svg#blob-primary" />
           </svg>
-          <img class="first-screen__item-1" src="img/fs-img-1.png" alt="Передняя часть дымохода">
-          <img class="first-screen__item-2" src="img/fs-img-2.png" alt="Соединительные части дымохода">
-          <svg class="first-screen__item-3">
-            <use href="../../img/sprite.svg#d-1-img" />
+          <img class="first-screen__item first-screen__item--1" src="img/fs-img-1.png" alt="Передняя часть дымохода">
+          <img class="first-screen__item first-screen__item--2" src="img/fs-img-2.png"
+            alt="Соединительные части дымохода">
+          <svg class="first-screen__item first-screen__item--3">
+            <use href="/img/sprite.svg#d-1-img" />
           </svg>
-          <svg class="first-screen__item-4">
-            <use href="../../img/sprite.svg#d-1-img" />
+          <svg class="first-screen__item first-screen__item--4">
+            <use href="/img/sprite.svg#d-1-img" />
           </svg>
-          <svg class="first-screen__item-5">
-            <use href="../../img/sprite.svg#triangle" />
+          <svg class="first-screen__item first-screen__item--5">
+            <use href="/img/sprite.svg#triangle" />
           </svg>
-          <svg class="first-screen__item-6">
-            <use href="../../img/sprite.svg#triangle" />
+          <svg class="first-screen__item first-screen__item--6">
+            <use href="/img/sprite.svg#triangle" />
           </svg>
         </div>
       </div>
@@ -117,300 +118,644 @@
     <section class="best-seller ">
       <div class="container best-seller__container">
         <div class="best-seller__title-wrapper">
-          <h2 class="best-seller__title">Хиты продаж</h2>
+          <h2 class="best-seller__title container-title">Хиты продаж</h2>
           <div class="best-seller__btn-wrapper">
-            <button class="best-seller__btn best-seller__btn--prev" type="button">
-              <svg class=" best-seller__icon-prev">
-                <use href="../../img/sprite.svg#arrow" />
+            <button class="best-seller__btn best-seller__btn--prev slider-btn" type="button">
+              <svg class="slider-btn__prev">
+                <use href="/img/sprite.svg#arrow" />
               </svg>
             </button>
-            <button class="best-seller__btn best-seller__btn--next" type="button">
-              <svg class=" best-seller__icon-next">
-                <use href="../../img/sprite.svg#arrow" />
+            <button class="best-seller__btn best-seller__btn--next slider-btn" type="button">
+              <svg class="slider-btn__next">
+                <use href="/img/sprite.svg#arrow" />
               </svg>
             </button>
           </div>
         </div>
         <div class="swiper best-seller__slider">
-          <div class="swiper-wrapper best-seller__wrapper">
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
+          <ul class="swiper-wrapper best-seller__wrapper">
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
               <div class="best-seller__btn-shop">
                 <span class="best-seller__border"></span>
                 <button class="best-seller__card-btn" type="button">
                   <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
+                    <use href="/img/sprite.svg#shopping-cart" />
                   </svg>
                 </button>
               </div>
               <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
                 <div class="best-seller__price-wrapper">
                   <p class="best-seller__price-tag">16 490 </p>
                   <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
                   <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213" alt="">
+            </li>
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
               <div class="best-seller__btn-shop">
                 <span class="best-seller__border"></span>
                 <button class="best-seller__card-btn" type="button">
                   <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
+                    <use href="/img/sprite.svg#shopping-cart" />
                   </svg>
                 </button>
               </div>
               <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
                 <div class="best-seller__price-wrapper">
                   <p class="best-seller__price-tag">16 490 </p>
                   <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
                   <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
+            </li>
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
               <div class="best-seller__btn-shop">
                 <span class="best-seller__border"></span>
                 <button class="best-seller__card-btn" type="button">
                   <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
+                    <use href="/img/sprite.svg#shopping-cart" />
                   </svg>
                 </button>
               </div>
               <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki
-                  ZUZIA LPT</p>
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
                 <div class="best-seller__price-wrapper">
                   <p class="best-seller__price-tag">16 490 </p>
                   <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
                   <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
+            </li>
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
               <div class="best-seller__btn-shop">
                 <span class="best-seller__border"></span>
                 <button class="best-seller__card-btn" type="button">
                   <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
+                    <use href="/img/sprite.svg#shopping-cart" />
                   </svg>
                 </button>
               </div>
               <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki
-                  ZUZIA LPT</p>
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
                 <div class="best-seller__price-wrapper">
                   <p class="best-seller__price-tag">16 490 </p>
                   <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
                   <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
+            </li>
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
               <div class="best-seller__btn-shop">
                 <span class="best-seller__border"></span>
                 <button class="best-seller__card-btn" type="button">
                   <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
+                    <use href="/img/sprite.svg#shopping-cart" />
                   </svg>
                 </button>
               </div>
               <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold">₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
-                <span class="best-seller__border"></span>
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
                 <div class="best-seller__price-wrapper">
                   <p class="best-seller__price-tag">16 490 </p>
                   <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
                   <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="swiper-slide  best-seller__slide">
+              <a href="#" class="best-seller__link-img">
+                <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
+                  alt="Каминная топка Kratki"> </a>
+              <div class="best-seller__btn-shop">
+                <span class="best-seller__border"></span>
+                <button class="best-seller__card-btn" type="button">
+                  <svg class="best-seller__cart-icon">
+                    <use href="/img/sprite.svg#shopping-cart" />
+                  </svg>
+                </button>
+              </div>
+              <div class="best-seller__item">
+                <a href="#" class="best-seller__link"><span class="best-seller__item-title">Kratki</span></a>
+                <a href="#">
+                  <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
+                </a>
+                <div class="best-seller__price-wrapper">
+                  <p class="best-seller__price-tag">16 490 </p>
+                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
+                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="work">
       <div class="container work__container">
         <div class="work__title-wrapper">
-          <h2 class="work__title">Хиты продаж</h2>
+          <h2 class="work__title">Выполненные <span class="work__title-text">проекты</span> </h2>
+          <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
           <div class="work__btn-wrapper">
-            <button class="work__slider-btn work__slider-btn--prev" type="button">
-              <svg class=" best-seller__icon-prev">
-                <use href="../../img/sprite.svg#arrow" />
+            <button class="work__slider-btn work__slider-btn--prev slider-btn" type="button">
+              <svg class=" slider-btn__prev">
+                <use href="/img/sprite.svg#arrow" />
               </svg>
             </button>
-            <button class="work__slider-btn work__slider-btn--next" type="button">
-              <svg class=" best-seller__icon-next">
-                <use href="../../img/sprite.svg#arrow" />
+            <button class="work__slider-btn work__slider-btn--next slider-btn" type="button">
+              <svg class=" slider-btn__next">
+                <use href="/img/sprite.svg#arrow" />
               </svg>
             </button>
           </div>
         </div>
-        <div class="swiper best-seller__slider">
-          <div class="swiper-wrapper best-seller__wrapper">
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213" alt="">
-              <div class="best-seller__btn-shop">
+        <svg class="work__container-bg">
+          <use href="/img/sprite.svg#blob" />
+        </svg>
+        <div class="swiper work__slider">
+          <ul class=" work__wrapper swiper-wrapper ">
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-1.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
 
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
                 </div>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <p class="work__item-value">304-0,8/430</p>
+                </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
+            </li>
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-2.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
 
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki
-                  ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
 
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki
-                  ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
                 </div>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <p class="work__item-value">304-0,8/430</p>
+                </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
               </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
+            </li>
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-3.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
 
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold">₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
+
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-slide  best-seller__slide">
-              <img class="best-seller__slide-img" src="img/item-1.png" width="213" height="213"
-                alt="Каминная топка Kratki">
-              <div class="best-seller__btn-shop">
-                <button class="best-seller__card-btn" type="button">
-                  <svg class="best-seller__cart-icon">
-                    <use href="../../img/sprite.svg#shopping-cart" />
-                  </svg>
-                </button>
-              </div>
-              <div class="best-seller__item">
-                <h3 class="best-seller__item-title">Kratki</h3>
-                <p class="best-seller__item-description">Каминная топка Kratki ZUZIA LPT</p>
-                <div class="best-seller__price-wrapper">
-                  <p class="best-seller__price-tag">16 490 </p>
-                  <p class="best-seller__price-tag best-seller__price-tag--bold"> ₽</p>
-                  <p class="best-seller__price-delete"><s>15 995 ₽</s></p>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <p class="work__item-value">304-0,8/430</p>
                 </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-1.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
+
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
+                </div>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <p class="work__item-value">304-0,8/430</p>
+                </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
+              </div>
+            </li>
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-2.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
+
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
+
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <span class="work__item-border"></span>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
+                </div>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <span class="work__item-border"></span>
+                  <p class="work__item-value">304-0,8/430</p>
+                </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
+              </div>
+            </li>
+            <li class="swiper-slide work__slide">
+              <a href="#" class="work__slide-link"><img class="work__slide-img" src="img/work-img-3.png" width="300"
+                  height="250" alt="Печь «Бахта»"></a>
+
+              <div class="work__item">
+                <a href="#" class="work__item-link">
+                  <h3 class="work__item-title">Печь «Бахта»</h3>
+                </a>
+
+                <div class="work__item-features">
+                  <p class="work__item-name">Диаметр </p>
+                  <span class="work__item-border"></span>
+                  <p class="work__item-value work__item-value-primary">115/250</p>
+                </div>
+                <div class="work__item-features">
+                  <p class="work__item-name">Сталь</p>
+                  <span class="work__item-border"></span>
+                  <p class="work__item-value">304-0,8/430</p>
+                </div>
+                <p class="work__item-description">Чугунная отопительно-варочная печь. Дымоход собственного
+                  производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки
+                  с минеритом. </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+    </section>
+    <section class="calculate">
+      <div class=" container calculate__container">
+        <div class="calculate__container-left">
+          <h2 class="calculate__title"> <span class="calculate__caption">самостоятельный</span>
+            расчёт стоимости дымохода</h2>
+          <p class="calculate__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et
+          </p>
+          <p class="calculate__subtitle">Для расчета стоимости пройдите тест за <span class="calculate__time">1
+              минуту</span>
+          </p>
+          <a class="btn calculate__link" href="#">рассчитать стоимость</a>
+        </div>
+
+        <div class="calculate__decor-img">
+          <svg class="calculate__bg">
+            <use href="/img/sprite.svg#blob-carrot" />
+          </svg>
+          <img class="calculate__img" src="img/calculator.png" alt="Изображение калькулятора">
+          <svg class=" calculate__item calculate__item--1">
+            <use href="/img/sprite.svg#d-1-img" />
+          </svg>
+          <svg class="calculate__item calculate__item--2">
+            <use href="/img/sprite.svg#d-1-img" />
+          </svg>
+          <svg class="calculate__item calculate__item--3">
+            <use href="/img/sprite.svg#triangle" />
+          </svg>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="advantages">
+      <div class="container advantages__container ">
+        <h2 class="container-title advantages__title">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__wrapper-img">
+              <svg class="advantages__img">
+                <use href="/img/sprite.svg#consult" />
+              </svg>
+              <svg class="advantages__img-border">
+                <use href="/img/sprite.svg#border" />
+              </svg>
+            </div>
+            <div class="advantages__wrapper">
+              <p class="advantages__item-title">Бесплатная консультация</p>
+              <p class="advantages__item-description">Позвонить нам, чтобы получить бесплатную консультацию, на крепёж,
+                стыковку элементов и «вертикальность»
+              </p>
+            </div>
+
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__wrapper-img">
+              <svg class="advantages__img">
+                <use href="/img/sprite.svg#contract" />
+              </svg>
+              <svg class="advantages__img-border">
+                <use href="/img/sprite.svg#border" />
+              </svg>
+            </div>
+            <div class="advantages__wrapper">
+              <p class="advantages__item-title">Бесплатный просчёт</p>
+              <p class="advantages__item-description">Оставьте заявку или перезвоните нам на расчёт стоимости монтажа
+                для дома, бани или котельной.
+              </p>
+            </div>
+
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__wrapper-img">
+              <svg class="advantages__img">
+                <use href="/img/sprite.svg#experience" />
+              </svg>
+              <svg class="advantages__img-border">
+                <use href="/img/sprite.svg#border" />
+              </svg>
+            </div>
+            <div class="advantages__wrapper">
+              <p class="advantages__item-title">Большой опыт </p>
+              <p class="advantages__item-description">У нас большой опыт установки, монтажа, убедитесь в этом прочитав
+                отзывы и посмотрите фотографии наших работ
+              </p>
+            </div>
+
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__wrapper-img">
+              <svg class="advantages__img">
+                <use href="/img/sprite.svg#broom" />
+              </svg>
+              <svg class="advantages__img-border">
+                <use href="/img/sprite.svg#border" />
+              </svg>
+            </div>
+            <div class="advantages__wrapper">
+              <p class="advantages__item-title">Чистка дымохода </p>
+              <p class="advantages__item-description">Мы производим чистку дымохода с применением современной
+                профессиональной технологии.
+              </p>
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container service__container">
+        <div class="service__block">
+          <div class="service__wrapper-decor">
+            <img class="service__img" src="img/service__img-1.png" width="433" height="476" alt="Инженер-проектировщик">
+
+            <svg class="service__blob-primary">
+              <use href="../../img/sprite.svg#blob-primary" />
+            </svg>
+            <svg class="service__img-arrow">
+              <use href="../../img/sprite.svg#turn-arrow" />
+            </svg>
+            <svg class=" service__item service__item--1">
+              <use href="../../img/sprite.svg#d-1-img" />
+            </svg>
+            <svg class="service__item service__item--2">
+              <use href="../../img/sprite.svg#triangle" />
+            </svg>
+          </div>
+          <div class="service__text-wrapper">
+            <h2 class="service__title">Заказать выезд инженера<span class="service__caption">
+                на замер</span></h2>
+            <p class="service__phone-text"> Оставьте заявку по телефону
+              <a href="tel:+78125092936" class="service__phone">+7 (812) <span
+                  class="service__phone-number">509-29-36</span>
+              </a></p>
+            <p class="service__description">Наш инженер-проектировщик приедет в удобное для Вас время, поможет с выбором
+              места установки печи или котла и осуществит замер для Вашего дымохода</p>
+          </div>
+        </div>
+        <div class="service__wrapper requisition">
+          <div class="service__form-text requisition__form-text">
+            <p class="service__form-title requisition__form-title">Для <span
+                class="service__form-subtitle requisition__form-subtitle">заказа</span> замера заполните форму!</p>
+            <p class="service__form-description requisition__form-description">И получите полную смету требуемых изделий
+              и монтажных работ
+            </p>
+          </div>
+          <form action="#" class="service__form requisition__form">
+            <input class="service__form-name requisition__form-name" type="text" placeholder="Ваше имя">
+            <input class="service__form-phone requisition__form-phone" type="tel" placeholder="Ваш телефон">
+            <button class="btn" type="submit"> оставить заявку</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__title container-title">Установка и отношение к работе</h2>
+        <div class="about-us__wrapper">
+          <div class="about-us__text">
+            <p class="about-us__description">Правильная установка очень важна, от этого зависит не только красота но и
+              ваша безопасность. Не профессиональная установка газоотводящей системы несёт большую опасность
+              возникновения пожаров и
+              отравление угарным газом.</p>
+            <p class="about-us__description">В <a href="#" class="about-us__link">Дымоход.ру</a> работают профессионалы
+              с большим опытом работы, они ежегодно проходят курсы повышения квалификации </p>
+            <p class="about-us__slogan">Все работы проводим качественно, аккуратно, и на совесть</p>
+          </div>
+          <img class="about-us__img" width="624" height="313" src="img/about-us__img-1.jpg"
+            alt="Дымоход, который установлен на крышу дома">
+        </div>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <svg class="about-us__item-img">
+              <use href="../../img/sprite.svg#price-tag" />
+            </svg>
+            <p class="about-us__item-title">Доступные
+              цены</p>
+            <p class="about-us__item-description">Мы предлагаем нашу продукцию, услуги по доступным ценам и отличного
+              качества</p>
+          </li>
+          <li class="about-us__item">
+            <svg class="about-us__item-img">
+              <use href="../../img/sprite.svg#gear" />
+            </svg>
+            <p class="about-us__item-title">Установка</p>
+            <p class="about-us__item-description">Устанавливаем дымоходы, камины, печи, котлы всех производителей</p>
+          </li>
+          <li class="about-us__item">
+            <svg class="about-us__item-img">
+              <use href="../../img/sprite.svg#architect" />
+            </svg>
+            <p class="about-us__item-title">Профессионализм </p>
+            <p class="about-us__item-description">Квалифицированные специалисты. Работаем чисто, аккуратно, убираем за
+              собой</p>
+          </li>
+          <li class="about-us__item">
+            <svg class="about-us__item-img">
+              <use href="../../img/sprite.svg#guarantee" />
+            </svg>
+            <p class="about-us__item-title">Гарантия качества</p>
+            <p class="about-us__item-description">Мы даём гарантию на все изделия и работы, выполненные нашими
+              специалистами. </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="infographic">
+      <div class="container">
+        <h2 class="infographic__title container-title">О компании в цифрах</h2>
+        <div class="infographic__container">
+          <ul class="infographic__list">
+            <li class="infographic__item">
+              <div class="infographic__item-wrapper">
+                <p class="infographic__item-title">11</p>
+              </div>
+              <p class="infographic__item-description">Магазинов продают нашу продукцию</p>
+            </li>
+            <li class="infographic__item">
+              <div class="infographic__item-wrapper">
+                <p class="infographic__item-title">1886</p>
+              </div>
+              <p class="infographic__item-description">Выполненных объектов </p>
+            </li>
+            <li class="infographic__item">
+              <div class="infographic__item-wrapper">
+                <p class="infographic__item-title">18</p>
+              </div>
+              <p class="infographic__item-description">Лет опыта работы
+                на рынке с гарантией&nbsp;качества</p>
+            </li>
+            <li class="infographic__item">
+              <div class="infographic__item-wrapper">
+                <p class="infographic__item-title">90%</p>
+              </div>
+              <p class="infographic__item-description">рекомендуют и&nbsp;обращаются к нам&nbsp;повторно</p>
+            </li>
+          </ul>
+          <div class="infographic__wrapper">
+            <svg class="infographic-bg">
+              <use href="/img/sprite.svg#info-blob" />
+            </svg>
+            <img class="infographic__img" width="340" height="513" src="/img/item2.png" alt="Камин">
+            <svg class="infographic__item-decor infographic__item-decor--1">
+              <use href="/img/sprite.svg#d-1-img" />
+            </svg>
+            <svg class="infographic__item-decor infographic__item-decor--2">
+              <use href="/img/sprite.svg#triangle" />
+            </svg>
+            <svg class="infographic__item-decor infographic__item-decor--3">
+              <use href="/img/sprite.svg#d-1-img" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="callback">
+      <div class="container callback__container">
+        <h2 class="callback__title">Оставьте заявку</h2>
+        <p class="callback__subtitle">или свяжитесь с нами в социальных сетях</p>
+        <ul class="callback__social-list">
+          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
+
+              <svg class="callback__social-vk">
+                <use href="/img/sprite.svg#vk" />
+              </svg>
+            </a></li>
+          <li class="callback__social-item">
+            <a href="#" class="callback__social-link" target="_blank">
+              <svg class="callback__social-telegram">
+                <use href="/img/sprite.svg#telegram" />
+              </svg>
+            </a>
+          </li>
+          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
+
+              <svg class="callback__social-instagram">
+                <use href="/img/sprite.svg#instagram" />
+              </svg>
+            </a></li>
+          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
+
+              <svg class="callback__social-whatsapp">
+                <use href="/img/sprite.svg#whatsapp" />
+              </svg>
+            </a></li>
+        </ul>
+        <ul class="callback__question-list">
+          <li class="callback__question-item">Какой дымоход лучше выбрать?</li>
+          <li class="callback__question-item"> Сколько стоит монтаж дымохода?</li>
+          <li class="callback__question-item">Из какой стали выбрать дымоход?</li>
+          <li class="callback__question-item">Занимаетесь обслуживанием дымоходов?</li>
+          <li class="callback__question-item">Сколько стоит выезд инженера на замер?</li>
+          <li class="callback__question-item"> Сколько стоит выезд инженера на замер?</li>
+        </ul>
+        <div class=" callback__requisition requisition">
+          <div class="requisition__form-text callback__form-text">
+            <p class=" requisition__form-title callback__form-title">Для <span
+                class=" requisition__form-subtitle callback__form-subtitle">заказа</span> замера заполните форму!</p>
+            <p class="requisition__form-description callback__form-description">С Вами свяжутся в ближайшее время
+            </p>
+          </div>
+          <form action="#" class="requisition__form callback___form">
+            <input class=" requisition__form-name callback__form-name" type="text" placeholder="Ваше имя">
+            <input class="requisition__form-phone callback__form-phone" type="tel" placeholder="Ваш телефон">
+            <button class="btn" type="submit"> оставить заявку</button>
+          </form>
+        </div>
+      </div>
+
     </section>
   </main>
 

@@ -6,7 +6,7 @@ const bestSellerSwiper = new Swiper('.best-seller__slider', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
   navigation: {
     nextEl: '.best-seller__btn--next',
@@ -18,13 +18,14 @@ const bestSellerSwiper = new Swiper('.best-seller__slider', {
 
 const workSwiper = new Swiper('.work__slider', {
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
 
+
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
   navigation: {
     nextEl: '.work__slider-btn--next',
