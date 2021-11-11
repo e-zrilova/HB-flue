@@ -1,6 +1,5 @@
 .work
-  margin-bottom: 190px
-  padding-bottom: 200px
+  padding-bottom: 355px
   &__container
     position: relative
     display: flex
@@ -8,14 +7,17 @@
     &-bg
       position: absolute
       z-index: 1
+      left: 64px
+      top: 10px
       width: 763px
       height: 642px
       fill: $turquoise-blue
-      transform: translate(-52%, -4%)
+
   &__title-wrapper
     max-width: 350px
     width: 100%
     text-align: right
+    padding: 38px 0
   &__title
     margin: 66px 0 24px 0
     font-size: 40px
@@ -32,6 +34,7 @@
   &__slider
     position: absolute
     width: 100%
+    padding: 40px 0
     transform: translateX(-39%)
   &__slide
     max-width: 400px
@@ -72,9 +75,6 @@
       font-weight: 500
       color: $grey-light
       order: 1
-    // &-border
-    //   flex-grow: 1
-    //   border-bottom: 1px dashed $grey
     &-value
       font-size: 14px
       line-height: 17px
