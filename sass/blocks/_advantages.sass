@@ -33,10 +33,27 @@
       width: 100%
       margin-right: 30px
       align-items: center
+      border: 1px solid $grey
+      border-radius: 4px
+      min-height: 140px
+      &::before
+        content: ""
+        position: absolute
+        top: -3px
+        right: 19px
+        background-color: $light
+        width: 135px
+        height: 143px
+      &::after
+        content: ""
+        position: absolute
+        top: 21px
+        right: -2px
+        background-color: $light
+        width: 180px
+        height: 97px
   &__img
     height: 70px
     width: 100%
-    &-border
-      position: absolute
-      width: 179px
-      height: 141px
+    position: absolute
+    z-index: 1

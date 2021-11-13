@@ -1330,17 +1330,36 @@ p {
   width: 100%;
   margin-right: 30px;
   align-items: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  min-height: 140px;
+}
+
+.advantages__wrapper-img::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 19px;
+  background-color: #ffffff;
+  width: 135px;
+  height: 143px;
+}
+
+.advantages__wrapper-img::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: -2px;
+  background-color: #ffffff;
+  width: 180px;
+  height: 97px;
 }
 
 .advantages__img {
   height: 70px;
   width: 100%;
-}
-
-.advantages__img-border {
   position: absolute;
-  width: 179px;
-  height: 141px;
+  z-index: 1;
 }
 
 .service {
