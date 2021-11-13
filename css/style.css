@@ -553,6 +553,41 @@ p {
   height: 19px;
 }
 
+.social-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E5E5;
+  max-width: 594px;
+}
+
+.social-item {
+  margin-right: 40px;
+}
+
+.social-vk, .social-telegram, .social-instagram, .social-whatsapp {
+  fill: #EA6628;
+}
+
+.social-vk {
+  width: 23px;
+  height: 23px;
+}
+
+.social-telegram {
+  width: 22px;
+  height: 23px;
+}
+
+.social-instagram,
+.social-whatsapp {
+  width: 18px;
+  height: 19px;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2");
@@ -1655,40 +1690,6 @@ p {
   text-transform: lowercase;
 }
 
-.callback__social-list {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #E5E5E5;
-  max-width: 594px;
-}
-
-.callback__social-item {
-  margin-right: 40px;
-}
-
-.callback__social-vk, .callback__social-telegram, .callback__social-instagram, .callback__social-whatsapp {
-  fill: #EA6628;
-}
-
-.callback__social-vk {
-  width: 23px;
-  height: 23px;
-}
-
-.callback__social-telegram {
-  width: 22px;
-  height: 23px;
-}
-
-.callback__social-instagram, .callback__social-whatsapp {
-  width: 18px;
-  height: 19px;
-}
-
 .callback__question-list {
   max-width: 862px;
   margin: 0 auto;
@@ -1894,6 +1895,10 @@ p {
   right: 271px;
 }
 
+.buy {
+  padding-bottom: 300px;
+}
+
 .buy-container {
   display: flex;
 }
@@ -1920,5 +1925,115 @@ p {
   line-height: 30px;
   opacity: 0.1;
   transform: translate(-82px, 412px);
+}
+
+.reviews {
+  padding-bottom: 345px;
+}
+
+.reviews__text-wrapper {
+  max-width: 543px;
+  width: 100%;
+}
+
+.reviews-description {
+  margin-top: 53px;
+  margin-bottom: 64px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer {
+  background-color: #0C2F33;
+  color: #ffffff;
+  padding: 68px 0;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.footer__caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.footer__caption--decor {
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.footer__catalog {
+  columns: 2;
+  column-gap: 83px;
+}
+
+.footer__catalog-info {
+  column-gap: 60px;
+}
+
+.footer__item {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer__item-text {
+  color: #4C858B;
+  margin-right: 5px;
+}
+
+.footer__item-text--decor {
+  margin-left: 5px;
+}
+
+.footer__item-hours {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Lato;
+}
+
+.footer__link {
+  color: inherit;
+}
+
+.footer__hours {
+  margin-bottom: 26px;
+}
+
+.footer__icon {
+  margin-right: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+.footer__icon--1 {
+  width: 17px;
+  height: 17px;
+}
+
+.menu-catalog {
+  margin-right: 105px;
+}
+
+.menu-info {
+  margin-right: 109px;
+}
+
+.menu-hours {
+  margin-left: 10px;
+}
+
+.social-link--color .social-vk, .social-telegram, .social-instagram, .social-whatsapp {
+  fill: #4C858B;
+}
+
+.social-list--decor {
+  border: none;
+  justify-content: start;
+  margin-left: 2px;
 }
 /*# sourceMappingURL=style.css.map */
