@@ -508,6 +508,51 @@ p {
   margin-right: 12px;
 }
 
+.container-content {
+  position: relative;
+  width: 100%;
+}
+
+.container-item {
+  position: absolute;
+}
+
+.container-item--1 {
+  width: 768px;
+  height: 718px;
+  fill: #E33E54;
+  left: 3px;
+}
+
+.container-item--2 {
+  top: 109px;
+  left: 230px;
+}
+
+.container-item--3 {
+  top: 94px;
+  left: 146px;
+}
+
+.container-item--4 {
+  top: 516px;
+  left: 541px;
+}
+
+.container-item--5 {
+  top: 238px;
+  left: 20px;
+  width: 78px;
+  height: 19px;
+}
+
+.container-item--6 {
+  top: 146px;
+  left: 688px;
+  width: 78px;
+  height: 19px;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2");
@@ -836,11 +881,6 @@ p {
   align-items: center;
 }
 
-.first-screen__price-wrapper p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .first-screen__price {
   margin: 0;
   font-size: 16px;
@@ -1041,8 +1081,8 @@ p {
 .work__container-bg {
   position: absolute;
   z-index: 1;
-  left: 64px;
-  top: 10px;
+  left: 66px;
+  top: 9px;
   width: 763px;
   height: 642px;
   fill: #4C858B;
@@ -1094,7 +1134,7 @@ p {
 }
 
 .work__item-title {
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 14px;
   font-size: 20px;
   line-height: 20px;
@@ -1580,7 +1620,7 @@ p {
 }
 
 .callback__social-item {
-  margin-right: 36px;
+  margin-right: 40px;
 }
 
 .callback__social-vk, .callback__social-telegram, .callback__social-instagram, .callback__social-whatsapp {
@@ -1605,7 +1645,7 @@ p {
 .callback__question-list {
   max-width: 862px;
   margin: 0 auto;
-  padding-top: 32px;
+  padding: 32px 0;
   columns: 2;
   column-gap: 2px;
   list-style: disc;
@@ -1630,7 +1670,7 @@ p {
 }
 
 .block-video {
-  padding-bottom: 137px;
+  padding-bottom: 126px;
 }
 
 .block-video__description {
@@ -1809,16 +1849,25 @@ p {
 
 .buy__text-wrapper {
   max-width: 630px;
+  width: 100%;
 }
 
 .buy__text-description {
   max-width: 484px;
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: 84px;
+  margin-bottom: 66px;
 }
 
 .buy__img {
   transform: translate(206px, 107px);
+}
+
+.buy__price {
+  font-weight: 800;
+  font-size: 250px;
+  line-height: 30px;
+  opacity: 0.1;
+  transform: translate(-82px, 412px);
 }
 /*# sourceMappingURL=style.css.map */
