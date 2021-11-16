@@ -2041,11 +2041,13 @@ p {
 }
 
 .footer__menu-info {
-  margin-right: 109px;
+  margin-right: 105px;
 }
 
 .footer__menu-hours {
   margin-left: 10px;
+  max-width: 320px;
+  width: 100%;
 }
 
 .footer__caption {
@@ -2061,18 +2063,16 @@ p {
 }
 
 .footer__catalog {
-  columns: 2;
-  column-gap: 83px;
-}
-
-.footer__catalog-info {
-  column-gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__item {
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 24px;
+  max-width: 210px;
+  width: 50%;
 }
 
 .footer__item-text {
@@ -2089,6 +2089,8 @@ p {
   align-items: center;
   margin-bottom: 10px;
   font-family: Lato;
+  max-width: 320px;
+  width: 100%;
 }
 
 .footer__link {

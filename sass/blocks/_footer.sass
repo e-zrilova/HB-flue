@@ -7,9 +7,11 @@
     &-catalog
       margin-right: 105px
     &-info
-      margin-right: 109px
+      margin-right: 105px
     &-hours
       margin-left: 10px
+      max-width: 320px
+      width: 100%
   &__caption
     margin-bottom: 10px
     font-weight: 700
@@ -19,14 +21,14 @@
       margin-top: 17px
       margin-bottom: 15px
   &__catalog
-    columns: 2
-    column-gap: 83px
-    &-info
-      column-gap: 60px
+    display: flex
+    flex-wrap: wrap
   &__item
     margin-bottom: 14px
     font-size: 14px
     line-height: 24px
+    max-width: 210px
+    width: 50%
     &-text
       color: $turquoise-blue
       margin-right: 5px
@@ -37,6 +39,8 @@
       align-items: center
       margin-bottom: 10px
       font-family: Lato
+      max-width: 320px
+      width: 100%
   &__link
     color: inherit
   &__hours
