@@ -22,7 +22,8 @@ button
 input
   outline: none
 p
-  margin: 0
+  margin-top: 0
+  margin-bottom: 0
 .container
   max-width: 1248px
   width: 100%
@@ -148,26 +149,25 @@ p
     left: 688px
     width: 78px
     height: 19px
-.social-list
+.social
   position: relative
   display: flex
   align-items: center
   justify-content: center
   margin: 0 auto
-  padding-bottom: 24px
-  border-bottom: 1px solid $grey
+
   max-width: 594px
-.social-item
-  margin-right: 40px
-.social-vk, .social-telegram, .social-instagram, .social-whatsapp
-  fill: $carrot
-.social-vk
-  width: 23px
-  height: 23px
-.social-telegram
-  width: 22px
-  height: 23px
-.social-instagram,
-.social-whatsapp
-  width: 18px
-  height: 19px
+  &__item
+    margin-right: 40px
+  &__vk, &__telegram,&__instagram, &__whatsapp
+    fill: $carrot
+  &__vk
+    width: 23px
+    height: 23px
+  &__telegram
+    width: 22px
+    height: 23px
+  &__instagram,
+  &__whatsapp
+    width: 18px
+    height: 19px
