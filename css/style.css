@@ -343,6 +343,13 @@ template {
 
 body {
   font: normal 400 16px/1.5 Montserrat, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 a {
