@@ -34,3 +34,21 @@ const workSwiper = new Swiper('.work__slider', {
 
 
 });
+
+const reviewsSwiper = new Swiper(".reviews__slider", {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 22,
+  loop: true,
+  centeredSlides: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  navigation: {
+    nextEl: '.reviews__slider-btn--next',
+    prevEl: '.reviews__slider-btn--prev',
+  },
+});

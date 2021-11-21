@@ -1,5 +1,5 @@
 .advantages
-  margin-bottom: 82px
+  padding-bottom: 105px
   &__container
   &__title
     margin-bottom: 46px
@@ -7,6 +7,7 @@
     flex-wrap: wrap
     display: flex
     margin: 0 -15px
+    row-gap: 11px
   &__item
     display: flex
     width: calc(50% - 30px)
@@ -32,10 +33,25 @@
       width: 100%
       margin-right: 30px
       align-items: center
+      border: 1px solid $grey
+      border-radius: 4px
+      min-height: 140px
+      &::before, &::after
+        content: ""
+        position: absolute
+        background-color: $light
+      &::before
+        top: -3px
+        right: 19px
+        width: 135px
+        height: 143px
+      &::after
+        top: 21px
+        right: -2px
+        width: 180px
+        height: 97px
   &__img
     height: 70px
     width: 100%
-    &-border
-      position: absolute
-      width: 179px
-      height: 141px
+    position: absolute
+    z-index: 1

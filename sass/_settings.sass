@@ -2,6 +2,11 @@
   box-sizing: border-box
 body
   font: normal 400 16px/1.5 $font-primary
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+main
+  flex: 1
 a
   text-decoration: none
   color: $black
@@ -21,10 +26,13 @@ button
   outline: none
 input
   outline: none
+p
+  margin-top: 0
+  margin-bottom: 0
 .container
   max-width: 1248px
   width: 100%
-  margin: auto
+  margin: 0 auto
   padding-left: 15px
   padding-right: 15px
   &-title
@@ -40,7 +48,19 @@ input
       height: 5px
       background-color: $primary
       left: 0
-      bottom: 123%
+      top: -16px
+  &-heading
+    margin-top: 92px
+    margin-bottom: 19px
+    font-size: 40px
+    line-height: 63px
+    font-weight: 600
+  &-headline
+    font-size: 50px
+    line-height: 63px
+    font-weight: 800
+    text-transform: uppercase
+    color: $primary
 .btn
   padding: 18px 24px
   border-radius: 4px
@@ -49,6 +69,7 @@ input
   font-size: 16px
   line-height: 20px
   color: $light
+  display: inline-block
   min-width: 240px
   text-align: center
   &--primary
@@ -72,7 +93,7 @@ input
   background-color: $light
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
   padding: 60px 55px 59px 57px
-  transform: translate(-7%, -5%)
+  margin: 0 auto
   max-width: 866px
   &__form
     &-text
@@ -104,3 +125,54 @@ input
       margin-right: 10px
     &-phone
       margin-right: 12px
+.container-content
+  position: relative
+  width: 100%
+.container-item
+  position: absolute
+  &--1
+    width: 768px
+    height: 718px
+    fill: #E33E54
+    left: 3px
+  &--2
+    top: 109px
+    left: 230px
+  &--3
+    top: 94px
+    left: 146px
+  &--4
+    top: 516px
+    left: 541px
+  &--5
+    top: 238px
+    left: 20px
+    width: 78px
+    height: 19px
+  &--6
+    top: 146px
+    left: 688px
+    width: 78px
+    height: 19px
+.social
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+
+  max-width: 594px
+  &__item
+    margin-right: 40px
+  &__vk, &__telegram,&__instagram, &__whatsapp
+    fill: $carrot
+  &__vk
+    width: 23px
+    height: 23px
+  &__telegram
+    width: 22px
+    height: 23px
+  &__instagram,
+  &__whatsapp
+    width: 18px
+    height: 19px

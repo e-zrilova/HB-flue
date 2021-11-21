@@ -1,6 +1,5 @@
 .callback
-  margin-bottom: 100px
-  padding-bottom: 400px
+  padding-bottom: 118px
   &__container
     position: relative
   &__title
@@ -18,44 +17,16 @@
     font-weight: 300
     text-align: center
     text-transform: lowercase
-  &__social-list
-    position: relative
-    display: flex
-    justify-content: center
-    margin-bottom: 55px
-    &::after
-      content: ""
-      position: absolute
-      border: 1px solid $grey
-      max-width: 594px
-      width: 100%
-      transform: translate(0%, 53px)
-  &__social-vk, &__social-telegram, &__social-instagram, &__social-whatsapp
-    fill: $carrot
-  &__social-vk
-    width: 23px
-    height: 23px
-    margin-right: 36px
-  &__social-telegram
-    width: 22px
-    height: 23px
-    margin-right: 42px
-  &__social-instagram
-    margin-right: 44px
-  &__social-instagram,
-  &__social-whatsapp
-    width: 18px
-    height: 19px
   &__question-list
     max-width: 862px
     margin: 0 auto
+    padding: 32px 0
     columns: 2
-    column-gap: 0
+    column-gap: 2px
     list-style: disc
   &__question-item
     position: relative
     margin-left: 25px
-    margin-top: 2px
     font-size: 18px
     line-height: 40px
     font-weight: 500
@@ -65,4 +36,6 @@
       color: $primary
   &__requisition
     padding: 59px 53px 59px 62px
-    transform: translate(20%, 11%)
+  &__social
+    padding-bottom: 24px
+    border-bottom: 1px solid $grey

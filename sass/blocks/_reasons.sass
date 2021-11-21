@@ -1,0 +1,43 @@
+.reasons
+  padding-bottom: 27px
+  &__wrapper
+    margin-top: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__list
+    list-style: none
+    counter-reset: my-counter 0
+    max-width: 628px
+    width: 100%
+    padding-left: 0
+    margin-top: 0
+  &__item
+    display: flex
+    align-items: center
+    font-size: 16px
+    line-height: 30px
+    margin-bottom: 12px
+    &::before
+      counter-increment: my-counter
+      content: counter(my-counter)
+      color: $primary
+      opacity: 0.2
+      font-weight: 700
+      font-size: 100px
+      line-height: 122px
+      margin-right: 43px
+    &--1
+      &::before
+        margin-right: 63px
+    &--3
+      align-items: start
+    &-wrapper
+      padding-top: 20px
+    &-text
+      margin: 0
+    &-decor
+      font-weight: 700
+  &__img
+    position: absolute
+    right: 271px

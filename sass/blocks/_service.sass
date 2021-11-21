@@ -1,26 +1,14 @@
 .service
-  margin-bottom: 128px
+  padding-bottom: 126px
   &__container
     position: relative
-    padding-left: 175px
   &__block
     display: flex
+    padding-left: 156px
   &__wrapper-decor
     width: 100%
   &__text-wrapper
     margin-left: 58px
-  &__title
-    margin-top: 92px
-    margin-bottom: 19px
-    font-size: 40px
-    line-height: 63px
-    font-weight: 600
-  &__caption
-    font-size: 50px
-    line-height: 63px
-    font-weight: 800
-    text-transform: uppercase
-    color: $primary
   &__phone-text
     margin-bottom: 33px
     font-size: 16px
@@ -41,7 +29,8 @@
     &-arrow
       position: absolute
       z-index: 2
-      transform: translate(861px, -46px)
+      bottom: 147px
+      right: -88px
   &__description
     font-size: 16px
     line-height: 30px
@@ -49,15 +38,34 @@
     position: absolute
     z-index: 2
     &--1
-      transform: translate(-60%, -262%)
+      top: 81px
+      left: -6px
     &--2
+      left: -190px
+      bottom: 351px
       width: 77px
       height: 22px
-      transform: translate(-366px, -123px)
   &__blob-primary
     position: absolute
     z-index: -1
+    top: 76px
+    left: -148px
     width: 766px
     height: 541px
-    transform: translate(-42%, -74%)
     fill: $turquoise-blue
+  &__requisition
+    margin-top: -10px
+    margin-left: 100px
+.container
+  &-heading
+    margin-top: 92px
+    margin-bottom: 19px
+    font-size: 40px
+    line-height: 63px
+    font-weight: 600
+  &-headline
+    font-size: 50px
+    line-height: 63px
+    font-weight: 800
+    text-transform: uppercase
+    color: $primary

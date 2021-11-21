@@ -485,9 +485,6 @@
               <svg class="advantages__img">
                 <use href="/img/sprite.svg#consult" />
               </svg>
-              <svg class="advantages__img-border">
-                <use href="/img/sprite.svg#border" />
-              </svg>
             </div>
             <div class="advantages__wrapper">
               <p class="advantages__item-title">Бесплатная консультация</p>
@@ -495,15 +492,11 @@
                 стыковку элементов и «вертикальность»
               </p>
             </div>
-
           </li>
           <li class="advantages__item">
             <div class="advantages__wrapper-img">
               <svg class="advantages__img">
                 <use href="/img/sprite.svg#contract" />
-              </svg>
-              <svg class="advantages__img-border">
-                <use href="/img/sprite.svg#border" />
               </svg>
             </div>
             <div class="advantages__wrapper">
@@ -512,15 +505,11 @@
                 для дома, бани или котельной.
               </p>
             </div>
-
           </li>
           <li class="advantages__item">
             <div class="advantages__wrapper-img">
               <svg class="advantages__img">
                 <use href="/img/sprite.svg#experience" />
-              </svg>
-              <svg class="advantages__img-border">
-                <use href="/img/sprite.svg#border" />
               </svg>
             </div>
             <div class="advantages__wrapper">
@@ -529,16 +518,11 @@
                 отзывы и посмотрите фотографии наших работ
               </p>
             </div>
-
           </li>
-
           <li class="advantages__item">
             <div class="advantages__wrapper-img">
               <svg class="advantages__img">
                 <use href="/img/sprite.svg#broom" />
-              </svg>
-              <svg class="advantages__img-border">
-                <use href="/img/sprite.svg#border" />
               </svg>
             </div>
             <div class="advantages__wrapper">
@@ -547,9 +531,7 @@
                 профессиональной технологии.
               </p>
             </div>
-
           </li>
-
         </ul>
       </div>
     </section>
@@ -573,7 +555,7 @@
             </svg>
           </div>
           <div class="service__text-wrapper">
-            <h2 class="service__title">Заказать выезд инженера<span class="service__caption">
+            <h2 class="container-heading">Заказать выезд инженера<span class="container-headline">
                 на замер</span></h2>
             <p class="service__phone-text"> Оставьте заявку по телефону
               <a href="tel:+78125092936" class="service__phone">+7 (812) <span
@@ -583,17 +565,17 @@
               места установки печи или котла и осуществит замер для Вашего дымохода</p>
           </div>
         </div>
-        <div class="service__wrapper requisition">
-          <div class="service__form-text requisition__form-text">
-            <p class="service__form-title requisition__form-title">Для <span
-                class="service__form-subtitle requisition__form-subtitle">заказа</span> замера заполните форму!</p>
-            <p class="service__form-description requisition__form-description">И получите полную смету требуемых изделий
+        <div class="requisition service__requisition">
+          <div class="requisition__form-text">
+            <p class="requisition__form-title">Для <span class="requisition__form-subtitle">заказа</span> замера
+              заполните форму!</p>
+            <p class="requisition__form-description">И получите полную смету требуемых изделий
               и монтажных работ
             </p>
           </div>
           <form action="#" class="service__form requisition__form">
-            <input class="service__form-name requisition__form-name" type="text" placeholder="Ваше имя">
-            <input class="service__form-phone requisition__form-phone" type="tel" placeholder="Ваш телефон">
+            <input class="service__form-name requisition__form-name" required type="text" placeholder="Ваше имя">
+            <input class="service__form-phone requisition__form-phone" required type="tel" placeholder="Ваш телефон">
             <button class="btn" type="submit"> оставить заявку</button>
           </form>
         </div>
@@ -706,61 +688,317 @@
       <div class="container callback__container">
         <h2 class="callback__title">Оставьте заявку</h2>
         <p class="callback__subtitle">или свяжитесь с нами в социальных сетях</p>
-        <ul class="callback__social-list">
-          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
-
-              <svg class="callback__social-vk">
+        <ul class="social callback__social">
+          <li class="social__item"><a href="#" class="social-link" target="_blank">
+              <svg class="social__vk">
                 <use href="/img/sprite.svg#vk" />
               </svg>
             </a></li>
-          <li class="callback__social-item">
-            <a href="#" class="callback__social-link" target="_blank">
-              <svg class="callback__social-telegram">
+          <li class="social__item">
+            <a href="#" class="social__link" target="_blank">
+              <svg class="social__telegram">
                 <use href="/img/sprite.svg#telegram" />
               </svg>
             </a>
           </li>
-          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
+          <li class="social__item"><a href="#" class="social-link" target="_blank">
 
-              <svg class="callback__social-instagram">
+              <svg class="social__instagram">
                 <use href="/img/sprite.svg#instagram" />
               </svg>
             </a></li>
-          <li class="callback__social-item"><a href="#" class="callback__social-link" target="_blank">
-
-              <svg class="callback__social-whatsapp">
+          <li class="social__item"><a href="#" class="social-link" target="_blank">
+              <svg class="social__whatsapp">
                 <use href="/img/sprite.svg#whatsapp" />
               </svg>
             </a></li>
         </ul>
         <ul class="callback__question-list">
           <li class="callback__question-item">Какой дымоход лучше выбрать?</li>
-          <li class="callback__question-item"> Сколько стоит монтаж дымохода?</li>
-          <li class="callback__question-item">Из какой стали выбрать дымоход?</li>
           <li class="callback__question-item">Занимаетесь обслуживанием дымоходов?</li>
+          <li class="callback__question-item">Сколько стоит монтаж дымохода?</li>
+          <li class="callback__question-item">Сколько стоит монтаж дымохода?</li>
           <li class="callback__question-item">Сколько стоит выезд инженера на замер?</li>
-          <li class="callback__question-item"> Сколько стоит выезд инженера на замер?</li>
+          <li class="callback__question-item">Из какой стали выбрать дымоход?</li>
+          <li class="callback__question-item">Сколько стоит выезд инженера на замер?</li>
+          <li class="callback__question-item">Сколько стоит выезд инженера на замер?</li>
         </ul>
         <div class=" callback__requisition requisition">
-          <div class="requisition__form-text callback__form-text">
-            <p class=" requisition__form-title callback__form-title">Для <span
-                class=" requisition__form-subtitle callback__form-subtitle">заказа</span> замера заполните форму!</p>
-            <p class="requisition__form-description callback__form-description">С Вами свяжутся в ближайшее время
+          <div class="requisition__form-text">
+            <p class=" requisition__form-title">Для <span class=" requisition__form-subtitle">заказа</span> замера
+              заполните форму!</p>
+            <p class="requisition__form-description">С Вами свяжутся в ближайшее время
             </p>
           </div>
-          <form action="#" class="requisition__form callback___form">
-            <input class=" requisition__form-name callback__form-name" type="text" placeholder="Ваше имя">
-            <input class="requisition__form-phone callback__form-phone" type="tel" placeholder="Ваш телефон">
+          <form action="#" class="requisition__form">
+            <input class=" requisition__form-name" type="text" required placeholder="Ваше имя">
+            <input class="requisition__form-phone" type="tel" required placeholder="Ваш телефон">
             <button class="btn" type="submit"> оставить заявку</button>
           </form>
         </div>
       </div>
 
     </section>
-  </main>
+    <section class="block-video">
+      <div class="container">
+        <h2 class="container-title">Видео</h2>
+        <p class="block-video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</p>
+        <div class="video">
+          <div class="video__wrapper">
+            <a class="video__link" href="https://youtu.be/LtDQe2nu_cQ">
+              <picture>
+                <source srcset="https://i.ytimg.com/vi_webp/LtDQe2nu_cQ/maxresdefault.webp" type="image/webp">
+                <img class="video__media" src="https://i.ytimg.com/vi/LtDQe2nu_cQ/maxresdefault.jpg"
+                  alt="Коаксиальный дымоход для газового котла">
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <svg width="68" height="48" viewbox="0 0 68 48">
+                <path class="video__button-shape"
+                  d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                </path>
+                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+              </svg>
+            </button>
+          </div>
+          <svg class="video__item-decor video__item-decor--1">
+            <use href="/img/sprite.svg#decor-img" />
+          </svg>
+          <svg class="video__item-decor video__item-decor--2">
+            <use href="/img/sprite.svg#decor-img" />
+          </svg>
+          <svg class="video__item-decor video__item-decor--3">
+            <use href="/img/sprite.svg#blob-left" />
+          </svg>
+          <svg class="video__item-decor video__item-decor--4">
+            <use href="/img/sprite.svg#blob-right" />
+          </svg>
+        </div>
+      </div>
 
+    </section>
+    <section class="reasons">
+      <div class="container">
+        <h2 class="container-title">Причины приобрести нашу продукцию</h2>
+        <div class="reasons__wrapper">
+          <ol class="reasons__list">
+            <li class="reasons__item reasons__item--1">Мы предоставляем полный комплекс услуг включающий консультацию и
+              поддержку на всех
+              этапах сотрудничества, от покупки до установки. Дальнейшую очистку дымоходов.</li>
+            <li class="reasons__item">Точное выполнение договорённости, сроков, стоимости и качеству произведенного
+              монтажа, наличие всех необходимых сертификатов и технических документов.
+            </li>
+            <li class="reasons__item reasons__item--3">
+
+              <div class="reasons__item-wrapper">
+                <p class="reasons__item-text"> Гарантия на выполненные работы:</p>
+                <p class="reasons__item-text"><span class="reasons__item-decor">3 года</span> на гидроизоляцию
+                  кровельных элементов</p>
+                <p class="reasons__item-text"><span class="reasons__item-decor">5 лет</span> на сквозную коррозию
+                  внутренней и наружной трубы</p>
+                <p class="reasons__item-text"><span class="reasons__item-decor">10 лет</span> на крепёж, стыковку
+                  элементов и «вертикальность»</p>
+              </div>
+
+            </li>
+          </ol>
+          <img class="reasons__img" src="img/Dyimohod-dlya-pechi-52.png" alt="Дымоход для печи" width="602"
+            height="403">
+        </div>
+      </div>
+    </section>
+    <section class="buy">
+      <div class="container buy__container">
+        <div class="buy__text-wrapper">
+          <h2 class="container-heading"> Купите любую продукцию
+            <span class="container-headline">без денег</span>
+          </h2>
+          <p class="buy__text-description">Теперь возможна оплата в кредит или в рассрочку 0%.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. </p>
+          <a class="btn" href="#"> купить в кредит</a>
+        </div>
+        <div class="container-content">
+          <svg class="container-item container-item--1">
+            <use href="/img/sprite.svg#blob-primary" />
+          </svg>
+          <img class="container-item container-item--2" src=" img/buy-item-1.png" alt="Печь" width="487" height="439">
+          <svg class="container-item container-item--3">
+            <use href="/img/sprite.svg#d-1-img" />
+          </svg>
+          <svg class="container-item container-item--4">
+            <use href="/img/sprite.svg#d-1-img" />
+          </svg>
+          <svg class="container-item container-item--5">
+            <use href="/img/sprite.svg#triangle" />
+          </svg>
+          <svg class="container-item container-item--6">
+            <use href="/img/sprite.svg#triangle" />
+          </svg>
+          <p class="buy__price">0%</p>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__text-wrapper">
+          <h2 class="container-title">Отзывы наших клиентов</h2>
+          <p class="reviews__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. </p>
+          <div class="reviews__btn-wrapper">
+            <button class="reviews__slider-btn reviews__slider-btn--prev slider-btn" type="button">
+              <svg class=" slider-btn__prev">
+                <use href="/img/sprite.svg#arrow" />
+              </svg>
+            </button>
+            <button class="reviews__slider-btn reviews__slider-btn--next slider-btn" type="button">
+              <svg class=" slider-btn__next">
+                <use href="/img/sprite.svg#arrow" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper reviews__slider">
+          <ul class="swiper-wrapper reviews__wrapper">
+            <li class="swiper-slide reviews__slide">
+              <p class="reviews__text">Отличная компания, быстро доставили мой заказ и были очень внимательны к моим
+                пожеланиям! Обязательно еще к вам обращусь, первый заказ получился на "отлично"!</p>
+              <div class="reviews__user-wrapper">
+                <span class="reviews__img">
+                  <img src="img/avatar-1.jpg" alt="Фотография Алёны Симоновой" class="reviews__avatar" width="172"
+                    height="256">
+                </span>
+                <div class="reviews__user-info">
+                  <p class="reviews__user">Алёна Симонова</p>
+                  <p class="reviews__user-date">20.11.2020</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide reviews__slide">
+              <p class="reviews__text">Много где были, выбирая камин своей мечты, но нигде к нам не отнеслись с таким
+                пониманием и душевным теплом, как здесь. Нам не пришлось самим ломать голову при выборе, взвешивать все
+                плюсы </p>
+              <div class="reviews__user-wrapper">
+                <span class="reviews__img">
+                  <img src="img/avatar-2.jpg" alt="Фотография Алёны Симоновой" class="reviews__avatar" width="172"
+                    height="256">
+                </span>
+                <div class="reviews__user-info">
+                  <p class="reviews__user">Антон Баранов</p>
+                  <p class="reviews__user-date">20.11.2020</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide reviews__slide">
+              <p class="reviews__text">Отличный магазин! Нет проблем с доставкой. Цены на среднем уровне. Огромный выбор
+                каминов. Монтажом занимаются профессионалы: делают быстро и наверняка. </p>
+              <div class="reviews__user-wrapper">
+                <span class="reviews__img">
+                  <img src="img/avatar-3.jpg" alt="Фотография Алёны Симоновой" class="reviews__avatar" width="172"
+                    height="256">
+                </span>
+                <div class="reviews__user-info">
+                  <p class="reviews__user">Виктор Исаев</p>
+                  <p class="reviews__user-date">20.11.2020</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__menu">
+        <div class="footer__menu-catalog">
+          <h3 class="footer__caption">КАТАЛОГ</h3>
+          <ul class="footer__catalog">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Дымоходы</a>
+            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Дымососы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Печи для дома</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Печи для бани</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Камины</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Силикат кальция</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Котлы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Ещё</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-info">
+          <h3 class="footer__caption">ИНФОРМАЦИЯ</h3>
+          <ul class="footer__catalog footer__catalog-info">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Каталог</a>
+            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Установка и монтаж
+              </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Ликвидация товара</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Полезное</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Оплата и доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-hours">
+          <h3 class="footer__caption footer__caption--decor">ВРЕМЯ РАБОТЫ</h3>
+          <ul class="footer__hours">
+            <li class="footer__item footer__item-desc footer__item-hours">
+              <svg class="footer__icon">
+                <use href="/img/sprite.svg#wall-clock" />
+              </svg>
+              <p class="footer__item-text"> пн-пт </p> 9:00 – 20:00 <p
+                class="footer__item-text footer__item-text--decor">
+                сб-вс </p> 10:00 –
+              18:00
+
+            </li>
+            <li class="footer__item footer__item-hours">
+              <svg class="footer__icon footer__icon--1">
+                <use href="/img/sprite.svg#marker" />
+              </svg>
+              г. Санкт - Петербург ,ул. Тамбасова д.7</li>
+          </ul>
+          <ul class="social social--decor">
+            <li class="social__item"><a href="#" class="social__link" target="_blank">
+                <svg class="social__vk social__icon">
+                  <use href="/img/sprite.svg#vk" />
+                </svg>
+              </a></li>
+            <li class="social__item">
+              <a href="#" class="social__link " target="_blank">
+                <svg class="social__telegram social__icon">
+                  <use href="/img/sprite.svg#telegram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item"><a href="#" class="social__link" target="_blank">
+
+                <svg class="social__instagram social__icon">
+                  <use href="/img/sprite.svg#instagram" />
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" class="social__link" target="_blank">
+                <svg class="social__whatsapp social__icon">
+                  <use href="/img/sprite.svg#whatsapp" />
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/video.js"> </script>
 </body>
 
 </html>
