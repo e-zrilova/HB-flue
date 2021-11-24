@@ -1,0 +1,38 @@
+section.reviews
+  .container
+    .reviews__text-wrapper
+      h2.container-title Отзывы наших клиентов
+      p.reviews__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .reviews__btn-wrapper
+        button.reviews__slider-btn.reviews__slider-btn--prev.slider-btn(type='button')
+          svg.slider-btn__prev
+            use(href='assets/images/sprite.svg#arrow')
+        button.reviews__slider-btn.reviews__slider-btn--next.slider-btn(type='button')
+          svg.slider-btn__next
+            use(href='assets/images/sprite.svg#arrow')
+    .swiper.reviews__slider
+      ul.swiper-wrapper.reviews__wrapper
+        li.swiper-slide.reviews__slide
+          p.reviews__text Отличная компания, быстро доставили мой заказ и были очень внимательны к моим пожеланиям! Обязательно еще к вам обращусь, первый заказ получился на "отлично"!
+          .reviews__user-wrapper
+            span.reviews__img
+              img.reviews__avatar(src='assets/images/avatar-1.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+            .reviews__user-info
+              p.reviews__user Алёна Симонова
+              p.reviews__user-date 20.11.2020
+        li.swiper-slide.reviews__slide
+          p.reviews__text Много где были, выбирая камин своей мечты, но нигде к нам не отнеслись с таким пониманием и душевным теплом, как здесь. Нам не пришлось самим ломать голову при выборе, взвешивать все плюсы
+          .reviews__user-wrapper
+            span.reviews__img
+              img.reviews__avatar(src='assets/images/avatar-2.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+            .reviews__user-info
+              p.reviews__user Антон Баранов
+              p.reviews__user-date 20.11.2020
+        li.swiper-slide.reviews__slide
+          p.reviews__text Отличный магазин! Нет проблем с доставкой. Цены на среднем уровне. Огромный выбор каминов. Монтажом занимаются профессионалы: делают быстро и наверняка.
+          .reviews__user-wrapper
+            span.reviews__img
+              img.reviews__avatar(src='assets/images/avatar-3.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+            .reviews__user-info
+              p.reviews__user Виктор Исаев
+              p.reviews__user-date 20.11.2020

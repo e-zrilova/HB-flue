@@ -1,0 +1,30 @@
+section.service
+  .container.service__container
+    .service__block
+      .service__wrapper-decor
+        img.service__img(src='assets/images/service__img-1.png' width='433' height='476' alt='Инженер-проектировщик')
+        svg.service__blob-primary
+          use(href='assets/images/sprite.svg#blob-primary')
+        svg.service__img-arrow
+          use(href='assets/images/sprite.svg#turn-arrow')
+        svg.service__item.service__item--1
+          use(href='assets/images/sprite.svg#d-1-img')
+        svg.service__item.service__item--2
+          use(href='assets/images/sprite.svg#triangle')
+      .service__text-wrapper
+        h2.container-heading.service__title  Заказать выезд инженера
+          span.container-headline  на замер
+        p.service__phone-text Оставьте заявку по телефону
+          a.service__phone(href='tel:+78125092936') +7 (812)
+            span.service__phone-number  509-29-36
+        p.service__description Наш инженер-проектировщик приедет в удобное для Вас время, поможет с выбором места установки печи или котла и осуществит замер для Вашего дымохода
+    .requisition.service__requisition
+      .requisition__form-text
+        p.requisition__form-title Для
+          span.requisition__form-subtitle  заказа
+          | замера заполните форму!
+        p.requisition__form-description И получите полную смету требуемых изделий и монтажных работ
+      form.service__form.requisition__form(action='#')
+        input.service__form-name.requisition__form-name(required='' type='text' placeholder='Ваше имя')
+        input.service__form-phone.requisition__form-phone(required='' type='tel' placeholder='Ваш телефон')
+        button.btn(type='submit')  оставить заявку
