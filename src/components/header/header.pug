@@ -2,8 +2,7 @@ header.header
   .container.header__wrapper
     img.header__logo(src='assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
     button.header__burger-button(type='button')
-      svg.header__burger-menu
-        use(href='assets/images/sprite.svg#burger-menu')
+      +svg('burger-menu' ,'header__burger-menu', '')
     nav.header__navigation
       ul.header__menu
         li.header__item
@@ -19,25 +18,18 @@ header.header
     a.header__call(href='#') Перезвоните мне
     .header__social
       a.header__social-link(href='https://vk.com/' target='_blank')
-        svg.header__social-vk
-          use(href='assets/images/sprite.svg#vk')
+        +svg('vk' ,'header__social-vk', '')
       a.header__social-link(href='https://telegram.org/' target='_blank')
-        svg.header__social-telegram
-          use(href='assets/images//sprite.svg#telegram')
+        +svg('telegram' ,'header__social-telegram', '')
       a.header__social-link(href='https://instagram.com/' target='_blank')
-        svg.header__social-instagram
-          use(href='assets/images/sprite.svg#instagram')
+        +svg('instagram' ,'header__social-instagram', '')
       a.header__social-link(href='https://whatsapp.com/' target='_blank')
-        svg.header__social-whatsapp
-          use(href='assets/images/sprite.svg#whatsapp')
+        +svg('whatsapp' ,'header__social-whatsapp', '')
     .header__buttons
       button.header__search(type='button')
-        svg.header__search-icon
-          use(href='assets/images/sprite.svg#loupe')
+        +svg('loupe' ,'header__search-icon', '')
       button.header__favourites(type='button')
-        svg.header__favourites-icon
-          use(href='assets/images/sprite.svg#heart')
+        +svg('heart' ,'header__favourites-icon', '')
       button.header__shopping-cart(type='button')
-        svg.header__shopping-cart-icon
-          use(href='assets/images/sprite.svg#shopping-cart')
+        +svg('shopping-cart' ,'header__shopping-cart-icon', '')
         span.header__shopping-cart-count 10

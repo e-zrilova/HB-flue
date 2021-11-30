@@ -9,12 +9,8 @@ section.calculate
         span.calculate__time &nbsp;1 минуту
       a.btn.calculate__link(href='#') рассчитать стоимость
     .calculate__decor-img
-      svg.calculate__bg
-        use(href='assets/images/sprite.svg#blob-carrot')
+      +svg('blob-carrot' ,'calculate__bg', '')
       img.calculate__img(src='assets/images/calculator.png' alt='Изображение калькулятора')
-      svg.calculate__item.calculate__item--1
-        use(href='assets/images/sprite.svg#d-1-img')
-      svg.calculate__item.calculate__item--2
-        use(href='assets/images/sprite.svg#d-1-img')
-      svg.calculate__item.calculate__item--3
-        use(href='assets/images/sprite.svg#triangle')
+      +svg('d-1-img' ,'calculate__item', 'calculate__item--1')
+      +svg('d-1-img' ,'calculate__item', 'calculate__item--2')
+      +svg('triangle' ,'calculate__item', 'calculate__item--3')

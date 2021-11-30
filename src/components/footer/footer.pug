@@ -41,30 +41,24 @@ footer.footer
         h3.footer__caption.footer__caption--decor ВРЕМЯ РАБОТЫ
         ul.footer__hours
           li.footer__item.footer__item-desc.footer__item-hours
-            svg.footer__icon
-              use(href='assets/images/sprite.svg#wall-clock')
+            +svg('wall-clock' ,'footer__icon', '')
             p.footer__item-text  пн-пт
             |  9:00 &ndash; 20:00
             p.footer__item-text.footer__item-text--decor сб-вс
             |  10:00 &ndash; 18:00
           li.footer__item.footer__item-hours
-            svg.footer__icon.footer__icon--1
-              use(href='assets/images/sprite.svg#marker')
+            +svg('marker' ,'footer__icon', 'footer__icon--1')
             |г. Санкт - Петербург ,ул. Тамбасова д.7
         ul.social.social--decor
           li.social__item
             a.social__link(href='#' target='_blank')
-              svg.social__vk.social__icon
-                use(href='assets/images/sprite.svg#vk')
+              +svg('vk' ,'social__icon', 'social__vk')
           li.social__item
             a.social__link(href='#' target='_blank')
-              svg.social__telegram.social__icon
-                use(href='assets/images/sprite.svg#telegram')
+              +svg('telegram' ,'social__icon', 'social__telegram')
           li.social__item
             a.social__link(href='#' target='_blank')
-              svg.social__instagram.social__icon
-                use(href='assets/images/sprite.svg#instagram')
+              +svg('instagram' ,'social__icon', 'social__instagram')
           li.social__item
             a.social__link(href='#' target='_blank')
-              svg.social__whatsapp.social__icon
-                use(href='assets/images/sprite.svg#whatsapp')
+              +svg('whatsapp' ,'social__icon', 'social__whatsapp')

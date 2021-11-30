@@ -5,11 +5,9 @@ section.reviews
       p.reviews__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       .reviews__btn-wrapper
         button.reviews__slider-btn.reviews__slider-btn--prev.slider-btn(type='button')
-          svg.slider-btn__prev
-            use(href='assets/images/sprite.svg#arrow')
+          +svg('arrow' ,'slider-btn__prev', '')
         button.reviews__slider-btn.reviews__slider-btn--next.slider-btn(type='button')
-          svg.slider-btn__next
-            use(href='assets/images/sprite.svg#arrow')
+          +svg('arrow' ,'slider-btn__next', '')
     .swiper.reviews__slider
       ul.swiper-wrapper.reviews__wrapper
         li.swiper-slide.reviews__slide

@@ -6,13 +6,10 @@ section.work
       p.work__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo
       .work__btn-wrapper
         button.work__slider-btn.work__slider-btn--prev.slider-btn(type='button')
-          svg.slider-btn__prev
-            use(href='assets/images/sprite.svg#arrow')
+          +svg('arrow' ,'slider-btn__prev', '')
         button.work__slider-btn.work__slider-btn--next.slider-btn(type='button')
-          svg.slider-btn__next
-            use(href='assets/images/sprite.svg#arrow')
-    svg.work__container-bg
-      use(href='assets/images/sprite.svg#blob')
+          +svg('arrow' ,'slider-btn__next', '')
+    +svg('blob' ,'work__container-bg', '')
     .swiper.work__slider
       ul.work__wrapper.swiper-wrapper
         li.swiper-slide.work__slide

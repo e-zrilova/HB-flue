@@ -3,14 +3,10 @@ section.service
     .service__block
       .service__wrapper-decor
         img.service__img(src='assets/images/service__img-1.png' width='433' height='476' alt='Инженер-проектировщик')
-        svg.service__blob-primary
-          use(href='assets/images/sprite.svg#blob-primary')
-        svg.service__img-arrow
-          use(href='assets/images/sprite.svg#turn-arrow')
-        svg.service__item.service__item--1
-          use(href='assets/images/sprite.svg#d-1-img')
-        svg.service__item.service__item--2
-          use(href='assets/images/sprite.svg#triangle')
+        +svg('blob-primary' ,'service__blob-primary', '')
+        +svg('turn-arrow' ,'service__img-arrow', '')
+        +svg('d-1-img' ,'service__item', 'service__item--1')
+        +svg('triangle' ,'service__item', 'service__item--2')
       .service__text-wrapper
         h2.container-heading.service__title  Заказать выезд инженера
           span.container-headline  на замер

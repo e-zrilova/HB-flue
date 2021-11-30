@@ -19,15 +19,10 @@ section.first-screen
         a.btn.first-screen__link(href='#')  в каталог
         a.btn.btn--primary(href='#')  монтаж
     .first-screen__content
-      svg.first-screen__blob-primary
-        use(href='assets/images/sprite.svg#blob-primary')
+      +svg('blob-primary' ,'first-screen__blob-primary', '')
       img.first-screen__item.first-screen__item--1(src='assets/images/fs-img-1.png' alt='Передняя часть дымохода')
       img.first-screen__item.first-screen__item--2(src='assets/images/fs-img-2.png' alt='Соединительные части дымохода')
-      svg.first-screen__item.first-screen__item--3
-        use(href='assets/images/sprite.svg#d-1-img')
-      svg.first-screen__item.first-screen__item--4
-        use(href='assets/images/sprite.svg#d-1-img')
-      svg.first-screen__item.first-screen__item--5
-        use(href='assets/images/sprite.svg#triangle')
-      svg.first-screen__item.first-screen__item--6
-        use(href='assets/images/sprite.svg#triangle')
+      +svg('d-1-img' ,'first-screen__item', 'first-screen__item--3')
+      +svg('d-1-img' ,'first-screen__item', 'first-screen__item--4')
+      +svg('triangle' ,'first-screen__item', 'first-screen__item--5')
+      +svg('triangle' ,'first-screen__item', 'first-screen__item--6')
