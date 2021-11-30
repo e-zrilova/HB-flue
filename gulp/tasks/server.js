@@ -6,8 +6,9 @@ const fonts = require('./fonts');
 const views = require('./views');
 const svgSprite = require('./svgSprite');
 const images = require('./images');
-const scripts = require('./esbulid');
-const paths = require('../paths');
+const scripts = require('./scripts');
+
+const { paths } = require('../config');
 
 const server = () => {
   browserSync.init({
