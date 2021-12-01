@@ -1,0 +1,5 @@
+mixin social(alink,name,mod )
+  li(class= 'social__item')
+    a(class= 'social__link' + ' ' + mod href=`${alink}` target='_blank')
+      svg(class= `social__${name}` +' '+ mod)
+        use(href=`assets/images/sprite.svg#${name}`)

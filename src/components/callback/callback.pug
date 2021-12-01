@@ -3,22 +3,10 @@ section.callback
     h2.callback__title Оставьте заявку
     p.callback__subtitle или свяжитесь с нами в социальных сетях
     ul.social.callback__social
-      li.social__item
-        a.social-link(href='#' target='_blank')
-          svg.social__vk
-            use(href='assets/images/sprite.svg#vk')
-      li.social__item
-        a.social__link(href='#' target='_blank')
-          svg.social__telegram
-            use(href='assets/images/sprite.svg#telegram')
-      li.social__item
-        a.social-link(href='#' target='_blank')
-          svg.social__instagram
-            use(href='assets/images/sprite.svg#instagram')
-      li.social__item
-        a.social-link(href='#' target='_blank')
-          svg.social__whatsapp
-            use(href='assets/images/sprite.svg#whatsapp')
+      +social('https://vk.com/', 'vk' ,'primary')
+      +social('https://telegram.org/', 'telegram' ,'primary')
+      +social('https://instagram.com/', 'instagram' ,'primary')
+      +social('https://whatsapp.com/', 'whatsapp' ,'primary')
     ul.callback__question-list
       li.callback__question-item Какой дымоход лучше выбрать?
       li.callback__question-item Сколько стоит монтаж дымохода?
@@ -26,14 +14,4 @@ section.callback
       li.callback__question-item Сколько стоит выезд инженера на замер?
       li.callback__question-item Из какой стали выбрать дымоход?
       li.callback__question-item Сколько стоит выезд инженера на замер?
-    .callback__requisition.requisition
-      .requisition__form-text
-        p.requisition__form-title Для
-          span.requisition__form-subtitle &nbsp;заказа&nbsp;
-          | замера заполните форму!
-        p.requisition__form-description
-          | С Вами свяжутся в ближайшее время
-      form.requisition__form(action='#')
-        input.requisition__form-name(type='text' required='' placeholder='Ваше имя')
-        input.requisition__form-phone(type='tel' required='' placeholder='Ваш телефон')
-        +button('submit', 'оставить заявку', '')
+    +form('callback__requisition', 'С Вами свяжутся в ближайшее время')

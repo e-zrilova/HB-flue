@@ -1,42 +1,36 @@
+-
+  catalog = [
+    {alink: '#', name: 'Дымоходы'},
+    {alink: '#', name: 'Камины'},
+    {alink: '#', name: 'Дымососы'},
+    {alink: '#', name: 'Силикат кальция'},
+    {alink: '#', name: 'Печи для дома'},
+    {alink: '#', name: 'Котлы'},
+    {alink: '#', name: 'Печи для бани'},
+    {alink: '#', name: 'Ещё'}
+  ]
+  info = [
+    {alink: '#', name: 'Каталог'},
+    {alink: '#', name: 'Полезное'},
+    {alink: '#', name: 'Установка и монтаж'},
+    {alink: '#', name: 'Контакты'},
+    {alink: '#', name: 'Отзывы'},
+    {alink: '#', name: 'Оплата и доставка'},
+    {alink: '#', name: 'Ликвидация товара'}
+  ]
 footer.footer
   .container
     nav.footer__menu
       .footer__menu-catalog
         h3.footer__caption КАТАЛОГ
         ul.footer__catalog
-          li.footer__item
-            a.footer__link(href='#') Дымоходы
-          li.footer__item
-            a.footer__link(href='#') Камины
-          li.footer__item
-            a.footer__link(href='#') Дымососы
-          li.footer__item
-            a.footer__link(href='#') Силикат кальция
-          li.footer__item
-            a.footer__link(href='#') Печи для дома
-          li.footer__item
-            a.footer__link(href='#') Котлы
-          li.footer__item
-            a.footer__link(href='#') Печи для бани
-          li.footer__item
-            a.footer__link(href='#') Ещё
+          each item in catalog
+            +list-catalog(item.alink, item.name)
       .footer__menu-info
         h3.footer__caption ИНФОРМАЦИЯ
         ul.footer__catalog.footer__catalog-info
-          li.footer__item
-            a.footer__link(href='#') Каталог
-          li.footer__item
-            a.footer__link(href='#') Полезное
-          li.footer__item
-            a.footer__link(href='#') Установка и монтаж
-          li.footer__item
-            a.footer__link(href='#') Контакты
-          li.footer__item
-            a.footer__link(href='#') Отзывы
-          li.footer__item
-            a.footer__link(href='#') Оплата и доставка
-          li.footer__item
-            a.footer__link(href='#') Ликвидация товара
+          each item in info
+            +list-catalog(item.alink, item.name)
       .footer__menu-hours
         h3.footer__caption.footer__caption--decor ВРЕМЯ РАБОТЫ
         ul.footer__hours
@@ -49,16 +43,8 @@ footer.footer
           li.footer__item.footer__item-hours
             +svg('marker' ,'footer__icon', 'footer__icon--1')
             |г. Санкт - Петербург ,ул. Тамбасова д.7
-        ul.social.social--decor
-          li.social__item
-            a.social__link(href='#' target='_blank')
-              +svg('vk' ,'social__icon', 'social__vk')
-          li.social__item
-            a.social__link(href='#' target='_blank')
-              +svg('telegram' ,'social__icon', 'social__telegram')
-          li.social__item
-            a.social__link(href='#' target='_blank')
-              +svg('instagram' ,'social__icon', 'social__instagram')
-          li.social__item
-            a.social__link(href='#' target='_blank')
-              +svg('whatsapp' ,'social__icon', 'social__whatsapp')
+        ul.social.social-decor
+          +social('https://vk.com/', 'vk' , '')
+          +social('https://telegram.org/', 'telegram' , '')
+          +social('https://instagram.com/', 'instagram' , '')
+          +social('https://whatsapp.com/', 'whatsapp' , '')

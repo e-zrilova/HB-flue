@@ -9,15 +9,11 @@ header.header
     a.header__phone(href='tel:+78125092198') +7 (812)
       span.header__phone-number 509 21&nbsp;98
     a.header__call(href='#') Перезвоните мне
-    .header__social
-      a.header__social-link(href='https://vk.com/' target='_blank')
-        +svg('vk' ,'header__social-vk', '')
-      a.header__social-link(href='https://telegram.org/' target='_blank')
-        +svg('telegram' ,'header__social-telegram', '')
-      a.header__social-link(href='https://instagram.com/' target='_blank')
-        +svg('instagram' ,'header__social-instagram', '')
-      a.header__social-link(href='https://whatsapp.com/' target='_blank')
-        +svg('whatsapp' ,'header__social-whatsapp', '')
+    ul.social.header-social
+      +social('https://vk.com/', 'vk' , '')
+      +social('https://telegram.org/', 'telegram' , '')
+      +social('https://instagram.com/', 'instagram' , '')
+      +social('https://whatsapp.com/', 'whatsapp' , '')
     .header__buttons
       button.header__search(type='button')
         +svg('loupe' ,'header__search-icon', '')
