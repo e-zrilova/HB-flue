@@ -23,4 +23,4 @@ section.service
       form.service__form.requisition__form(action='#')
         input.service__form-name.requisition__form-name(required='' type='text' placeholder='Ваше имя')
         input.service__form-phone.requisition__form-phone(required='' type='tel' placeholder='Ваш телефон')
-        button.btn(type='submit')  оставить заявку
+        +button('submit', 'оставить заявку', '')

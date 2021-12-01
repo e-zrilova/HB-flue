@@ -16,8 +16,8 @@ section.first-screen
         p.first-screen__price-delete
           s 15 995 &nbsp; ₽
       .first-screen__wrapper
-        a.btn.first-screen__link(href='#')  в каталог
-        a.btn.btn--primary(href='#')  монтаж
+        +button-link('#', 'в каталог', 'first-screen__link')
+        +button-link('#', 'монтаж', 'btn--primary')
     .first-screen__content
       +svg('blob-primary' ,'first-screen__blob-primary', '')
       img.first-screen__item.first-screen__item--1(src='assets/images/fs-img-1.png' alt='Передняя часть дымохода')
