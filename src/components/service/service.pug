@@ -8,8 +8,7 @@ section.service
         +svg('d-1-img' ,'service__item', 'service__item--1')
         +svg('triangle' ,'service__item', 'service__item--2')
       .service__text-wrapper
-        h2.container-heading.service__title  Заказать выезд инженера
-          span.container-headline  на замер
+        +heading('Заказать выезд инженера', 'на замер', 'service__title', '' )
         p.service__phone-text Оставьте заявку по телефону
           a.service__phone(href='tel:+78125092936') +7 (812)
             span.service__phone-number  509-29-36
@@ -17,7 +16,7 @@ section.service
     .requisition.service__requisition
       .requisition__form-text
         p.requisition__form-title Для
-          span.requisition__form-subtitle  заказа
+          span.requisition__form-subtitle &nbsp;заказа&nbsp;
           | замера заполните форму!
         p.requisition__form-description И получите полную смету требуемых изделий и монтажных работ
       form.service__form.requisition__form(action='#')

@@ -3,16 +3,9 @@ header.header
     img.header__logo(src='assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
     button.header__burger-button(type='button')
       +svg('burger-menu' ,'header__burger-menu', '')
-    nav.header__navigation
-      ul.header__menu
-        li.header__item
-          a.header__link(href='#') Каталог товаров
-        li.header__item
-          a.header__link(href='#') Доставка и оплата
-        li.header__item
-          a.header__link(href='#') Цены
-        li.header__item
-          a.header__link(href='#') Контакты
+
+    include ../../components/navigation/navigation.pug
+
     a.header__phone(href='tel:+78125092198') +7 (812)
       span.header__phone-number 509 21&nbsp;98
     a.header__call(href='#') Перезвоните мне
