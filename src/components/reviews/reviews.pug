@@ -4,10 +4,7 @@ section.reviews
       h2.container-title Отзывы наших клиентов
       p.reviews__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       .reviews__btn-wrapper
-        button.reviews__slider-btn.reviews__slider-btn--prev.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__prev', '')
-        button.reviews__slider-btn.reviews__slider-btn--next.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__next', '')
+        +button-slider('wreviews__slider-btn', 'reviews__slider-btn--prev','reviews__slider-btn--next')
     .swiper.reviews__slider
       ul.swiper-wrapper.reviews__wrapper
         li.swiper-slide.reviews__slide

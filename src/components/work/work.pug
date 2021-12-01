@@ -5,10 +5,7 @@ section.work
         span.work__title-text  &nbsp;проекты
       p.work__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo
       .work__btn-wrapper
-        button.work__slider-btn.work__slider-btn--prev.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__prev', '')
-        button.work__slider-btn.work__slider-btn--next.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__next', '')
+        +button-slider('work__slider-btn', 'work__slider-btn--prev','work__slider-btn--next')
     +svg('blob' ,'work__container-bg', '')
     .swiper.work__slider
       ul.work__wrapper.swiper-wrapper

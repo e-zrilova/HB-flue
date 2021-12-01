@@ -15,10 +15,7 @@ section.best-seller
     .best-seller__title-wrapper
       +caption('Хиты продаж','best-seller__title')
       .best-seller__btn-wrapper
-        button.best-seller__btn.best-seller__btn--prev.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__prev', '')
-        button.best-seller__btn.best-seller__btn--next.slider-btn(type='button')
-          +svg('arrow' ,'slider-btn__next', '')
+        +button-slider('best-seller__btn', 'best-seller__btn--prev','best-seller__btn--next')
     .swiper.best-seller__slider
       ul.swiper-wrapper.best-seller__wrapper
         each product in bestProducts
