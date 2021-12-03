@@ -1,5 +1,7 @@
 .header
   padding-bottom: 95px
+  @media ( max-width: $media-mobile)
+    padding-bottom: 40px
   &__wrapper
     display: flex
     max-width: 1820px
@@ -8,12 +10,19 @@
     justify-content: space-between
   &__logo
     margin-right: 48px
-    @media ( max-width: $media-dekstop)
+    @media ( max-width: $media-tablet)
       margin-right: 30px
+    @media (max-width: $media-mobile)
+      width: 47px
+      height: 47px
   &__burger-button
     margin-right: 30px
     padding: 17px
     line-height: 0
+    @media ( min-width: 1365px) and (max-width: 1600px)
+      margin-right: 400px
+    @media ( min-width: 1249px) and (max-width: 1364px)
+      margin-right: 300px
   &__burger-menu
     width: 22px
     height: 22px
@@ -23,14 +32,16 @@
     line-height: 20px
     color: $turquoise-blue
     letter-spacing: 0.08em
-    @media ( max-width: $media-dekstop)
-      margin-right: 50px
-      font-size: 14px
+    white-space: nowrap
+    @media ( max-width: 1715px)
+      margin-right: 35px
+    @media (max-width: $media-tablet)
+      display: none
     &-number
       margin-left: 5px
       font-weight: 700
       color: $black
-      @media ( max-width: $media-dekstop)
+      @media ( max-width: $media-tablet)
         font-size: 14px
   &__call
     margin-right: 63px
@@ -41,8 +52,11 @@
     color: $maroon
     border-bottom: 1px dashed $maroon
     text-transform: uppercase
-    @media ( max-width: $media-dekstop)
-      font-size: 12px
+    white-space: nowrap
+    @media ( max-width: 1715px)
+      margin-right: 35px
+    @media (max-width: $media-tablet)
+      display: none
   &__search,
   &__favourites,
   &__shopping-cart,
@@ -51,19 +65,31 @@
     border-radius: 50%
   &__search
     margin-right: 16px
-    padding: 12px
+    padding: 16px
     line-height: 0
-    @media ( max-width: $media-dekstop)
+    @media ( max-width: 1815px)
+      padding: 14px
+    @media ( max-width: 1715px)
+      padding: 12px
+    @media ( max-width: $media-tablet)
       padding: 10px
+    @media (max-width: $media-mobile)
+      display: none
     &-icon
       width: 22px
       height: 22px
-      @media ( max-width: $media-dekstop)
+      @media ( max-width: $media-tablet)
         width: 18px
         height: 18px
   &__favourites
     margin-right: 10px
     padding: 15px 15px 12px 15px
+    @media ( max-width: 1815px)
+      padding: 14px 14px 10px 14px
+    @media ( max-width: 1715px)
+      padding: 12px 12px 8px 12px
+    @media (max-width: $media-mobile)
+      display: none
     &-icon
       width: 23px
       height: 23px
@@ -71,6 +97,10 @@
     position: relative
     z-index: 1
     padding: 15px 15px 12px 15px
+    @media ( max-width: 1815px)
+      padding: 14px 14px 10px 14px
+    @media ( max-width: 1715px)
+      padding: 12px 12px 8px 12px
     &::after
       content: ""
       position: absolute
@@ -94,5 +124,7 @@
       font-size: 11px
       line-height: 13px
       font-weight: 800
-.header-social
+.social.header-social
   margin-right: 54px
+  @media (max-width: $media-tablet)
+    display: none
