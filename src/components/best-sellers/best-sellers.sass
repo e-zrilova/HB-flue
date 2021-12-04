@@ -1,10 +1,29 @@
 .best-seller
   padding-bottom: 222px
+  @media ( max-width: $media-tablet)
+    padding-bottom: 30px
+  &__container
+    @media ( max-width: $media-mobile)
+      display: flex
+      flex-direction: column
   &__title
     margin-bottom: 62px
+    @media ( max-width: $media-mobile)
+      margin-bottom: 0
     &-wrapper
       display: flex
       justify-content: space-between
+      @media ( max-width: $media-mobile)
+        flex-direction: column
   &__slider
     max-width: 1218px
     width: 100%
+    @media ( max-width: $media-tablet)
+      padding-bottom: 40px
+  &__btn-wrapper
+    @media ( max-width: $media-mobile)
+      max-width: 180px
+      transform: translate(35%,500px)
+  &__btn--prev
+    @media ( max-width: $media-tablet)
+      margin-right: 30px

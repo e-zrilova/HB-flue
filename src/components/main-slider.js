@@ -7,7 +7,7 @@ Swiper.use([Navigation, Keyboard]);
 
 new Swiper('.best-seller__slider', {
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
 

@@ -12,7 +12,7 @@ mixin product-card(img, title, description, price, oldPrice)
       a(href='#')
         p.best-seller__item-description=description
       .best-seller__price-wrapper
-        p.best-seller__price-tag= price
-        p.best-seller__price-tag.best-seller__price-tag--bold  ₽
+        span.best-seller__price-tag= price
+          p.best-seller__price-tag.best-seller__price-tag--bold  ₽
         p.best-seller__price-delete
           s= oldPrice
