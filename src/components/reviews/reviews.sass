@@ -16,11 +16,17 @@
     padding: 40px 10px
     left: 571px
     top: 192px
+    @media ( max-width: $media-tablet )
+      left: -75px
+    @media ( max-width: $media-mobile )
+      left: 0px
   &__slide
     max-width: 400px
     min-height: 260px
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
     padding: 33px 10px 10px 48px
+    @media ( max-width: $media-tablet )
+      width: 100% !important
   &__text
     position: relative
     font-weight: 300
@@ -64,3 +70,7 @@
   &__btn-wrapper
     max-width: 120px
     width: 100%
+    @media ( max-width: $media-tablet )
+      transform: translate(600px, -250px)
+    @media ( max-width: $media-mobile )
+      transform: translate(80px, 290px)
