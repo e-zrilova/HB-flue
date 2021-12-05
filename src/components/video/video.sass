@@ -1,14 +1,22 @@
 .block-video
   padding-bottom: 126px
+  @media (max-width: $media-tablet)
+    padding-bottom: 70px
   &__description
     font-size: 16px
     line-height: 30px
     margin-top: 66px
+    @media (max-width: $media-tablet)
+      font-size: 14px
+      line-height: 26px
+      margin-top: 40px
 .video
   position: relative
   max-width: 771px
   margin: 0 auto
   margin-top: 96px
+  @media (max-width: $media-tablet)
+    margin-top: 20px
   &__wrapper
     position: relative
     width: 100%
@@ -53,21 +61,29 @@
     &--1
       top: 230px
       left: -130px
+      @media (max-width: $media-tablet)
+        display: none
     &--2
       top: -43px
       right: -384px
+      @media (max-width: $media-tablet)
+        display: none
     &--3
       z-index: -1
       top: 67px
       left: -194px
       width: 472px
       height: 294px
+      @media (max-width: $media-tablet)
+        display: none
     &--4
       z-index: -1
       left: 335px
       bottom: 72px
       width: 630px
       height: 392px
+      @media (max-width: $media-tablet)
+        display: none
 .video__wrapper:hover .video__button-shape,
 .video__button:focus .video__button-shape
   fill: #ff0000
