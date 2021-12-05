@@ -9,6 +9,13 @@
     font-weight: 800
     text-align: center
     text-transform: uppercase
+    @media (max-width: $media-tablet)
+      font-size: 40px
+      line-height: 30px
+    @media (max-width: $media-mobile)
+      font-size: 22px
+      line-height: 30px
+
   &__subtitle
     margin-top: 9px
     margin-bottom: 33px
@@ -17,6 +24,13 @@
     font-weight: 300
     text-align: center
     text-transform: lowercase
+    @media (max-width: $media-tablet)
+      font-size: 16px
+      line-height: 30px
+    @media (max-width: $media-mobile)
+      font-size: 14px
+      line-height: 26px
+
   &__question-list
     max-width: 862px
     margin: 0 auto
@@ -24,12 +38,18 @@
     columns: 2
     column-gap: 2px
     list-style: disc
+    @media (max-width: $media-mobile)
+      columns: 1
+
   &__question-item
     position: relative
     margin-left: 25px
     font-size: 18px
     line-height: 40px
     font-weight: 500
+    @media (max-width: $media-tablet)
+      font-size: 14px
+      line-height: 30px
     &::marker
       font-size: 30px
       line-height: 0
@@ -37,6 +57,7 @@
   &__requisition
     padding: 59px 53px 59px 62px
     margin: 0 auto
+
   &__social
     padding-bottom: 24px
     border-bottom: 1px solid $grey

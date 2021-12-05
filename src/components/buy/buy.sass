@@ -1,20 +1,47 @@
 .buy
   padding-bottom: 300px
+  @media (max-width: $media-tablet)
+    padding-bottom: 80px
   &__container
     display: flex
   &__text-wrapper
     max-width: 630px
     width: 100%
+    @media (max-width: $media-tablet)
+      text-align-last: left
+      width: 60%
+    @media (max-width: $media-mobile)
+      text-align: center
+      width: 100%
+      align-items: center
+      display: flex
+      flex-direction: column
   &__text-description
     max-width: 484px
     font-size: 16px
     line-height: 30px
     margin-bottom: 66px
+    @media (max-width: $media-tablet)
+      max-width: 740px
+      text-align: left
+      width: 70%
+    @media (max-width: $media-mobile)
+      width: 100%
+      font-size: 14px
+      line-height: 26px
+
   &__img
     transform: translate(206px, 107px)
+    @media (max-width: $media-mobile)
+      display: none
   &__price
     font-weight: 800
     font-size: 250px
     line-height: 30px
     opacity: 0.1
     transform: translate(-82px, 412px)
+    @media (max-width: $media-mobile)
+      display: none
+    @media (max-width: $media-tablet)
+      font-size: 100px
+      transform: translate(-115px, 336px)

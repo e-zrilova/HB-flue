@@ -46,6 +46,11 @@ p
 .container-content
   position: relative
   width: 100%
+  @media (max-width: $media-mobile)
+    display: none
+  @media (max-width: $media-tablet)
+    text-align-last: left
+    width: 42%
 .container-item
   position: absolute
   &--1
@@ -53,25 +58,45 @@ p
     height: 718px
     fill: #E33E54
     left: 3px
+    @media (max-width: $media-mobile)
+      display: none
+    @media (max-width: $media-tablet)
+      width: 422px
+      height: 297px
+      left: -125px
+      top: 200px
   &--2
     top: 109px
     left: 230px
+    @media (max-width: $media-mobile)
+      display: none
+    @media (max-width: $media-tablet)
+      top: 157px
+      left: 0px
   &--3
     top: 94px
     left: 146px
+    @media (max-width: $media-tablet)
+      display: none
   &--4
     top: 516px
     left: 541px
+    @media (max-width: $media-tablet)
+      display: none
   &--5
     top: 238px
     left: 20px
     width: 78px
     height: 19px
+    @media (max-width: $media-tablet)
+      display: none
   &--6
     top: 146px
     left: 688px
     width: 78px
     height: 19px
+    @media (max-width: $media-tablet)
+      display: none
 .blob-carrot
   fill: $carrot
 .social__icon
