@@ -65,9 +65,16 @@ p
       height: 297px
       left: -125px
       top: 200px
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      width: 700px
+      left: 40%
+      transform: translateX(-50%)
   &--2
     top: 109px
     left: 230px
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      left: 50%
+      transform: translateX(-40%)
     @media (max-width: $media-mobile)
       display: none
     @media (max-width: $media-tablet)
@@ -83,6 +90,8 @@ p
     left: 541px
     @media (max-width: $media-tablet)
       display: none
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      display: none
   &--5
     top: 238px
     left: 20px
@@ -96,6 +105,8 @@ p
     width: 78px
     height: 19px
     @media (max-width: $media-tablet)
+      display: none
+    @media (min-width: $media-tablet) and (max-width: 1690px)
       display: none
 .blob-carrot
   fill: $carrot

@@ -77,10 +77,18 @@
     fill: $slate-grey
     @media (max-width: $media-tablet)
       display: none
+    @media (min-width: 1248px) and (max-width: 1630px)
+      width: 526px
+      height: 584px
+      left: 50%
+      transform: translateX(-50%)
   &__img
     position: absolute
     bottom: 10px
     left: 261px
+    @media (min-width: 1248px) and (max-width: 1630px)
+      left: 60%
+      transform: translateX(-50%)
     @media (max-width: $media-tablet)
       display: none
   &__item-decor
@@ -101,5 +109,8 @@
       z-index: 2
       top: 326px
       right: -200px
+      @media (min-width: 1248px) and (max-width: 1630px)
+        left: 80%
+        transform: translateX(-50%)
       @media (max-width: $media-tablet)
         display: none
