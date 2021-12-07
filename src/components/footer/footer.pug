@@ -1,48 +1,13 @@
 -
-  catalog = [
-    {alink: '#', name: 'Дымоходы'},
-    {alink: '#', name: 'Камины'},
-    {alink: '#', name: 'Дымососы'},
-    {alink: '#', name: 'Силикат кальция'},
-    {alink: '#', name: 'Печи для дома'},
-    {alink: '#', name: 'Котлы'},
-    {alink: '#', name: 'Печи для бани'},
-    {alink: '#', name: 'Ещё'}
-  ]
-  info = [
-    {alink: '#', name: 'Каталог'},
-    {alink: '#', name: 'Полезное'},
-    {alink: '#', name: 'Установка и монтаж'},
-    {alink: '#', name: 'Контакты'},
-    {alink: '#', name: 'Отзывы'},
-    {alink: '#', name: 'Оплата и доставка'},
-    {alink: '#', name: 'Ликвидация товара'}
-  ]
+include  ../../components/_ui/index.pug
 footer.footer
   .container
     nav.footer__menu
-      .footer__menu-catalog
-        h3.footer__caption КАТАЛОГ
-        ul.footer__catalog
-          each item in catalog
-            +list-catalog(item.alink, item.name)
-      .footer__menu-info
-        h3.footer__caption ИНФОРМАЦИЯ
-        ul.footer__catalog.footer__catalog-info
-          each item in info
-            +list-catalog(item.alink, item.name)
+      +menu-catalog('footer__menu-catalog', 'footer__menu-catalog--media', 'КАТАЛОГ', 'footer__caption', '', 'footer__catalog-info', 'catalog')
+      +menu-catalog('footer__menu-info', 'footer__menu-info--media', 'ИНФОРМАЦИЯ', 'footer__caption', '', 'footer__catalog-info', 'info')
       .footer__menu-hours
         h3.footer__caption.footer__caption--decor ВРЕМЯ РАБОТЫ
-        ul.footer__hours
-          li.footer__item-desc.footer__item-hours
-            +svg('wall-clock' ,'footer__icon', '')
-            p.footer__item-text  пн-пт
-            |  9:00 &ndash; 20:00
-            p.footer__item-text.footer__item-text--decor сб-вс
-            |  10:00 &ndash; 18:00
-          li.footer__item-hours
-            +svg('marker' ,'footer__icon', 'footer__icon--1')
-            |г. Санкт - Петербург ,ул. Тамбасова д.7
+        +hours('footer__hours--media','footer__item-desc', 'footer__item-hours', 'footer__item-text', 'footer__item-text--decor')
         ul.social.social-decor
           +social('https://vk.com/', 'vk' , '')
           +social('https://telegram.org/', 'telegram' , '')

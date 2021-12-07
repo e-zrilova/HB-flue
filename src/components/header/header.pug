@@ -1,14 +1,10 @@
 header.header
   .container.header__wrapper
     img.header__logo(src='assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
-    button.header__burger-button(type='button')
-      +svg('burger-menu' ,'header__burger-menu', '')
-
+    include ../../components/humburger/humburger.pug
     include ../../components/navigation/navigation.pug
-
-    a.header__phone(href='tel:+78125092198') +7 (812)
-      span.header__phone-number 509 21&nbsp;98
-    a.header__call(href='#') Перезвоните мне
+    +phone('header__phone', '', 'header__phone-number', '')
+    +call('#', 'Перезвоните мне', '')
     ul.social.header-social
       +social('https://vk.com/', 'vk' , '')
       +social('https://telegram.org/', 'telegram' , '')

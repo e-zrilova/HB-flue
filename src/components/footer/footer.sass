@@ -8,12 +8,14 @@
     display: flex
     &-catalog
       margin-right: 32px
-      @media (max-width: 1440px)
-        display: none
+      &--media
+        @media (max-width: 1440px)
+          display: none
     &-info
       margin-right: 10px
-      @media (max-width: 1440px)
-        display: none
+      &--media
+        @media (max-width: 1440px)
+          display: none
     &-hours
       margin-left: 10px
       max-width: 320px
@@ -34,8 +36,9 @@
   &__catalog
     display: flex
     flex-wrap: wrap
-    @media (max-width: 1440px)
-      display: none
+    &--media
+      @media (max-width: 1440px)
+        display: none
   &__item
     &-text
       color: $turquoise-blue
@@ -53,8 +56,9 @@
       width: 100%
   &__hours
     margin-bottom: 26px
-    @media (max-width: 1440px)
-      display: none
+    &--media
+      @media (max-width: 1440px)
+        display: none
   &__icon
     margin-right: 7px
     width: 15px
