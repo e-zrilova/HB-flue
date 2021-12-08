@@ -1,0 +1,103 @@
+.catalog-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  gap: 10px
+  grid-auto-flow: row
+  grid-template-areas: "item-1 item-2 item-3" "item-4 item-5 item-6"
+  padding-top: 50px
+  @media (max-width: $media-tablet)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px 0
+    grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6"
+  @media (max-width: $media-mobile)
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5" "item-6"
+.item
+  display: grid
+  max-width: 390px
+  width: 100%
+  height: 400px
+  position: relative
+.item--1
+  grid-area: item-1
+
+.item--2
+  grid-area: item-2
+
+.item--3
+  grid-area: item-3
+
+.item--4
+  grid-area: item-4
+
+.item--5
+  grid-area: item-5
+
+.item--6
+  grid-area: item-6
+
+.catalog-d-1
+  position: absolute
+  width: 36px
+  height: 76px
+  @media (max-width: $media-mobile)
+    width: 25px
+    height: 53px
+  &--left
+    top: 60px
+    left: 50px
+    @media (max-width: $media-mobile)
+      top: 80px
+  &--right
+    right: 20px
+    top: 40%
+.catalog-blob
+  width: 308px
+  height: 287px
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: -1
+  transform: translate(-50%, -50%)
+  @media (max-width: $media-mobile)
+    wdith: 214px
+    height: 200px
+  &--carrot
+    fill: $carrot
+  &--primary
+    fill: $primary
+  &--base
+    fill: $turquoise-blue
+.catalog-img
+  position: absolute
+  top: 10px
+  left: 50%
+  transform: translateX(-40%)
+  &--1
+    top: 50px
+    @media (max-width: $media-mobile)
+      top: 90px
+      width: 151px
+      height: 145px
+  &--2
+    top: 20px
+  &--4
+    top: 80px
+  &--5
+    top: 70px
+  &--6
+    top: 60px
+.catalog-caption
+  font-weight: 600
+  font-size: 30px
+  line-height: 37px
+  max-width: 400px
+  width: 100%
+  padding-top: 220px
+  text-align: start
+
+  @media (max-width: $media-mobile)
+    margin-top: 0
+    padding-top: 320px
+    text-align: center

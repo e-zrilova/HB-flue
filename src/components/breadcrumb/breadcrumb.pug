@@ -1,0 +1,36 @@
+mixin breadcrumb(levels)
+
+  nav(aria-label="breadcrumb")
+    ul.breadcrumb(itemscope itemtype="http://schema.org/BreadcrumbList")
+      each level, index in levels
+        - let count = index+1
+        li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+          a(href="#{level[1]}" aria-level!=count)
+            span(class='breadcrumb__item' itemprop="name") #{level[0]}
+          if count < levels.length
+            i.breadcrumb__symbol(aria-hidden="true")
+              +svg('bread', 'breadcrumb-icon', '')
+          meta(itemprop="position" content!=count)
+
+
+//- //  Breadcrumbs
+//- //  items - pages in array, e.g. (['Main page', 'News'])
+//- //  last - last active page in span, e.g. (['Main page', 'News'], 'News detail')
+//-       mixin breadcrumbs(items, last)
+//-           .breadcrumb
+//-               ul.breadcrumb__list&attributes(attributes)
+//-                   each item in items
+//-                       li.breadcrumb__item
+//-                           ? if breadcrumb is single
+//-                           if (items.length === 1)
+//-                             span.breadcrumb__link= item
+//-                           else
+//-                             a(href="#" title=item).breadcrumb__link= item
+
+//-                   if last
+//-                       li.breadcrumb__item
+//-                           span.breadcrumb__link-current= last
+//-                   else
+
+//-       +breadcrumbs(['Main page', 'News'], 'News detail')
+//-       +breadcrumbs(['Main page'])
