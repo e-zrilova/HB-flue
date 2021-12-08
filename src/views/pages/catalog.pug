@@ -5,7 +5,6 @@ block content
       .catalog__wrapper
         +title-category('Каталог товаров', 'title-category', '')
       .catalog__breadcrumb
-        //- +breadcrumb([["Главная", "/index.html"], ["Каталог товаров", "/catalog.html"]])
         +breadcrumbs(['Главная'], 'Каталог')
       include ../../components/catalog-grid/catalog-grid.pug
 block scripts
