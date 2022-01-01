@@ -1,0 +1,50 @@
+
+extends ../layouts/default
+block content
+  section.cladding
+    .container.cladding__container
+      .cladding__wrapper
+        +title-category('Камины облицовки', 'title-category', '')
+      .cladding__breadcrumb
+        +breadcrumbs(['Главная', 'Каталог', 'Камины'], 'Камины облицовки')
+      form.cladding-grid
+        .cladding-grid__item.cladding-grid__item--1
+            label.form__select-label
+              span Выберите предложение:
+                select(name="select-an-offer").default.js-field
+                  option(value="Предложение1") Предложение 1
+                  option(value="Предложение1") Предложение 2
+                  option(value="Предложение1") Предложение 3
+                  option(value="Предложение1") Предложение 4
+        .cladding-grid__item.cladding-grid__item--2
+        .cladding-grid__item.cladding-grid__item--3
+        .cladding-grid__item.cladding-grid__item--4
+        .cladding-grid__item.cladding-grid__item--5
+        .cladding-grid__item.cladding-grid__item--6
+        .cladding-grid__item.cladding-grid__item--7
+          +svg('trash' ,'cladding-grid__trash', '')
+          +button('button', 'Сбросить фильтр', 'cladding-grid__btn-link')
+          +button('submit', 'применить фильтр', 'cladding-grid__btn')
+
+      .filter-grid
+      .catalog-product-grid
+        .catalog-product-grid__item--1
+        .catalog-product-grid__item--2
+        .catalog-product-grid__item--3
+        .catalog-product-grid__item--4
+        .catalog-product-grid__item--5
+        .catalog-product-grid__item--6
+        .catalog-product-grid__item--7
+        .catalog-product-grid__item--8
+        .catalog-product-grid__item--9
+        //- ul.best-seller__wrapper
+        //-   each product in bestProducts
+        //-     +product-card(product.img, product.title, product.description, product.price, product.oldPrice)
+      aside.sidebar-menu
+        h3.sidebar-menu__title Каталог
+        ul.sidebar-menu__list Каминные облицовки
+          li.sidebar-menu__item Встраиваемые камины
+          li.sidebar-menu__item Двусторонний камин
+          li.sidebar-menu__item Пристенно-угловые камины
+block scripts
+

@@ -1,6 +1,6 @@
 header.header
   .container.header__wrapper
-    img.header__logo(src='assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
+    img.header__logo(src='./assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
     include ../../components/humburger/humburger.pug
     include ../../components/navigation/navigation.pug
     +phone('header__phone', '', 'header__phone-number', '')
@@ -17,4 +17,4 @@ header.header
         +svg('heart' ,'header__favourites-icon', '')
       button.header__shopping-cart(type='button')
         +svg('shopping-cart' ,'header__shopping-cart-icon', '')
-        span.header__shopping-cart-count 10
+        span.header__shopping-cart-count 0

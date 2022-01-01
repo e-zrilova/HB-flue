@@ -1,0 +1,18 @@
+extends ../layouts/default
+block content
+  section.catalog
+    .container.catalog__container
+      .catalog__wrapper
+        +title-category('Каталог товаров', 'title-category', '')
+      .catalog__breadcrumb
+        +breadcrumbs(['Главная', 'Каталог'], 'Дымоходы')
+
+      button.catalog-item.btn(data-id=1) Дымоход 1
+      button.catalog-item.btn(data-id=2) Дымоход 2
+      button.catalog-item.btn(data-id=3) Дымоход 3
+      button.catalog-item.btn(data-id=4) Дымоход 4
+      button.catalog-item.btn(data-id=5) Дымоход 5
+      button.catalog-item.btn(data-id=6) Дымоход 6
+      button.catalog-item.btn(data-id=7) Дымоход 7
+      button.catalog-item.btn(data-id=8) Дымоход 8
+block scripts
