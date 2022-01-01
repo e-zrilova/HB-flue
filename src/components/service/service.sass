@@ -45,9 +45,7 @@
       z-index: 2
       bottom: 147px
       right: -88px
-      @media (min-width: $media-tablet) and (max-width: 1690px)
-        display: none
-      @media (max-width: $media-tablet)
+      @media (max-width: $media-desktop)
         display: none
   &__description
     font-size: 16px
@@ -96,12 +94,13 @@
       left: 50%
       transform: translateX(-50%)
       z-index: -1
-    @media (max-width: $media-mobile)
-      display: none
     @media (min-width: 1248px) and (max-width: 1430px)
       width: 588px
       height: 415px
       left: 40px
+    @media (max-width: $media-mobile)
+      display: none
+
   &__requisition
     margin-left: 100px
     margin-top: -8px
