@@ -1,0 +1,5 @@
+mixin button-slider(common,modPrev,modNext)
+  button(class= 'slider-btn' + ' ' + common + ' ' + modPrev type='button')
+    +svg('arrow' ,'slider-btn__prev', '')
+  button(class= 'slider-btn' + ' ' + common + ' ' + modNext type='button')
+    +svg('arrow' ,'slider-btn__next', '')

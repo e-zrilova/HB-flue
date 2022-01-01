@@ -1,0 +1,16 @@
+section.calculate
+  .container.calculate__container
+    .calculate__container-left
+      h2.calculate__title
+        span.calculate__caption самостоятельный
+        |  расчёт стоимости дымохода
+      p.calculate__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      p.calculate__subtitle Для расчета стоимости пройдите тест за
+        span.calculate__time &nbsp;1 минуту
+      +button-link('#', 'рассчитать стоимость', 'calculate__link')
+    .calculate__decor-img
+      +svg('blob-carrot' ,'calculate__bg', '')
+      img.calculate__img(src='assets/images/calculator.png' alt='Изображение калькулятора')
+      +svg('d-1-img' ,'calculate__item', 'calculate__item--1')
+      +svg('d-1-img' ,'calculate__item', 'calculate__item--2')
+      +svg('triangle' ,'calculate__item', 'calculate__item--3')

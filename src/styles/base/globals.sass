@@ -1,0 +1,118 @@
+*
+  box-sizing: border-box
+body
+  font: normal 400 16px/1.5 $font-primary
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  justify-content: space-between
+  margin: 0
+main
+  flex: 1
+a
+  text-decoration: none
+  color: $black
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+img
+  display: block
+  max-width: 100%
+  height: auto
+button
+  background-color: transparent
+  background-repeat: no-repeat
+  border: none
+  cursor: pointer
+  outline: none
+input
+  outline: none
+p
+  margin-top: 0
+  margin-bottom: 0
+.fixed
+  position: fixed
+  width: 100%
+  padding-right: 17px
+.container
+  max-width: 1248px
+  width: 100%
+  margin: 0 auto
+  padding-left: 15px
+  padding-right: 15px
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  clip: rect(0 0 0 0)
+.container-content
+  position: relative
+  width: 100%
+  @media (max-width: $media-mobile)
+    display: none
+  @media (max-width: $media-tablet)
+    text-align-last: left
+    width: 42%
+.container-item
+  position: absolute
+  &--1
+    width: 768px
+    height: 718px
+    fill: #E33E54
+    left: 3px
+    @media (max-width: $media-mobile)
+      display: none
+    @media (max-width: $media-tablet)
+      width: 422px
+      height: 297px
+      left: -125px
+      top: 200px
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      width: 700px
+      left: 40%
+      transform: translateX(-50%)
+  &--2
+    top: 109px
+    left: 230px
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      left: 50%
+      transform: translateX(-40%)
+    @media (max-width: $media-mobile)
+      display: none
+    @media (max-width: $media-tablet)
+      top: 157px
+      left: 0px
+  &--3
+    top: 94px
+    left: 146px
+    @media (max-width: $media-tablet)
+      display: none
+  &--4
+    top: 516px
+    left: 541px
+    @media (max-width: $media-tablet)
+      display: none
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      display: none
+  &--5
+    top: 238px
+    left: 20px
+    width: 78px
+    height: 19px
+    @media (max-width: $media-tablet)
+      display: none
+  &--6
+    top: 146px
+    left: 688px
+    width: 78px
+    height: 19px
+    @media (max-width: $media-tablet)
+      display: none
+    @media (min-width: $media-tablet) and (max-width: 1690px)
+      display: none
+.blob-carrot
+  fill: $carrot
+.social__icon
+  fill: $turquoise-blue

@@ -1,0 +1,14 @@
+.hamburger.hamburger--squeeze.js-menu-toggle
+  .hamburger-box
+    .hamburger-inner
+.menu-list.js-menu-content
+  .container.menu-list__wrapper
+    nav.menu-wrapper
+      +menu-catalog('footer__menu-catalog', 'menu-list__catalog', 'КАТАЛОГ', 'footer__caption', '', 'footer__catalog-info', 'catalog')
+      +menu-catalog('footer__menu-info', 'menu-list__catalog', 'ИНФОРМАЦИЯ', 'footer__caption', '', 'footer__catalog-info', 'info')
+    .contacts-all
+      .contacts-all__wrapper
+        +phone('header__phone', 'burger-phone', 'header__phone-number', 'burger__phone-number')
+        +call('#', 'Перезвоните мне', 'burger-call')
+      .hours-wrapper
+        +hours('','footer__item-hours', 'contacts-all__item', 'footer__item-text', 'footer__item-text--decor')

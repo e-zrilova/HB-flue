@@ -1,0 +1,15 @@
+-
+include  ../../components/_ui/index.pug
+footer.footer
+  .container
+    nav.footer__menu
+      +menu-catalog('footer__menu-catalog', 'footer__menu-catalog--media', 'КАТАЛОГ', 'footer__caption', '', 'footer__catalog-info', 'catalog')
+      +menu-catalog('footer__menu-info', 'footer__menu-info--media', 'ИНФОРМАЦИЯ', 'footer__caption', '', 'footer__catalog-info', 'info')
+      .footer__menu-hours
+        h3.footer__caption.footer__caption--decor ВРЕМЯ РАБОТЫ
+        +hours('footer__hours--media','footer__item-desc', 'footer__item-hours', 'footer__item-text', 'footer__item-text--decor')
+        ul.social.social-decor
+          +social('https://vk.com/', 'vk' , '')
+          +social('https://telegram.org/', 'telegram' , '')
+          +social('https://instagram.com/', 'instagram' , '')
+          +social('https://whatsapp.com/', 'whatsapp' , '')

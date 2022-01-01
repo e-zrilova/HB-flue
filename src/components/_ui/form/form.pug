@@ -1,0 +1,11 @@
+mixin form(mod,description)
+  div(class='requisition' + ' ' + mod)
+    div(class='requisition__form-text')
+      p.requisition__form-title Для
+        span.requisition__form-subtitle &nbsp;заказа&nbsp;
+        | замера заполните форму!
+      p(class='requisition__form-description')= description
+    form.requisition__form(action='#')
+      +input('text', 'Ваше имя', 'requisition__form-name')
+      +input('tel', 'Ваш телефон', 'requisition__form-phone')
+      +button('submit', 'оставить заявку', '')
