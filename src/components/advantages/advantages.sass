@@ -1,9 +1,10 @@
 .advantages
   padding-bottom: 105px
-  @media ( max-width: $media-mobile )
-    padding-bottom: 50px
-  @media ( max-width: $media-mobile )
+  @media (max-width: $media-tablet )
     padding-bottom: 70px
+  @media (max-width: $media-mobile )
+    padding-bottom: 50px
+
   &__title
     margin-bottom: 46px
   &__list
@@ -11,18 +12,19 @@
     display: flex
     margin: 0 -15px
     row-gap: 11px
-    @media ( max-width: $media-mobile )
-      flex-direction: column
-    @media ( max-width: $media-tablet )
+    @media (max-width: $media-tablet )
       row-gap: 21px
+    @media (max-width: $media-mobile )
+      flex-direction: column
+
   &__item
     display: flex
     width: calc(50% - 30px)
     align-items: center
     margin: 0 15px
-    @media ( max-width: $media-tablet )
+    @media (max-width: $media-tablet )
       flex-direction: column
-    @media ( max-width: $media-mobile )
+    @media (max-width: $media-mobile )
       width: 85%
     &-title
       margin-top: 28px
@@ -30,18 +32,18 @@
       font-size: 22px
       line-height: 30px
       font-weight: 700
-      @media ( max-width: $media-tablet )
+      @media (max-width: $media-tablet )
         text-align: center
         font-size: 20px
         line-height: 30px
-      @media ( max-width: $media-mobile )
+      @media (max-width: $media-mobile )
         font-size: 16px
         line-height: 30px
     &-description
       margin-top: 0
       font-size: 16px
       line-height: 30px
-    @media ( max-width: $media-tablet )
+    @media (max-width: $media-tablet )
       text-align: center
       font-size: 14px
       line-height: 26px
@@ -58,7 +60,7 @@
       border: 1px solid $grey
       border-radius: 4px
       min-height: 140px
-      @media ( max-width: $media-tablet )
+      @media (max-width: $media-tablet )
         margin-right: 0
       &::before, &::after
         content: ""

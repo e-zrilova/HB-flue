@@ -1,30 +1,27 @@
 -
   lists = {
     catalog: [
-    {alink: '#', name: 'Дымоходы'},
-    {alink: '#', name: 'Камины'},
-    {alink: '#', name: 'Дымососы'},
-    {alink: '#', name: 'Силикат кальция'},
-    {alink: '#', name: 'Печи для дома'},
-    {alink: '#', name: 'Котлы'},
-    {alink: '#', name: 'Печи для бани'},
-    {alink: '#', name: 'Ещё'}
+      {alink: '#', name: 'Дымоходы'},
+      {alink: '#', name: 'Камины'},
+      {alink: '#', name: 'Дымососы'},
+      {alink: '#', name: 'Силикат кальция'},
+      {alink: '#', name: 'Печи для дома'},
+      {alink: '#', name: 'Котлы'},
+      {alink: '#', name: 'Печи для бани'},
+      {alink: '#', name: 'Ещё'}
   ],
-  info: [
-    {alink: '#', name: 'Каталог'},
-    {alink: '#', name: 'Полезное'},
-    {alink: '#', name: 'Установка и монтаж'},
-    {alink: '#', name: 'Контакты'},
-    {alink: '#', name: 'Отзывы'},
-    {alink: '#', name: 'Оплата и доставка'},
-    {alink: '#', name: 'Ликвидация товара'}
-  ]
+    info: [
+      {alink: '#', name: 'Каталог'},
+      {alink: '#', name: 'Полезное'},
+      {alink: '#', name: 'Установка и монтаж'},
+      {alink: '#', name: 'Контакты'},
+      {alink: '#', name: 'Отзывы'},
+      {alink: '#', name: 'Оплата и доставка'},
+      {alink: '#', name: 'Ликвидация товара'}
+    ]
   }
 
 mixin menu-catalog(common, mod, text, commonName, nameMod, listMod, listName)
-  - m = mod || ''
-  - m = name-mod || ''
-  - m = list-mod || ''
   - defaultList = lists[listName] || []
   div(class= common + ' ' + mod)
     h3(class= commonName + ' ' + nameMod)=text
