@@ -31,7 +31,8 @@
     "stylelint-config-standard": "^24.0.0"
   },
   "dependencies": {
-    "choices.js": "^9.0.1",
+    "choices.js": "^9.1.0",
+    "nouislider": "^15.5.0",
     "swiper": "^7.3.1"
   }
 }

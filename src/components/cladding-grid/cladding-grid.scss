@@ -1,0 +1,136 @@
+.cladding-grid {
+  padding: 32px;
+  margin-top: 48px;
+  margin-bottom: 44px;
+  display: grid;
+  min-height: 200px;
+  border: 1px dashed $turquoise-blue;
+  gap: 20px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 54px;
+}
+
+.cladding-grid__item--1 {
+  grid-area: cladding-grid__item--1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.cladding-grid__item--2 {
+  grid-area: cladding-grid__item--2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.cladding-grid__item--3 {
+  grid-area: cladding-grid__item--3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.cladding-grid__item--4 {
+  grid-area: cladding-grid__item--4;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.cladding-grid__item--5 {
+  grid-area: cladding-grid__item--5;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.cladding-grid__item--6 {
+  grid-area: cladding-grid__item--6;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.cladding-grid__item--7 {
+  grid-area: cladding-grid__item--7;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.cladding-grid__btn {
+  background-color: $carrot
+}
+
+.cladding-grid__btn-link {
+  background-color: transparent;
+  color: $primary;
+  min-width: 180px;
+  padding-left: 0;
+}
+
+.cladding-grid__trash {
+  width: 22px;
+  height: 22px;
+}
+
+.choices__inner {
+  padding: 5px 10px;
+  border: 1px solid $grey;
+  background-color: $light;
+  min-height: auto;
+}
+
+.is-open .choices__inner {
+  padding: 5px 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid $grey;
+  background-color: $light;
+  min-height: auto;
+}
+
+.choices__list--dropdown {
+  border: 1px solid $grey;
+  background-color: $light;
+}
+
+.is-open .choices__list--dropdown {
+  border: 1px solid $grey;
+  background-color: $light;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+  display: none;
+}
+
+.choices[data-type*=select-one]:after {
+  content: '';
+  position: absolute;
+  right: 25.5px;
+  top: 10px;
+  height: 23px;
+  width: 12px;
+  margin-top: 0;
+  background: url(../images/clad-arrow.svg) center no-repeat;
+  border-style: none;
+  border-color: transparent transparent;
+  border-width: 0;
+
+}
+
+.choices[data-type*=select-one].is-open:after {
+  transform: rotate(180deg);
+  top: 15px;
+}

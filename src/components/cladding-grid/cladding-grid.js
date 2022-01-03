@@ -1,9 +1,13 @@
-// import Choices from 'choices.js';
+import Choices from 'choices.js';
 
-// const defaultSelect = () => {
-//   const element = document.querySelector('.default')
-//   const choices = new Choices(element, {
-//     searchEnabled: false,
-//   })
-// }
-// defaultSelect();
+const multiDefault = () => {
+  const elements = document.querySelectorAll('.multi-default');
+  elements.forEach(el => {
+    const choices = new Choices(el, {
+      searchEnabled: false
+    });
+  });
+
+}
+
+multiDefault();

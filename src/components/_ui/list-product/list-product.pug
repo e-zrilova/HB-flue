@@ -1,0 +1,4 @@
+mixin list-product(products)
+  -defaultProducts = products || []
+  each product in defaultProducts
+    +product-card(product.img, product.title, product.description, product.price, product.oldPrice)

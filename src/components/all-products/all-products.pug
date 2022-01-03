@@ -1,5 +1,5 @@
 -
-  bestProducts = [
+  allProducts = [
     {img: 'assets/images/item-1.png', title: 'Kratki', description: 'Каминная топка Kratki ZUZIA LPT', price: '15 995', oldPrice: '16 490'},
     {img: 'assets/images/item-1.png',title: 'Kratki2',description: 'Каминная топка Kratki ZUZIA LPT',price: '15 995',oldPrice: '16 490'},
     {img: 'assets/images/item-1.png',title: 'Kratki3',description: 'Каминная топка Kratki ZUZIA LPT',price: '15 995',oldPrice: '16 490'},
@@ -9,13 +9,7 @@
     {img: 'assets/images/item-1.png',title: 'Kratki7',description: 'Каминная топка Kratki ZUZIA LPT',price: '15 995',oldPrice: '16 490'},
     {img: 'assets/images/item-1.png',title: 'Kratki8',description: 'Каминная топка Kratki ZUZIA LPT',price: '15 995',oldPrice: '16 490'}
   ]
-
-section.best-seller
-  .container.best-seller__container
-    .best-seller__title-wrapper
-      +caption('Хиты продаж','best-seller__title')
-      .best-seller__btn-wrapper
-        +button-slider('best-seller__btn', 'best-seller__btn--prev','best-seller__btn--next')
-    .swiper.best-seller__slider
-      ul.swiper-wrapper.best-seller__wrapper
-        +list-product(bestProducts)
+section.all-products
+  .all-products__container
+    ul.all-products__wrapper
+      +list-product(allProducts)
