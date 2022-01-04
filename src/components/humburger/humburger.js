@@ -1,7 +1,6 @@
 (function () {
   const menuToggle = document.querySelector('.js-menu-toggle')
   const menuContent = document.querySelector('.js-menu-content')
-  console.log(menuContent);
 
   if (menuToggle && menuContent) {
     function openMenu() {

@@ -1,0 +1,13 @@
+.footer {
+  &__item {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 206px;
+    width: 50%;
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

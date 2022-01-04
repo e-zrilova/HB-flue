@@ -6,7 +6,7 @@ block content
         +title-category('Камины облицовки', 'title-category', '')
       .cladding__breadcrumb
         +breadcrumbs(['Главная', 'Каталог', 'Камины'], 'Камины облицовки')
-      form.cladding-grid
+      form.cladding-grid(action="#")
         .cladding-grid__item.cladding-grid__item--1
           select(name="Пол" aria-label="Выбор пола").multi-default
             option(value="" ) Бренд
@@ -38,6 +38,14 @@ block content
             option(value="Материал облицовки2") Балка2
             option(value="Материал облицовки3") Балка3
         .cladding-grid__item.cladding-grid__item--6
+          .filters__item.filters-price
+            h3.filters-price__title &TScy;&iecy;&ncy;&acy;
+            .filters-price__inputs
+              label.filters-price__label
+                input#input-0.filters-price__input(placeholder='500')
+              label.filters-price__label
+                input#input-1.filters-price__input(placeholder='999999')
+            #range-slider.filters-price__slider
         .cladding-grid__item.cladding-grid__item--7
           +svg('trash' ,'cladding-grid__trash', '')
           +button('button', 'Сбросить фильтр', 'cladding-grid__btn-link')
@@ -48,7 +56,7 @@ block content
         ul.sidebar-menu__list.js-sidebar-menu
           li.sidebar-menu__item-1.js-sidebar-menu__item-1 Каминные облицовки
             +svg('menu-arrow')
-            ul.items
+            ul.items.items--mod
               li.sidebar-menu__item-2 Встраиваемые камины
                 +svg('menu-arrow')
               li.sidebar-menu__item-2 Двусторонний камин
@@ -94,5 +102,18 @@ block content
             +svg('menu-arrow')
       .cladding-wrapper
         .cladding-filter
-          p Сортировать по:
+          .cladding-filter-new
+            p Сортировать по:
+            select(name="Пол" aria-label="Выбор пола").multi-default
+              option(value="" ) от нового к старому
+              option(value="Материал облицовки1") Балка1
+              option(value="Материал облицовки2") Балка2
+              option(value="Материал облицовки3") Балка3
+          .cladding-filter-count
+            p Выводить по:
+            select(name="Пол" aria-label="Выбор пола").multi-default
+              option(value="" ) 15
+              option(value="Материал облицовки1") 20
+              option(value="Материал облицовки2") 30
+              option(value="Материал облицовки3") 40
         include ../../components/all-products/all-products

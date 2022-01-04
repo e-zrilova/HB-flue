@@ -1,0 +1,44 @@
+.catalog-product-grid {
+  display: grid;
+  grid-template-columns: 282px 282px 282px;
+  grid-template-rows: 400px 400px 400px 400px;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "catalog-product-grid__item--1 catalog-product-grid__item--2 catalog-product-grid__item--3""catalog-product-grid__item--4 catalog-product-grid__item--5 catalog-product-grid__item--6""catalog-product-grid__item--7 catalog-product-grid__item--8 catalog-product-grid__item--9";
+
+  &__item--1 {
+    grid-area: catalog-product-grid__item--1;
+  }
+
+  &__item--2 {
+    grid-area: catalog-product-grid__item--2;
+  }
+
+  &__item--3 {
+    grid-area: catalog-product-grid__item--3;
+  }
+
+  &__item--4 {
+    grid-area: catalog-product-grid__item--4;
+  }
+
+  &__item--5 {
+    grid-area: catalog-product-grid__item--5;
+  }
+
+  &__item--6 {
+    grid-area: catalog-product-grid__item--6;
+  }
+
+  &__item--7 {
+    grid-area: catalog-product-grid__item--7;
+  }
+
+  &__item--8 {
+    grid-area: catalog-product-grid__item--8;
+  }
+
+  &__item--9 {
+    grid-area: catalog-product-grid__item--9;
+  }
+}

@@ -1,0 +1,16 @@
+.btn {
+  padding: 18px 24px;
+  border-radius: 4px;
+  background-color: $slate-grey;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light;
+  display: inline-block;
+  min-width: 240px;
+  text-align: center;
+
+  &--primary {
+    background-color: $carrot
+  }
+}

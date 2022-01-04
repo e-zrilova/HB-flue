@@ -1,0 +1,25 @@
+.catalog__breadcrumb {
+  padding: 10px;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+}
+
+.breadcrumb {
+  display: flex;
+
+  &-icon {
+    margin: 0 10px;
+  }
+
+  &__item {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey-light;
+
+    &--last {
+      color: $turquoise-blue;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.requisition {
+  &__form {
+
+    &-name,
+    &-phone {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: $grey-light;
+      border: 1px solid $grey;
+      padding: 17px 17px 17px 17px;
+      min-width: 240px;
+      border-radius: 4px;
+
+      @media (max-width: $media-tablet) {
+        max-width: 354px;
+        width: 100%;
+      }
+    }
+
+    &-name {
+      margin-right: 10px;
+
+      @media (max-width: $media-tablet) {
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: $media-mobile) {
+        margin-right: 0;
+      }
+    }
+
+    &-phone {
+      margin-right: 12px;
+
+      @media (max-width: $media-tablet) {
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: $media-mobile) {
+        margin-right: 0;
+      }
+    }
+  }
+}
