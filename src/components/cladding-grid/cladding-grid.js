@@ -11,3 +11,19 @@ const multiDefault = () => {
 }
 
 multiDefault();
+
+const filterBtn = document.querySelector('.js-cladding-filter-mobile_btn')
+const filterPanel = document.querySelector('.js-cladding-grid')
+const filterBtnExit = document.querySelector('.js-cladding__mobile-exit')
+if (filterBtn && filterPanel) {
+  filterBtn.addEventListener('click', () => {
+    filterPanel.classList.toggle('active')
+    document.body.classList.toggle('fixed')
+  })
+}
+if (filterBtnExit) {
+  filterBtnExit.addEventListener('click', () => {
+    filterPanel.classList.toggle('active')
+    document.body.classList.toggle('fixed')
+  })
+}

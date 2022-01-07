@@ -139,6 +139,20 @@
 
     @media (max-width: $media-mobile) {
       margin-top: 100px;
+
+      .menu-list__catalog {
+        margin-right: 0;
+      }
+
+      .footer__item {
+        font-size: 12px;
+
+      }
+
+      &::before {
+
+        border-top: none;
+      }
     }
   }
 

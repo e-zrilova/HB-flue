@@ -1,7 +1,17 @@
 .title-category {
-  font-family: Montserrat;
-  font-style: normal;
+  font-family: 'Montserrat Bold', sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 73px;
+
+  @media (max-width: $media-tablet) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @media (max-width: $media-mobile) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
 }

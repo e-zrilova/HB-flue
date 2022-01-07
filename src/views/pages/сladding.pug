@@ -4,42 +4,42 @@ block content
     .container.cladding__container
       .cladding__wrapper
         +title-category('Камины облицовки', 'title-category', '')
-      .cladding__breadcrumb
+      .breadcrumb-block
         +breadcrumbs(['Главная', 'Каталог', 'Камины'], 'Камины облицовки')
-      form.cladding-grid(action="#")
+      form.cladding-grid.js-cladding-grid(action="#")
         .cladding-grid__item.cladding-grid__item--1
-          select(name="Пол" aria-label="Выбор пола").multi-default
-            option(value="" ) Бренд
+          select(name="" aria-label="Выбор бренда").multi-default
+            option(value="") Бренд
             option(value="Бренд1") Kratki1
             option(value="Бренд2") Kratki2
             option(value="Бренд3") Kratki3
         .cladding-grid__item.cladding-grid__item--2
-          select(name="Пол" aria-label="Выбор пола").multi-default
-            option(value="" ) Материал облицовки
+          select(name="" aria-label="Выбор облицовки").multi-default
+            option(value="") Материал облицовки
             option(value="Материал облицовки1") Камень
             option(value="Материал облицовки2") Керамогранит
             option(value="Материал облицовки3") Пенополистирол
         .cladding-grid__item.cladding-grid__item--3
-          select(name="Пол" aria-label="Выбор пола").multi-default
-            option(value="" ) Расположение
+          select(name="" aria-label="Выбор расположения").multi-default
+            option(value="") Расположение
             option(value="Материал облицовки1") Верх
             option(value="Материал облицовки2") Низ
             option(value="Материал облицовки3") По диагонали
         .cladding-grid__item.cladding-grid__item--4
-          select(name="Пол" aria-label="Выбор пола").multi-default
-            option(value="" ) Серия
+          select(name="" aria-label="Выбор серии").multi-default
+            option(value="") Серия
             option(value="Материал облицовки1") ААА-01
             option(value="Материал облицовки2") ААА-02
             option(value="Материал облицовки3") ААА-03
         .cladding-grid__item.cladding-grid__item--5
-          select(name="Пол" aria-label="Выбор пола").multi-default
-            option(value="" ) Балка
+          select(name="" aria-label="Выбор балки").multi-default
+            option(value="") Балка
             option(value="Материал облицовки1") Балка1
             option(value="Материал облицовки2") Балка2
             option(value="Материал облицовки3") Балка3
         .cladding-grid__item.cladding-grid__item--6
-          .filters__item.filters-price
-            h3.filters-price__title &TScy;&iecy;&ncy;&acy;
+          .filters-price
+            h3.filters-price__title Цена
             .filters-price__inputs
               label.filters-price__label
                 input#input-0.filters-price__input(placeholder='500')
@@ -47,73 +47,36 @@ block content
                 input#input-1.filters-price__input(placeholder='999999')
             #range-slider.filters-price__slider
         .cladding-grid__item.cladding-grid__item--7
-          +svg('trash' ,'cladding-grid__trash', '')
-          +button('button', 'Сбросить фильтр', 'cladding-grid__btn-link')
+          .cladding-grid__item-mobile-wrapper
+            +svg('trash' ,'cladding-grid__trash', '')
+            +button('button', 'Сбросить фильтр', 'cladding-grid__btn-link')
+          .cladding-grid__item-mobile-wrapper
+            button.multilevel-menu__mobile-exit.js-cladding__mobile-exit Назад
+              +svg('menu-arrow')
+        .cladding-grid__item.cladding-grid__item--8
           +button('submit', 'применить фильтр', 'cladding-grid__btn')
+      button.multilevel-menu-mobile-btn.js-multilevel-menu-mobile-btn Камины облицовки
+        +svg('menu-arrow')
     .container.cladding-content
-      aside.sidebar-menu
-        h3.sidebar-menu__title Каталог
-        ul.sidebar-menu__list.js-sidebar-menu
-          li.sidebar-menu__item-1.js-sidebar-menu__item-1 Каминные облицовки
-            +svg('menu-arrow')
-            ul.items.items--mod
-              li.sidebar-menu__item-2 Встраиваемые камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Двусторонний камин
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Пристенно-угловые камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Угловые отопительные камины
-                +svg('menu-arrow')
-                ul.items
-                  li.sidebar-menu__item-3
-                    +svg('menu-arrow')
-                    a(href='#')  Мини
-                  li.sidebar-menu__item-3
-                    +svg('menu-arrow')
-                    a(href='#')  Мраморные
-              li.sidebar-menu__item-2 Центральные камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Пристенные камины
-                +svg('menu-arrow')
-          li.sidebar-menu__item-1.js-sidebar-menu__item-1 Каминные топки
-            +svg('menu-arrow')
-            ul.items
-              li.sidebar-menu__item-2 Встраиваемые камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Двусторонний камин
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Пристенно-угловые камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Угловые отопительные камины
-                +svg('menu-arrow')
-                ul.items
-                  li.sidebar-menu__item-3
-                    +svg('menu-arrow')
-                    a(href='#')  Мини
-                  li.sidebar-menu__item-3
-                    +svg('menu-arrow')
-                    a(href='#')  Мраморные
-              li.sidebar-menu__item-2 Центральные камины
-                +svg('menu-arrow')
-              li.sidebar-menu__item-2 Пристенные камины
-                +svg('menu-arrow')
-          li.sidebar-menu__item-1.js-sidebar-menu__item-1 Камины HI-TECH
-            +svg('menu-arrow')
+
+      include ../../components/multilevel-menu/multilevel-menu
       .cladding-wrapper
         .cladding-filter
           .cladding-filter-new
             p Сортировать по:
-            select(name="Пол" aria-label="Выбор пола").multi-default
-              option(value="" ) от нового к старому
-              option(value="Материал облицовки1") Балка1
-              option(value="Материал облицовки2") Балка2
-              option(value="Материал облицовки3") Балка3
+            select(name="" aria-label="Сортировать по").multi-default
+              option(value="от нового к старому" ) от нового к старому
+              option(value="от старого к новому") от старого к новому
+              option(value="по популярности") по популярности
           .cladding-filter-count
             p Выводить по:
-            select(name="Пол" aria-label="Выбор пола").multi-default
+            select(name="" aria-label="Выводить по").multi-default
               option(value="" ) 15
-              option(value="Материал облицовки1") 20
-              option(value="Материал облицовки2") 30
-              option(value="Материал облицовки3") 40
+              option(value="20") 20
+              option(value="30") 30
+              option(value="40") 40
+          .cladding-filter-mobile
+            span 3
+            button.cladding-filter-mobile_btn.count.js-cladding-filter-mobile_btn
+              +svg('filter' ,'cladding-filter-btn', '')
         include ../../components/all-products/all-products

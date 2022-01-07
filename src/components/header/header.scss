@@ -2,6 +2,10 @@
   position: relative;
   padding-bottom: 56px;
 
+  @media (max-width: $media-tablet) {
+    padding-bottom: 0;
+  }
+
   @media (max-width: $media-mobile) {
     padding-bottom: 40px;
   }

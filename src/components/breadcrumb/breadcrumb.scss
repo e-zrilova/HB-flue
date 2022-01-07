@@ -1,11 +1,15 @@
-.catalog__breadcrumb {
-  padding: 10px;
+.breadcrumb-block {
+  padding: 14px 10px 19px;
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
 }
 
 .breadcrumb {
   display: flex;
+
+  @media (max-width: $media-tablet) {
+    flex-wrap: wrap;
+  }
 
   &-icon {
     margin: 0 10px;
