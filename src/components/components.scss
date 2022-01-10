@@ -2,7 +2,7 @@
 @import 'humburger/humburger';
 @import 'navigation/navigation';
 @import 'first-screen/first-screen';
-@import 'best-sellers/best-sellers';
+@import 'product-slider/product-slider';
 @import 'work/work';
 @import 'calculate/calculate';
 @import 'advantages/advantages';
@@ -21,11 +21,13 @@
 @import '_ui/title/title';
 @import '_ui/title/heading';
 @import '_ui/requisition/requisition';
-@import '_ui/requisition/input/input';
+@import '_ui/textarea/textarea';
+@import '_ui/input/input';
 @import '_ui/social/social';
 @import '_ui/footer-list/footer-list';
 @import '_ui/title/title-category';
 @import '_ui/filter-price/filter-price';
+@import '_ui/product-carousel/product-carousel';
 @import 'breadcrumb/breadcrumb';
 @import 'catalog-grid/catalog-grid';
 @import 'cladding-grid/cladding-grid';
@@ -34,3 +36,4 @@
 @import 'all-products/all-products';
 @import 'cladding/cladding';
 @import 'multilevel-menu/multilevel-menu';
+@import 'product-page/product-page';

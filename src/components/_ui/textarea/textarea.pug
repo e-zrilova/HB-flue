@@ -1,0 +1,5 @@
+mixin textarea(wrapper, name, id, label, rows, text)
+  div(class=wrapper)
+    label(for=id)= label
+    textarea(id=id, name=name, rows=rows, class=name, placeholder=text)&attributes(attributes)
+

@@ -78,7 +78,7 @@
   &--1 {
     width: 768px;
     height: 718px;
-    fill: #E33E54;
+    fill: $primary;
     left: 3px;
 
     @media (min-width: $media-tablet) and (max-width: $media-desktop) {

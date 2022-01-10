@@ -1,6 +1,7 @@
-import "./humburger/humburger.js";
-import "./main-slider.js";
-import "./video/video.js";
-import "./cladding-grid/cladding-grid.js";
-import "./multilevel-menu/multilevel-menu.js";
-import "./_ui/filter-price/filter-price.js";
+import "./humburger/humburger";
+import "./main-slider";
+import "./video/video";
+import "./cladding-grid/cladding-grid";
+import "./multilevel-menu/multilevel-menu";
+import "./_ui/filter-price/filter-price";
+import './product-page/product-page';

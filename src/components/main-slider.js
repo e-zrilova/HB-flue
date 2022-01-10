@@ -5,7 +5,7 @@ import Swiper, {
 
 Swiper.use([Navigation, Keyboard]);
 
-new Swiper('.best-seller__slider', {
+new Swiper('.product-carousel', {
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 30,
@@ -16,11 +16,25 @@ new Swiper('.best-seller__slider', {
     onlyInViewport: true,
   },
   navigation: {
-    nextEl: '.best-seller__btn--next',
-    prevEl: '.best-seller__btn--prev',
+    nextEl: '.product-slider__btn--next',
+    prevEl: '.product-slider__btn--prev',
   },
 });
+new Swiper('.product-carousel-card-3', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  navigation: {
+    nextEl: '.product-slider__btn--next',
+    prevEl: '.product-slider__btn--prev',
+  },
+});
 new Swiper('.work__slider', {
   direction: 'horizontal',
   slidesPerView: 3,
@@ -57,3 +71,4 @@ new Swiper(".reviews__slider", {
     prevEl: '.reviews__slider-btn--prev',
   },
 });
+

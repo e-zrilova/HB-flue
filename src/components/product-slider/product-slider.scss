@@ -1,4 +1,4 @@
-.best-seller {
+.product-slider {
   padding-bottom: 222px;
 
   @media (max-width: $media-tablet) {
@@ -29,14 +29,7 @@
     }
   }
 
-  &__slider {
-    max-width: 1218px;
-    width: 100%;
 
-    @media (max-width: $media-tablet) {
-      padding-bottom: 40px;
-    }
-  }
 
   &__btn-wrapper {
     @media (max-width: $media-mobile) {

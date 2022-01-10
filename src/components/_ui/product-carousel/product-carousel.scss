@@ -1,0 +1,13 @@
+.product__carousel {
+  max-width: 1218px;
+  width: 100%;
+
+  @media (max-width: $media-tablet) {
+    padding-bottom: 40px;
+  }
+}
+
+.product-carousel-card-3 {
+  max-width: 906px;
+  width: 100%;
+}
