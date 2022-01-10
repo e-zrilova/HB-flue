@@ -101,3 +101,16 @@ p {
   width: 5px;
   height: 7px;
 }
+
+.no-scroll-mb {
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-thumb {
+    width: 0px;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+}

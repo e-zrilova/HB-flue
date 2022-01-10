@@ -38,6 +38,7 @@ block content
                           .slider__image
                               img(src='./assets/images/item-1.png' alt='').panzoom__content
                               +svg('zooming', 'zooming-plus-img')
+                    .swiper-pagination.slider__pagination
                   .slider__col
                     .slider__thumbs
                       .swiper-container
@@ -113,8 +114,8 @@ block content
             .product-info_item--9
               +button-link('#', 'в корзину', 'product-btn-link')
               +button-link('#', 'купить в 1 клик', 'product-btn--primary')
-        .tabs
-          ul.tabs__list
+        .tabs.no-scroll-mb
+          ul.tabs__list.no-scroll-mb
             li.tabs__item
               button.tabs__btn.tabs__btn--active(data-tabs-path='description') Описание
             li.tabs__item
@@ -173,13 +174,14 @@ block content
                   div.input-wrapper
                     +input('text', 'Ваше имя', 'input-name', 'reviews-form-name')
                     +input('tel', 'Ваш телефон', 'input-phone', 'reviews-form-phone')
-                  +textarea('textarea-wrapper','textarea', 'textarea-1', '', '', 'Текст отзыва')
-                  .input-wrapper
-                    input(type="file" name="file" id="file").inputfile.input-def.real-file
-                    label(for="file").file-title.file-title_mod
-                      button(type="button").btn-icon.custom-button.img
-                        +svg('add', 'reviews-ava-add')
-                        span.custom-button__text Ваше фото
+                  div.form-wrapper
+                    +textarea('textarea-wrapper','textarea', 'textarea-1', '', '', 'Текст отзыва')
+                    .input-wrapper
+                      input(type="file" name="file" id="file").inputfile.input-def.real-file
+                      label(for="file").file-title.file-title_mod
+                        button(type="button").btn-icon.custom-button.img
+                          +svg('add', 'reviews-ava-add')
+                          span.custom-button__text Ваше фото
                 +button('submit', 'оставить заявку', 'reviews-btn')
                 ul.reviews-list
                   li.reviews-item

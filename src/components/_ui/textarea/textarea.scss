@@ -11,4 +11,12 @@
   color: $grey-light;
   padding: 17px;
   margin-right: 8px;
+
+  @media (max-width: $media-tablet) {
+    width: 610px;
+  }
+
+  @media (max-width: $media-mobile) {
+    width: 290px;
+  }
 }

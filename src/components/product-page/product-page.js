@@ -1,26 +1,53 @@
 import Swiper, {
-  Thumbs
+  Thumbs,
+  Pagination
 } from 'swiper';
 import { Fancybox } from "@fancyapps/ui";
+Swiper.use([Thumbs, Pagination]);
 
-Swiper.use([Thumbs]);
-// Инициализация превью слайдера
-const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
-  // задаем параметры
-  direction: 'vertical', // вертикальная прокрутка
-  slidesPerView: 5, // показывать по 3 превью
-  spaceBetween: 8, // расстояние между слайдами
+const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
+  direction: 'vertical',
+  slidesPerView: 5,
+  spaceBetween: 8,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+    },
+    1248: {
+      slidesPerView: 5,
+    }
+  }
 });
-// Инициализация слайдера изображений
-const sliderImages = new Swiper('.slider__images .swiper-container', { // ищем слайдер превью по селектору
-  // задаем параметры
-  slidesPerView: 1, // показывать по 1 изображению
-  spaceBetween: 8, // расстояние между слайдами
-  mousewheel: true, // можно прокручивать изображения колёсиком мыши
-  grabCursor: true, // менять иконку курсора
-  thumbs: { // указываем на превью слайдер
-    swiper: sliderThumbs // указываем имя превью слайдера
+
+const sliderImages = new Swiper('.slider__images .swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  mousewheel: true,
+  grabCursor: true,
+  thumbs: {
+    swiper: sliderThumbs
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    },
+
+  }
+
 });
 Fancybox.bind("[data-fancybox]", {
   Image: {
@@ -143,5 +170,4 @@ if (btnBalance) {
     tooltipCount.classList.toggle('active')
   })
 }
-
 
