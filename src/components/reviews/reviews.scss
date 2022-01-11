@@ -88,12 +88,13 @@
   }
 
   &__img {
-    display: inline-block;
+    display: flex;
     border-radius: 50%;
     overflow: hidden;
     width: 64px;
     height: 64px;
     margin-right: 25px;
+    flex-shrink: 0;
   }
 
   &__avatar {

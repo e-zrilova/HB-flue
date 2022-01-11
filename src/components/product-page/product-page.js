@@ -56,25 +56,29 @@ Fancybox.bind("[data-fancybox]", {
   }
 });
 
-let buttonCountPlus = document.getElementById("buttonCountPlus");
-let buttonCountMinus = document.getElementById("buttonCountMinus");
-let count = document.getElementById("buttonCountNumber");
-let count2 = document.getElementById("num");
+const buttonCountPlus = document.getElementById("buttonCountPlus");
+const buttonCountMinus = document.getElementById("buttonCountMinus");
+const count = document.getElementById("buttonCountNumber");
+const count2 = document.getElementById("num");
 let number = 1;
-
-buttonCountPlus.onclick = function () {
-  if (number <= 999) {
-    number++;
-    count.innerHTML = number;
-  }
-};
-
-buttonCountMinus.onclick = function () {
-  if (number >= 2) {
-    number--;
-    count.innerHTML = number;
-  }
+if (buttonCountPlus) {
+  buttonCountPlus.addEventListener('click', () => {
+    if (number <= 999) {
+      number++;
+      count.innerHTML = number;
+    }
+  });
 }
+
+if (buttonCountMinus) {
+  buttonCountMinus.addEventListener('click', () => {
+    if (number >= 2) {
+      number--;
+      count.innerHTML = number;
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelector('.tabs');
   const tabsBtn = document.querySelectorAll('.tabs__btn');
