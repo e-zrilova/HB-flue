@@ -4,29 +4,35 @@
 
   @media (max-width: $media-tablet) {
     padding-bottom: 0;
+    padding-bottom: 75px;
   }
 
   @media (max-width: $media-mobile) {
-    padding-bottom: 40px;
+    padding-bottom: 58px;
   }
 
   &__wrapper {
     display: flex;
     max-width: 1820px;
-    padding-top: 19px;
+    padding-top: 24px;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $media-mobile) {
+      padding-top: 16px;
+    }
   }
 
   &__logo {
-    margin-right: 48px;
+    margin-right: 59px;
 
     @media (max-width: $media-tablet) {
       margin-right: 300px;
+      width: 70px;
     }
 
     @media (max-width: $media-mobile) {
-      width: 50px;
+      width: 47px;
       margin-right: 100px;
     }
   }
@@ -48,6 +54,23 @@
   &__burger-menu {
     width: 22px;
     height: 22px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $media-tablet) {
+      gap: 24px;
+      margin-left: 40px;
+
+    }
+
+    @media (max-width: $media-mobile) {
+      gap: 10px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
   }
 
   &__phone {
@@ -119,7 +142,15 @@
     }
 
     @media (max-width: $media-tablet) {
+      width: 58px;
+      height: 58px;
       padding: 10px;
+      margin-right: 0;
+
+      & svg {
+        width: 22px;
+        height: 22px;
+      }
     }
 
     @media (max-width: $media-mobile) {
@@ -149,6 +180,12 @@
       padding: 12px 12px 8px 12px;
     }
 
+    @media (max-width: $media-tablet) {
+      width: 58px;
+      height: 58px;
+      margin-right: 0;
+    }
+
     @media (max-width: $media-mobile) {
       display: none;
     }
@@ -165,23 +202,27 @@
     padding: 15px 15px 12px 15px;
 
     @media (max-width: 1815px) {
-      padding: 14px 14px 10px 14px;
+      padding: 13px 134px 10px 13px;
+
+      & svg {
+        width: 18px;
+        height: 18px;
+      }
     }
+
 
     @media (max-width: 1715px) {
       padding: 12px 12px 8px 12px;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 3px;
-      right: -4px;
-      z-index: 2;
-      width: 21px;
-      height: 21px;
-      background-color: $primary;
-      border-radius: 50%;
+    @media (max-width: $media-tablet) {
+      width: 58px;
+      height: 58px;
+    }
+
+    @media (max-width: $media-mobile) {
+      width: 44px;
+      height: 44px;
     }
 
     &-icon {
@@ -199,12 +240,22 @@
       font-size: 11px;
       line-height: 13px;
       font-weight: 800;
+      width: 21px;
+      height: 21px;
+      background-color: $primary;
+      border-radius: 50%;
+      padding-top: 2px;
+
+      @media (max-width: $media-mobile) {
+        top: 0;
+        right: -7px;
+      }
     }
   }
 }
 
 .social.header-social {
-  margin-right: 54px;
+  margin-right: 49px;
 
   @media (max-width: $media-tablet) {
     display: none;
