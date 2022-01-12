@@ -93,6 +93,11 @@
         margin-right: 0;
       }
 
+      @media (max-width: $media-mobile) {
+        align-items: center;
+        justify-content: center;
+      }
+
       &::before,
       &::after {
         content: "";
@@ -121,5 +126,17 @@
     width: 100%;
     position: absolute;
     z-index: 1;
+
+    @media (max-width: $media-mobile) {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+
+.advantages__title {
+  @media (max-width: $media-mobile) {
+    margin-bottom: 10px;
+
   }
 }

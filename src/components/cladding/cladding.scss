@@ -12,6 +12,15 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
+  padding-top: 14px;
+
+  @media (max-width: $media-tablet) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $media-mobile) {
+    margin-bottom: 27px;
+  }
 }
 
 .cladding-filter-new,
@@ -25,6 +34,8 @@
 }
 
 .cladding-filter-new {
+  margin-right: 29px;
+
   & .choices[data-type*=select-one]:after {
     @media (max-width: $media-tablet) {
       right: 0;
@@ -57,7 +68,7 @@
       margin-right: 14px;
     }
 
-    @media (max-width: $media-tablet) {
+    @media (max-width: $media-mobile) {
       display: none;
     }
   }

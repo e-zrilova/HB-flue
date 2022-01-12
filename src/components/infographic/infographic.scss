@@ -5,6 +5,10 @@
     padding-bottom: 40px;
   }
 
+  @media (max-width: $media-mobile) {
+    padding-bottom: 0;
+  }
+
   &__container {
     display: flex;
   }

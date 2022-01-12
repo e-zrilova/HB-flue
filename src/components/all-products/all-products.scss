@@ -3,5 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media (max-width: $media-tablet) {
+      gap: 15px;
+    }
+
+    @media (max-width: $media-mobile) {
+      gap: 46px;
+    }
   }
+
+
 }

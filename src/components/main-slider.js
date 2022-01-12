@@ -19,6 +19,17 @@ new Swiper('.product-carousel', {
     nextEl: '.product-slider__btn--next',
     prevEl: '.product-slider__btn--prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+    },
+    769: {
+      slidesPerView: 2,
+    },
+    1248: {
+      slidesPerView: 4,
+    },
+  }
 });
 new Swiper('.product-carousel-card-3', {
   direction: 'horizontal',
@@ -34,6 +45,17 @@ new Swiper('.product-carousel-card-3', {
     nextEl: '.product-slider__btn--next',
     prevEl: '.product-slider__btn--prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+    },
+    769: {
+      slidesPerView: 2,
+    },
+    1248: {
+      slidesPerView: 4,
+    },
+  }
 });
 new Swiper('.work__slider', {
   direction: 'horizontal',

@@ -1,5 +1,6 @@
 .cladding-grid {
   padding: 32px;
+  padding-bottom: 8px;
   margin-top: 48px;
   margin-bottom: 44px;
   display: grid;
@@ -29,8 +30,10 @@
 
   @media (max-width: $media-mobile) {
     &.active {
-      top: 125px;
+      top: 74px;
       padding-left: 0;
+      gap: 15px 20px;
+
     }
   }
 }

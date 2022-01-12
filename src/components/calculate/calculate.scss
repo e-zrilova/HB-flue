@@ -7,6 +7,8 @@
 
   @media (max-width: $media-mobile) {
     padding-top: 30px;
+    padding-bottom: 51px;
+
   }
 
   &__container {
@@ -38,6 +40,7 @@
       line-height: 26px;
       text-align: center;
       width: 100%;
+      margin-top: 80px;
     }
   }
 
@@ -144,6 +147,10 @@
 
     @media (max-width: $media-mobile) {
       width: 100%;
+      padding-top: 8px;
+      font-size: 14px;
+      line-height: 26px;
+      padding-bottom: 18px;
     }
   }
 
@@ -152,6 +159,11 @@
     line-height: 30px;
     font-weight: 700;
     color: $carrot;
+
+    @media (max-width: $media-mobile) {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__item {

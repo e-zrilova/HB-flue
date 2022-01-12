@@ -1,6 +1,10 @@
 .callback {
   padding-bottom: 118px;
 
+  @media (max-width: $media-mobile) {
+    padding-bottom: 56px;
+  }
+
   &__container {
     position: relative;
   }
@@ -54,6 +58,7 @@
 
     @media (max-width: $media-mobile) {
       columns: 1;
+      padding-bottom: 0;
     }
   }
 

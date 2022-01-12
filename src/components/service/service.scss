@@ -1,6 +1,10 @@
 .service {
   padding-bottom: 126px;
 
+  @media (max-width: $media-mobile) {
+    padding-bottom: 50px;
+  }
+
   &__container {
     position: relative;
   }
