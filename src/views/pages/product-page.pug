@@ -15,8 +15,8 @@ block content
           .product-slider
             .slider
                 .slider__flex
-                  .slider__images
-                    .swiper-container
+                  .slider__images.js-slider__images
+                    .swiper-container.js-swiper-container
                       .swiper-wrapper
                         a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
                           .slider__image
@@ -40,8 +40,8 @@ block content
                               +svg('zooming', 'zooming-plus-img')
                     .swiper-pagination.slider__pagination
                   .slider__col
-                    .slider__thumbs
-                      .swiper-container
+                    .slider__thumbs.js-slider__thumbs
+                      .swiper-container.js-swiper-container
                         .swiper-wrapper
                           .swiper-slide
                             .slider__image
@@ -99,10 +99,10 @@ block content
             .product-info_item--7
               span.product-info-title Количество
               div.product-info-wrapper
-                input(type="button" id="buttonCountPlus" value="+").product-count
-                .product-btn.product-btn--mod(id="buttonCountNumber") 1
-                input(type="button" id="buttonCountMinus" value="-").product-count
-                input(type="hidden" value="1" id="num" name="num")
+                input(type="button" value="+").product-count.buttonCountPlus.js-buttonCountPlus
+                .product-btn.product-btn--mod.buttonCountNumber.js-buttonCountNumber 1
+                input(type="button" value="-").product-count.buttonCountMinus.js-buttonCountMinus
+                input(type="hidden" value="1" name="num").num.js-num
             .product-info_item--8
               button.product-btn.product-btn-heart.js-product-btn-heart(type="button")
                 +svg('product-heart')
@@ -114,17 +114,17 @@ block content
             .product-info_item--9
               +button-link('#', 'в корзину', 'product-btn-link')
               +button-link('#', 'купить в 1 клик', 'product-btn--primary')
-        .tabs.no-scroll-mb
+        .tabs.no-scroll-mb.js-tabs
           ul.tabs__list.no-scroll-mb
             li.tabs__item
-              button.tabs__btn.tabs__btn--active(data-tabs-path='description') Описание
+              button.tabs__btn.tabs__btn--active.js-tabs__btn--active.js-tabs__btn(data-tabs-path='description') Описание
             li.tabs__item
-              button.tabs__btn(data-tabs-path='specifications') Характеристики
+              button.tabs__btn.js-tabs__btn(data-tabs-path='specifications') Характеристики
             li.tabs__item
-              button.tabs__btn(data-tabs-path='payment-delivery') Оплата и доставка
+              button.tabs__btn.js-tabs__btn(data-tabs-path='payment-delivery') Оплата и доставка
             li.tabs__item
-              button.tabs__btn(data-tabs-path='reviews') Отзывы
-          .tabs__content.tabs__content--active(data-tabs-target='description')
+              button.tabs__btn.js-tabs__btn(data-tabs-path='reviews') Отзывы
+          .tabs__content.js-tabs__content.tabs__content--active(data-tabs-target='description')
             .content
               p Каминная облицовка Damask EW90C изготовлена из колотого песчаника и полированного мрамора Emperador.Данная модель устанавливается в угол. Подходит под любые каминные топки 700ой серии, но на заказ может быть изготовлена под любую топку. Свяжитесь с нами для уточнения деталей заказа.Верхняя балка сделана также из полированного мрамора Emperador.
               p Каминная облицовка Damask EW90C изготовлена из колотого песчаника и полированного мрамора Emperador. Данная модель устанавливается в угол. Подходит под любые каминные топки 700ой серии, но на заказ может быть изготовлена под любую топку. Свяжитесь с нами для уточнения деталей заказа.Верхняя балка сделана также из полированного мрамора Emperador.
@@ -177,9 +177,9 @@ block content
                   div.form-wrapper
                     +textarea('textarea-wrapper','textarea', 'textarea-1', '', '', 'Текст отзыва')
                     .input-wrapper
-                      input(type="file" name="file" id="file").inputfile.input-def.real-file
+                      input(type="file" name="file" id="file").inputfile.input-def.real-file.js-real-file
                       label(for="file").file-title.file-title_mod
-                        button(type="button").btn-icon.custom-button.img
+                        button(type="button").btn-icon.custom-button.js-custom-button.img
                           +svg('add', 'reviews-ava-add')
                           span.custom-button__text Ваше фото
                 +button('submit', 'оставить заявку', 'reviews-btn')

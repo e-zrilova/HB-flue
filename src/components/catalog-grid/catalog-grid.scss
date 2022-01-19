@@ -28,94 +28,95 @@
     padding-bottom: 53px;
     gap: 0;
   }
-}
 
-.item {
-  display: grid;
-  max-width: 390px;
-  width: 100%;
-  position: relative;
-}
+  &__item {
+    max-width: 390px;
+    width: 100%;
+    position: relative;
 
-.item--1 {
-  grid-area: item-1;
-}
+    &--1 {
+      grid-area: item-1;
+    }
 
-.item--2 {
-  grid-area: item-2;
-}
+    &--2 {
+      grid-area: item-2;
+    }
 
-.item--3 {
-  grid-area: item-3;
+    &--3 {
+      grid-area: item-3;
 
-  @media (max-width: $media-tablet) {
-    & img {
-      top: -50px;
+      @media (max-width: $media-tablet) {
+        & img {
+          top: -50px;
+        }
+      }
+
+      @media (max-width: $media-mobile) {
+        & img {
+          width: 173px;
+          height: 173px;
+          top: 40px;
+        }
+      }
+
+    }
+
+    &--4 {
+      grid-area: item-4;
+
+      @media (max-width: $media-tablet) {
+        & img {
+          top: 10px;
+        }
+      }
+
+      @media (max-width: $media-mobile) {
+        & img {
+          width: 141px;
+          height: 135px;
+          top: 55px;
+        }
+      }
+    }
+
+    &--5 {
+      grid-area: item-5;
+
+      @media (max-width: $media-mobile) {
+        & img {
+          width: 154px;
+          height: 154px;
+          top: 55px;
+        }
+      }
+    }
+
+    &--6 {
+      grid-area: item-6;
+
+      @media (max-width: $media-mobile) {
+        & img {
+          width: 150px;
+          height: 175px;
+          top: 35px;
+        }
+      }
+    }
+
+    &--7 {
+
+      @media (max-width: $media-mobile) {
+        & img {
+          width: 167px;
+          height: 167px;
+          top: 55px;
+        }
+      }
     }
   }
-
-  @media (max-width: $media-mobile) {
-    & img {
-      width: 173px;
-      height: 173px;
-      top: 40px;
-    }
-  }
-
 }
 
-.item--4 {
-  grid-area: item-4;
 
-  @media (max-width: $media-tablet) {
-    & img {
-      top: 10px;
-    }
-  }
-
-  @media (max-width: $media-mobile) {
-    & img {
-      width: 141px;
-      height: 135px;
-      top: 55px;
-    }
-  }
-}
-
-.item--5 {
-  grid-area: item-5;
-
-  @media (max-width: $media-mobile) {
-    & img {
-      width: 154px;
-      height: 154px;
-      top: 55px;
-    }
-  }
-}
-
-.item--6 {
-  grid-area: item-6;
-
-  @media (max-width: $media-mobile) {
-    & img {
-      width: 150px;
-      height: 175px;
-      top: 35px;
-    }
-  }
-}
-
-.item--7 {
-
-  @media (max-width: $media-mobile) {
-    & img {
-      width: 167px;
-      height: 167px;
-      top: 55px;
-    }
-  }
-}
 
 .catalog-d-1 {
   position: absolute;

@@ -37,19 +37,6 @@
     }
   }
 
-  &__burger-button {
-    margin-right: 30px;
-    padding: 17px;
-    line-height: 0;
-
-    @media (min-width: 1365px) and (max-width: 1600px) {
-      margin-right: 400px;
-    }
-
-    @media (min-width: 1249px) and (max-width: 1364px) {
-      margin-right: 300px;
-    }
-  }
 
   &__burger-menu {
     width: 22px;
@@ -118,14 +105,6 @@
     @media (max-width: 1600px) {
       display: none;
     }
-  }
-
-  &__search,
-  &__favourites,
-  &__shopping-cart,
-  &__burger-button {
-    border: 1px solid $grey;
-    border-radius: 50%;
   }
 
   &__search {

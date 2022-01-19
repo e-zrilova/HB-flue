@@ -6,11 +6,12 @@
     margin-right: 15px;
   }
 
-  &__vk,
-  &__telegram,
-  &__instagram,
-  &__whatsapp {
+  &__default {
     fill: $turquoise-blue;
+  }
+
+  &__primary {
+    fill: $carrot;
   }
 
   &__vk {
@@ -28,8 +29,15 @@
     width: 18px;
     height: 19px;
   }
-}
 
-.primary {
-  fill: $carrot;
+  &-decor {
+    justify-content: space-between;
+    margin-left: 2px;
+    max-width: 200px;
+
+    @media (max-width: 1440px) {
+      margin: 0 auto;
+    }
+  }
+
 }

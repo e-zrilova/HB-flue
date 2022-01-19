@@ -7,7 +7,7 @@
     "start": "gulp start",
     "build": "cross-env NODE_ENV=production gulp build"
   },
-  "author": "",
+  "author": "e-zrilova",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.0",

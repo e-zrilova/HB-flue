@@ -1,10 +1,6 @@
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
-
-
-
-const rangeSlider = document.getElementById('range-slider');
-
+const rangeSlider = document.querySelector('.js-range-slider');
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
     start: [500, 999999],
@@ -19,19 +15,16 @@ if (rangeSlider) {
       thousand: ' '
     })
   });
-
-  const input0 = document.getElementById('input-0');
-  const input1 = document.getElementById('input-1');
+  const input0 = document.querySelector('.js-input-0');
+  const input1 = document.querySelector('.js-input-1');
   const inputs = [input0, input1];
-
-  rangeSlider.noUiSlider.on('update', function (values, handle) {
+  rangeSlider.noUiSlider.on('update', (values, handle) => {
     inputs[handle].value = values[handle];
   });
 
   const setRangeSlider = (i, value) => {
-    let arr = [null, null];
+    const arr = [];
     arr[i] = value;
-
     rangeSlider.noUiSlider.set(arr);
   };
   inputs.forEach((el, index) => {

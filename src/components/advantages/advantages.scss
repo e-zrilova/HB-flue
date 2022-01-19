@@ -11,6 +11,10 @@
 
   &__title {
     margin-bottom: 46px;
+
+    @media (max-width: $media-mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
@@ -131,12 +135,5 @@
       width: 54px;
       height: 54px;
     }
-  }
-}
-
-.advantages__title {
-  @media (max-width: $media-mobile) {
-    margin-bottom: 10px;
-
   }
 }

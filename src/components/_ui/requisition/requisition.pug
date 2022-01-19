@@ -6,6 +6,6 @@ mixin form(mod,description)
         | замера заполните форму!
       p(class='requisition__form-description')= description
     form.requisition__form(action='#')
-      +input('text', 'Ваше имя', 'input-name')
-      +input('tel', 'Ваш телефон', 'input-phone')
+      +input('text', 'Ваше имя', 'input-default','input-name')
+      +input('tel', 'Ваш телефон', 'input-default','input-phone')
       +button('submit', 'оставить заявку', '')

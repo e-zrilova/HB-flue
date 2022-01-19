@@ -49,6 +49,14 @@ p {
   margin-bottom: 0;
 }
 
+textarea {
+  resize: none;
+  border: 1px solid $grey;
+  border-radius: 4px;
+  font-family: $font-primary;
+  font-weight: 500;
+}
+
 .fixed {
   position: fixed;
   width: 100%;
@@ -87,6 +95,11 @@ p {
   @media (max-width: $media-mobile) {
     display: none;
   }
+}
+
+.default-icon-btn {
+  border: 1px solid $grey;
+  border-radius: 50%;
 }
 
 .blob-carrot {

@@ -5,20 +5,17 @@ import Swiper, {
 import { Fancybox } from "@fancyapps/ui";
 Swiper.use([Thumbs, Pagination]);
 
-const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
+const sliderThumbs = new Swiper('.js-slider__thumbs .js-swiper-container', {
   direction: 'vertical',
   slidesPerView: 5,
   spaceBetween: 8,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 2,
     },
-    // when window width is >= 480px
     480: {
       slidesPerView: 3,
     },
-    // when window width is >= 640px
     640: {
       slidesPerView: 4,
     },
@@ -28,7 +25,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
   }
 });
 
-const sliderImages = new Swiper('.slider__images .swiper-container', {
+const sliderImages = new Swiper('.js-slider__images .js-swiper-container', {
   slidesPerView: 1,
   spaceBetween: 8,
   mousewheel: true,
@@ -37,7 +34,6 @@ const sliderImages = new Swiper('.slider__images .swiper-container', {
     swiper: sliderThumbs
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       pagination: {
@@ -56,16 +52,15 @@ Fancybox.bind("[data-fancybox]", {
   }
 });
 
-const buttonCountPlus = document.getElementById("buttonCountPlus");
-const buttonCountMinus = document.getElementById("buttonCountMinus");
-const count = document.getElementById("buttonCountNumber");
-const count2 = document.getElementById("num");
+const buttonCountPlus = document.querySelector(".js-buttonCountPlus");
+const buttonCountMinus = document.querySelector(".js-buttonCountMinus");
+const count = document.querySelector(".js-buttonCountNumber");
 let number = 1;
 if (buttonCountPlus) {
   buttonCountPlus.addEventListener('click', () => {
     if (number <= 999) {
       number++;
-      count.innerHTML = number;
+      count.textContent = number;
     }
   });
 }
@@ -74,14 +69,14 @@ if (buttonCountMinus) {
   buttonCountMinus.addEventListener('click', () => {
     if (number >= 2) {
       number--;
-      count.innerHTML = number;
+      count.textContent = number;
     }
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelector('.tabs');
-  const tabsBtn = document.querySelectorAll('.tabs__btn');
+  const tabs = document.querySelector('.js-tabs');
+  const tabsBtn = document.querySelectorAll('.js-tabs__btn');
   const tabsContent = document.querySelectorAll('.tabs__content');
 
   if (tabs) {
@@ -130,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
   };
 });
-const realFileBtn = document.querySelector(".real-file");
-const customBtn = document.querySelector(".custom-button");
+const realFileBtn = document.querySelector(".js-real-file");
+const customBtn = document.querySelector(".js-custom-button");
 const customTxt = document.querySelector(".custom-text");
 const lkProfileAvatar = document.querySelector("#file");
 

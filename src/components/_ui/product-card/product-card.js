@@ -1,5 +1,5 @@
 //заготовка для слайдера, где добавить в корзину
-const cardCounter = document.querySelector('.header__shopping-cart-count');
+const cardCounter = document.querySelector('.js-header__shopping-cart-count');
 
 const updateCard = () => {
   if (cardCounter) {

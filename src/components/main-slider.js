@@ -5,7 +5,7 @@ import Swiper, {
 
 Swiper.use([Navigation, Keyboard]);
 
-new Swiper('.product-carousel', {
+new Swiper('.js-product-carousel', {
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 30,
@@ -31,7 +31,7 @@ new Swiper('.product-carousel', {
     },
   }
 });
-new Swiper('.product-carousel-card-3', {
+new Swiper('.js-product-carousel-card-3', {
   direction: 'horizontal',
   slidesPerView: 3,
   spaceBetween: 30,
@@ -53,7 +53,7 @@ new Swiper('.product-carousel-card-3', {
       slidesPerView: 2,
     },
     1248: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   }
 });

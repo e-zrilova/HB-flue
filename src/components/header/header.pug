@@ -11,10 +11,10 @@ header.header
       +social('https://instagram.com/', 'instagram' , '')
       +social('https://whatsapp.com/', 'whatsapp' , '')
     .header__buttons
-      button.header__search(type='button')
+      button.header__search.default-icon-btn(type='button')
         +svg('loupe' ,'header__search-icon', '')
-      button.header__favourites(type='button')
+      button.header__favourites.default-icon-btn(type='button')
         +svg('heart' ,'header__favourites-icon', '')
-      button.header__shopping-cart(type='button')
+      button.header__shopping-cart.default-icon-btn(type='button')
         +svg('shopping-cart' ,'header__shopping-cart-icon', '')
-        span.header__shopping-cart-count 0
+        span.header__shopping-cart-count.js-header__shopping-cart-count 0

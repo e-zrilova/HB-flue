@@ -11,7 +11,6 @@
     }
 
     @media (max-width: $media-mobile) {
-      max-width: 353px;
       position: relative;
       z-index: 1;
       padding: 5px;
@@ -29,12 +28,10 @@
       height: 163px;
     }
   }
-
   &__link-img {
     position: relative;
     display: block;
   }
-
   &__card-btn {
     position: absolute;
     z-index: 2;
@@ -44,23 +41,19 @@
     line-height: 0;
     background-color: $slate-grey;
     border-radius: 50%;
-
     @media (max-width: $media-tablet) {
       right: 150px;
       bottom: -24px;
     }
-
     @media (max-width: $media-mobile) {
       right: 100px;
     }
   }
-
   &__card-icon {
     width: 24px;
     height: 24px;
     fill: $light;
   }
-
   &__link {
     display: block;
     margin-top: 15px;
@@ -74,17 +67,12 @@
       margin-top: 43px;
     }
   }
-
   &__item {
     padding: 10px 10px 10px 0px;
-
     @media (max-width: $media-tablet) {
       text-align: center;
       padding: 0;
     }
-
-
-
     &::before {
       content: "";
       position: absolute;
@@ -92,50 +80,39 @@
       border: 1px solid $grey;
       bottom: 165px;
       left: 31px;
-
       @media (max-width: $media-tablet) {
         width: 250px;
         bottom: 175px;
       }
-
-      @media (max-width: $media-mobile) {
-        bottom: 170px;
-      }
-
-
-
       @media (max-width: $media-mobile) {
         width: 200px;
-      }
-    }
-
-    &-title {
-      margin-bottom: 7px;
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: 700;
-      color: $carrot;
-
-      @media (max-width: $media-mobile) {
-        font-size: 14px;
-        line-height: 22px;
-      }
-    }
-
-    &-description {
-      display: block;
-      margin: 0;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 500;
-
-      @media (max-width: $media-tablet) {
-        font-size: 14px;
-        line-height: 22px;
+        bottom: 170px;
       }
     }
   }
+  &-title {
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $carrot;
+    @media (max-width: $media-mobile) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  &-description {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
 
+    @media (max-width: $media-tablet) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
   &__price-wrapper {
     display: flex;
 
@@ -144,7 +121,6 @@
       align-items: center;
     }
   }
-
   &__price-tag {
     margin-right: 2px;
     margin-bottom: 0;
@@ -154,19 +130,15 @@
     font-weight: 700;
     color: $primary;
     white-space: nowrap;
-
     @media (max-width: $media-tablet) {
       margin-top: 5px;
       margin-right: 0;
     }
-
-
-
     &--bold {
       margin-right: 64px;
+      margin-left: 5px;
       color: $black;
       display: inline-block;
-
       @media (max-width: $media-tablet) {
         display: inline-block;
         margin-right: 0;
@@ -174,7 +146,6 @@
       }
     }
   }
-
   &__price-delete {
     display: flex;
     margin: 0;
@@ -182,13 +153,9 @@
     line-height: 17px;
     color: $grey-light;
     align-items: flex-end;
-
     @media (max-width: $media-tablet) {
       padding-bottom: 30px;
     }
-
-
-
     @media (max-width: $media-mobile) {
       padding-bottom: 40px;
     }
