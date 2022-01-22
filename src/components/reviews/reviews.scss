@@ -33,14 +33,14 @@
     }
 
     @media (max-width: $media-mobile) {
-      left: 0px;
+      left: 0;
     }
   }
 
   &__slide {
     max-width: 400px;
     min-height: 260px;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 50px rgb(0 0 0 / 15%);
     padding: 33px 10px 10px 48px;
 
     @media (max-width: $media-tablet) {
@@ -57,7 +57,7 @@
     width: 100%;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: -19px;
       top: 5px;

@@ -1,6 +1,6 @@
 import Swiper, {
   Navigation,
-  Keyboard
+  Keyboard,
 } from 'swiper';
 
 Swiper.use([Navigation, Keyboard]);
@@ -29,7 +29,7 @@ new Swiper('.js-product-carousel', {
     1248: {
       slidesPerView: 4,
     },
-  }
+  },
 });
 new Swiper('.js-product-carousel-card-3', {
   direction: 'horizontal',
@@ -55,14 +55,13 @@ new Swiper('.js-product-carousel-card-3', {
     1248: {
       slidesPerView: 3,
     },
-  }
+  },
 });
 new Swiper('.work__slider', {
   direction: 'horizontal',
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
-
 
   keyboard: {
     enabled: true,
@@ -73,10 +72,9 @@ new Swiper('.work__slider', {
     prevEl: '.work__slider-btn--prev',
   },
 
-
 });
 
-new Swiper(".reviews__slider", {
+new Swiper('.reviews__slider', {
   direction: 'horizontal',
   slidesPerView: 3,
   spaceBetween: 22,
@@ -93,4 +91,3 @@ new Swiper(".reviews__slider", {
     prevEl: '.reviews__slider-btn--prev',
   },
 });
-

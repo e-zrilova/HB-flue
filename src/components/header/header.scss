@@ -37,7 +37,6 @@
     }
   }
 
-
   &__burger-menu {
     width: 22px;
     height: 22px;
@@ -50,7 +49,6 @@
     @media (max-width: $media-tablet) {
       gap: 24px;
       margin-left: 40px;
-
     }
 
     @media (max-width: $media-mobile) {
@@ -149,14 +147,14 @@
 
   &__favourites {
     margin-right: 10px;
-    padding: 15px 15px 12px 15px;
+    padding: 15px 15px 12px;
 
     @media (max-width: 1815px) {
-      padding: 14px 14px 10px 14px;
+      padding: 14px 14px 10px;
     }
 
     @media (max-width: 1715px) {
-      padding: 12px 12px 8px 12px;
+      padding: 12px 12px 8px;
     }
 
     @media (max-width: $media-tablet) {
@@ -178,7 +176,7 @@
   &__shopping-cart {
     position: relative;
     z-index: 1;
-    padding: 15px 15px 12px 15px;
+    padding: 15px 15px 12px;
 
     @media (max-width: 1815px) {
       padding: 13px 134px 10px 13px;
@@ -189,9 +187,8 @@
       }
     }
 
-
     @media (max-width: 1715px) {
-      padding: 12px 12px 8px 12px;
+      padding: 12px 12px 8px;
     }
 
     @media (max-width: $media-tablet) {
@@ -213,7 +210,7 @@
       position: absolute;
       z-index: 3;
       top: 6px;
-      right: 0px;
+      right: 0;
       color: $light;
       font-family: $font-secondary;
       font-size: 11px;

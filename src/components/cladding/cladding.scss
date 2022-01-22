@@ -7,7 +7,6 @@
   margin-bottom: 136px;
 }
 
-
 .cladding-filter {
   display: flex;
   justify-content: space-between;
@@ -36,7 +35,7 @@
 .cladding-filter-new {
   margin-right: 29px;
 
-  & .choices[data-type*=select-one]:after {
+  & .choices[data-type*='select-one']::after {
     @media (max-width: $media-tablet) {
       right: 0;
     }
@@ -54,9 +53,7 @@
         max-width: 150px;
       }
     }
-
   }
-
 
   & p {
     @media (max-width: $media-tablet) {
@@ -102,9 +99,7 @@
         padding-bottom: 26px;
       }
     }
-
   }
-
 }
 
 .cladding-filter-count {
@@ -128,7 +123,7 @@
   height: 12px;
   fill: $grey-light;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 22px;
 }
 
@@ -154,8 +149,6 @@
       font-size: 16px;
       line-height: 20px;
     }
-
-
   }
 }
 
@@ -186,7 +179,6 @@
       fill: $light;
       transform: rotate(90deg);
       right: 32px;
-
     }
   }
 

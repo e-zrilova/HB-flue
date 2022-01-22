@@ -1,5 +1,6 @@
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
+
 const rangeSlider = document.querySelector('.js-range-slider');
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
@@ -7,13 +8,13 @@ if (rangeSlider) {
     connect: true,
     step: 1,
     range: {
-      'min': [500],
-      'max': [999999]
+      min: [500],
+      max: [999999],
     },
     format: wNumb({
       decimals: 0,
-      thousand: ' '
-    })
+      thousand: ' ',
+    }),
   });
   const input0 = document.querySelector('.js-input-0');
   const input1 = document.querySelector('.js-input-1');

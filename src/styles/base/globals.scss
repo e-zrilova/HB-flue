@@ -107,7 +107,7 @@ textarea {
 }
 
 .social__icon {
-  fill: $turquoise-blue
+  fill: $turquoise-blue;
 }
 
 .breadcrumb-icon {
@@ -116,11 +116,10 @@ textarea {
 }
 
 .no-scroll-mb {
-
   &::-webkit-scrollbar-track,
   &::-webkit-scrollbar,
   &::-webkit-scrollbar-thumb {
-    width: 0px;
+    width: 0;
     opacity: 0;
     height: 0;
     padding: 0;

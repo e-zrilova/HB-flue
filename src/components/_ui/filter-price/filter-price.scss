@@ -49,6 +49,19 @@
     margin-bottom: 20px;
   }
 
+  .noUi-handle {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    background: url('../../assets/images/clad-handle.svg') center no-repeat;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
   .noUi-horizontal .noUi-handle {
     width: 22px;
     height: 22px;
@@ -66,20 +79,5 @@
 
   .noUi-connect {
     background-color: $carrot;
-  }
-
-  .noUi-handle {
-    box-shadow: none;
-    border-radius: 100%;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    background: url(../../assets/images/clad-handle.svg) center no-repeat;
-    cursor: pointer;
-
-    &::after,
-    &::before {
-      display: none;
-    }
   }
 }

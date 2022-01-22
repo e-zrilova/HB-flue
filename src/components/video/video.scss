@@ -18,8 +18,6 @@
   }
 }
 
-
-
 .video {
   position: relative;
   max-width: 771px;
@@ -35,7 +33,7 @@
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    background-color: #000000;
+    background-color: #000;
   }
 
   &__link {
@@ -75,19 +73,13 @@
     }
 
     &-icon {
-      fill: #ffffff;
+      fill: #fff;
     }
 
     &:focus {
       outline: none;
     }
   }
-
-
-
-
-
-
 
   &__item-decor {
     position: absolute;
@@ -138,13 +130,11 @@
       }
     }
   }
-
-
 }
 
 .video__wrapper:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-  fill: #ff0000;
+  fill: #f00;
   fill-opacity: 1;
 }
 

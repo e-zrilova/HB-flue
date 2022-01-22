@@ -4,7 +4,29 @@
   margin-right: 30px;
   padding: 34px 25px 21px;
   background-color: $light;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+
+  &__item-2 {
+    position: relative;
+    display: none;
+    margin-left: 21px;
+    padding: 15px 0;
+
+    & svg {
+      fill: $black;
+    }
+  }
+
+  &__item-3 {
+    position: relative;
+    display: none;
+    margin-left: 15px;
+    padding: 15px 0;
+
+    & svg {
+      fill: $black;
+    }
+  }
 
   @media (max-width: $media-tablet) {
     display: none;
@@ -21,7 +43,6 @@
       min-height: 100vh;
       padding-left: 0;
 
-
       & .multilevel-menu__list {
         max-width: 1210px;
         margin-right: 30px;
@@ -29,12 +50,10 @@
         @media (max-width: $media-mobile) {
           margin-right: 15px;
         }
-
       }
 
       & .multilevel-menu__item-1 {
         max-width: 1210px;
-
       }
 
       & .multilevel-menu__title {
@@ -82,9 +101,7 @@
     &.active {
       top: 120px;
     }
-
   }
-
 
   &__title {
     font-family: $font-primary;
@@ -99,7 +116,7 @@
   }
 
   &__list {
-    max-width: 231px
+    max-width: 231px;
   }
 
   &__item-1 {
@@ -117,10 +134,6 @@
       border-bottom: 1px dashed $grey;
     }
 
-    &.active:first-child {
-      border-bottom: none;
-    }
-
     & svg {
       fill: $black;
     }
@@ -135,9 +148,7 @@
       }
 
       & .items--mod {
-
         border-top: 1px dashed $grey;
-
       }
 
       & .multilevel-menu__item-2 {
@@ -174,7 +185,6 @@
             padding-left: 35px;
             margin-left: 0;
 
-
             & svg {
               fill: $grey-light-2;
               transform: rotate(0deg);
@@ -197,26 +207,16 @@
               }
 
               & svg:first-child {
-                fill: $turquoise-blue
+                fill: $turquoise-blue;
               }
             }
           }
         }
       }
     }
-  }
 
-  &__item-2 {
-    position: relative;
-    display: none;
-    margin-left: 21px;
-    padding: 15px 0;
-  }
-
-  &__item-3 {
-    position: relative;
-    display: none;
-    margin-left: 15px;
-    padding: 15px 0;
+    &.active:first-child {
+      border-bottom: none;
+    }
   }
 }
