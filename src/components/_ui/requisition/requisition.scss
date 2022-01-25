@@ -15,8 +15,10 @@
   }
 
   &__form {
+    display: flex;
+    align-items: flex-start;
+
     @media (max-width: $media-tablet) {
-      display: flex;
       flex-direction: column;
       align-items: center;
     }

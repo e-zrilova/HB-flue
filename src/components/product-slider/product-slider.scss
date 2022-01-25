@@ -6,6 +6,8 @@
   }
 
   &__container {
+    position: relative;
+
     @media (max-width: $media-mobile) {
       display: flex;
       flex-direction: column;

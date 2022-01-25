@@ -1,3 +1,4 @@
-mixin input(type, placeholder, common, mod, value)
-  input(class= 'input-default'+ ' ' + common +' '+ mod type=`${type}` placeholder=`${placeholder}` required=`${value}`)
+mixin input(validate,type, placeholder, common, mod, name)
+  .input-wrapper
+    input(class= 'input-default'+ ' ' + common +' '+ mod type=`${type}` placeholder=`${placeholder}` data-validate-field=`${validate}` name=`${validate}` required="true" autocomplete="off" )
 

@@ -116,6 +116,7 @@ textarea {
 }
 
 .no-scroll-mb {
+
   &::-webkit-scrollbar-track,
   &::-webkit-scrollbar,
   &::-webkit-scrollbar-thumb {
@@ -125,4 +126,9 @@ textarea {
     padding: 0;
     pointer-events: none;
   }
+}
+
+.my-body-noscroll-class {
+  overflow: hidden;
+  padding-right: 17px;
 }

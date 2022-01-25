@@ -9,6 +9,10 @@
     min-width: 240px;
     border-radius: 4px;
 
+    &.is-invalid {
+      border: 1px solid $primary;
+    }
+
     @media (max-width: $media-tablet) {
       max-width: 354px;
       width: 100%;
@@ -38,4 +42,12 @@
       margin-right: 0;
     }
   }
+}
+
+.just-validate-error-label {
+  color: $primary !important;
+}
+
+.inputs-wrapper {
+  display: flex;
 }
