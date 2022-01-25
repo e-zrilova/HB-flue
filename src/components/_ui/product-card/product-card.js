@@ -3,7 +3,6 @@ const itemCart = document.querySelectorAll('.product-card__card-btn');
 const popupCount = document.querySelector('.js-popup-count')
 const popupCountText = document.querySelector('.js-popup-count-text')
 const popupBtnClose = document.querySelector('.js-popup-count__btn-close')
-console.log(itemCart)
 const updateCard = () => {
   if (cardCounter) {
     const count = parseInt(cardCounter.textContent, 10);
