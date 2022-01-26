@@ -1,0 +1,19 @@
+.button-to-up {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+.up_arrow {
+  width: 40px;
+  height: 40px;
+}
