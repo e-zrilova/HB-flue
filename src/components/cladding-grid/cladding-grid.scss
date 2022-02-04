@@ -230,6 +230,7 @@
 .is-open .choices__list--dropdown {
   border: 1px solid $grey;
   background-color: $light;
+  z-index: 7;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted::after {
