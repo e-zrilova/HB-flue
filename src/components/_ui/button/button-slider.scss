@@ -1,5 +1,9 @@
 .slider-btn {
-  padding: 17px 17px 10px 15px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid $grey;
   border-radius: 4px;
 

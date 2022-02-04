@@ -1,6 +1,6 @@
 .catalog-grid {
   display: grid;
-  grid-template: 'item-1 item-2 item-3' 'item-4 item-5 item-6';
+  grid-template: 'item-1 item-2 item-3''item-4 item-5 item-6';
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 400px);
   grid-auto-flow: row;
@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $media-mobile) {
-    grid-template: 'item-1' 'item-2' 'item-3' 'item-4' 'item-5' 'item-6';
+    grid-template: 'item-1''item-2''item-3''item-4''item-5''item-6';
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 300px;
     padding-top: 0;
@@ -30,8 +30,6 @@
   }
 
   &__item {
-    max-width: 390px;
-    width: 100%;
     position: relative;
 
     &--1 {
