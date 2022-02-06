@@ -10,7 +10,17 @@
   min-width: 240px;
   text-align: center;
 
-  &--primary {
+  &:hover {
     background-color: $carrot;
   }
+
+  &--primary {
+    background-color: $carrot;
+
+    &:hover {
+      background-color: $slate-grey;
+    }
+  }
+
+
 }

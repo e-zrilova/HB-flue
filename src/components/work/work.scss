@@ -201,6 +201,10 @@
   }
 
   &__btn-wrapper {
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+
     @media (max-width: $media-tablet) {
       transform: translate(0, -118px);
     }

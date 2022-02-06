@@ -8,10 +8,18 @@
 
   &__default {
     fill: $turquoise-blue;
+
+    &:hover {
+      fill: $carrot;
+    }
   }
 
   &__primary {
     fill: $carrot;
+
+    &:hover {
+      fill: $turquoise-blue;
+    }
   }
 
   &__vk {

@@ -32,8 +32,16 @@
     line-height: 15px;
     color: $grey-light;
 
+    &:hover {
+      color: $carrot;
+    }
+
     &--last {
       color: $turquoise-blue;
+
+      &:hover {
+        color: $turquoise-blue;
+      }
     }
   }
 }

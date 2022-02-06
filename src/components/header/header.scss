@@ -66,6 +66,10 @@
     letter-spacing: 0.08em;
     white-space: nowrap;
 
+    &:hover {
+      color: $carrot;
+    }
+
     @media (max-width: 1715px) {
       margin-right: 35px;
     }
@@ -78,6 +82,10 @@
       margin-left: 5px;
       font-weight: 700;
       color: $black;
+
+      &:hover {
+        color: $carrot;
+      }
 
       @media (max-width: $media-tablet) {
         font-size: 14px;
@@ -95,6 +103,10 @@
     border-bottom: 1px dashed $maroon;
     text-transform: uppercase;
     white-space: nowrap;
+
+    &:hover {
+      color: $turquoise-blue;
+    }
 
     @media (max-width: 1715px) {
       margin-right: 35px;
