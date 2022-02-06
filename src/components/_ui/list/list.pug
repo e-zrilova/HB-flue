@@ -30,7 +30,7 @@ mixin menu-catalog(common, mod, text, commonName, nameMod, listMod, listName)
         +list-catalog(item.alink, item.name)
 
 mixin hours(mod, liCommon, liMod, text, textMod)
-  - m = mod || ''
+  - mod = mod || ''
   ul(class= 'footer__hours' + ' ' + mod)
     li(class= liCommon + ' ' + liMod)
       +svg('wall-clock' ,'footer__icon', '')

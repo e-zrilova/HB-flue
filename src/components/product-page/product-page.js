@@ -31,6 +31,7 @@ new Swiper('.js-slider__images .js-swiper-container', {
   spaceBetween: 8,
   mousewheel: true,
   grabCursor: true,
+  direction: 'vertical',
   thumbs: {
     swiper: sliderThumbs,
   },
