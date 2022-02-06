@@ -6,10 +6,10 @@
   background-color: $light;
   box-shadow: 0 0 40px rgb(0 0 0 / 15%);
 
-  &__item-2 {
+  &__item-2,
+  &__item-3 {
     position: relative;
     display: none;
-    margin-left: 21px;
     padding: 15px 0;
 
     & svg {
@@ -17,15 +17,16 @@
     }
   }
 
-  &__item-3 {
-    position: relative;
-    display: none;
-    margin-left: 15px;
-    padding: 15px 0;
+  &__item-2 {
+    margin-left: 21px;
 
     & svg {
       fill: $black;
     }
+  }
+
+  &__item-3 {
+    margin-left: 15px;
   }
 
   @media (max-width: $media-tablet) {

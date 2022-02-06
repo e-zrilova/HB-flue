@@ -106,6 +106,8 @@
   &__btn-wrapper {
     max-width: 120px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 
     @media (max-width: 1800px) {
       transform: translate(600px, -250px);

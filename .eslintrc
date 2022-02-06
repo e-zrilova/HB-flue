@@ -9,7 +9,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "import/prefer-default-export": "off",
+    "import/prefer-default-export": 0,
     "no-new": 0,
     "no-plusplus": 0
   }
