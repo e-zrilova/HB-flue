@@ -1,0 +1,83 @@
+.filters-price {
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    border: none;
+    color: $black;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    max-width: 68px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $grey;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-light-2;
+  }
+
+  &__slider {
+    margin-bottom: 20px;
+  }
+
+  .noUi-handle {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    background: url('../../assets/images/clad-handle.svg') center no-repeat;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 22px;
+    height: 22px;
+    right: -10px;
+    top: 3px;
+  }
+
+  .noUi-target {
+    background-color: $grey;
+    border: none;
+    border-radius: 100px;
+    box-shadow: none;
+    height: 3px;
+  }
+
+  .noUi-connect {
+    background-color: $carrot;
+  }
+}

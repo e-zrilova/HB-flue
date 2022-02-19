@@ -1,0 +1,11 @@
+.filter-grid {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template: '..';
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 25%;
+  min-height: 56px;
+  background-color: $primary;
+  margin-bottom: 55px;
+}

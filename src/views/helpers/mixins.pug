@@ -1,4 +1,5 @@
 mixin svg(name, common, mod)
-  - m = mod || ''
+  - mod = mod || ''
+  - common = common || ''
     svg(class= name +' '+ common +' '+ mod)
       use(href=`assets/images/sprite.svg#${name}`)

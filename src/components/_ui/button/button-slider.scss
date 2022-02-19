@@ -1,0 +1,19 @@
+.slider-btn {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $grey;
+  border-radius: 4px;
+
+  &__next {
+    transform: rotate(180deg);
+  }
+
+  &__next,
+  &__prev {
+    width: 22px;
+    height: 22px;
+  }
+}

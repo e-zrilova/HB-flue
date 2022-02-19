@@ -1,0 +1,47 @@
+.breadcrumb-block {
+  padding: 10px 10px 19px;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+
+  @media (max-width: $media-tablet) {
+    padding-left: 0;
+    padding-top: 14px;
+  }
+
+  @media (max-width: $media-mobile) {
+    padding-left: 0;
+    padding-top: 8px;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+
+  @media (max-width: $media-tablet) {
+    flex-wrap: wrap;
+  }
+
+  &-icon {
+    margin: 0 5px;
+  }
+
+  &__item {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey-light;
+
+    &:hover {
+      color: $carrot;
+    }
+
+    &--last {
+      color: $turquoise-blue;
+
+      &:hover {
+        color: $turquoise-blue;
+      }
+    }
+  }
+}

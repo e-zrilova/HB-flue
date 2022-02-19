@@ -1,8 +1,8 @@
 -
   lists = {
     catalog: [
-    {alink: '#', name: 'Дымоходы'},
-    {alink: '#', name: 'Камины'},
+    {alink: './product-page.html', name: 'Дымоходы'},
+    {alink: './сladding.html', name: 'Камины'},
     {alink: '#', name: 'Дымососы'},
     {alink: '#', name: 'Силикат кальция'},
     {alink: '#', name: 'Печи для дома'},
@@ -10,21 +10,18 @@
     {alink: '#', name: 'Печи для бани'},
     {alink: '#', name: 'Ещё'}
   ],
-  info: [
-    {alink: '#', name: 'Каталог'},
-    {alink: '#', name: 'Полезное'},
-    {alink: '#', name: 'Установка и монтаж'},
-    {alink: '#', name: 'Контакты'},
-    {alink: '#', name: 'Отзывы'},
-    {alink: '#', name: 'Оплата и доставка'},
-    {alink: '#', name: 'Ликвидация товара'}
-  ]
+    info: [
+      {alink: './catalog.html', name: 'Каталог'},
+      {alink: '#', name: 'Полезное'},
+      {alink: '#', name: 'Установка и монтаж'},
+      {alink: '#', name: 'Контакты'},
+      {alink: '#', name: 'Отзывы'},
+      {alink: '#', name: 'Оплата и доставка'},
+      {alink: '#', name: 'Ликвидация товара'}
+    ]
   }
 
 mixin menu-catalog(common, mod, text, commonName, nameMod, listMod, listName)
-  - m = mod || ''
-  - m = name-mod || ''
-  - m = list-mod || ''
   - defaultList = lists[listName] || []
   div(class= common + ' ' + mod)
     h3(class= commonName + ' ' + nameMod)=text
@@ -33,7 +30,7 @@ mixin menu-catalog(common, mod, text, commonName, nameMod, listMod, listName)
         +list-catalog(item.alink, item.name)
 
 mixin hours(mod, liCommon, liMod, text, textMod)
-  - m = mod || ''
+  - mod = mod || ''
   ul(class= 'footer__hours' + ' ' + mod)
     li(class= liCommon + ' ' + liMod)
       +svg('wall-clock' ,'footer__icon', '')

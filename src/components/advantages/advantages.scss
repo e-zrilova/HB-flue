@@ -1,0 +1,139 @@
+.advantages {
+  padding-bottom: 105px;
+
+  @media (max-width: $media-tablet) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $media-mobile) {
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+
+    @media (max-width: $media-mobile) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 -15px;
+    row-gap: 11px;
+
+    @media (max-width: $media-tablet) {
+      row-gap: 21px;
+    }
+
+    @media (max-width: $media-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: calc(50% - 30px);
+    align-items: center;
+    margin: 0 15px;
+
+    @media (max-width: $media-tablet) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $media-mobile) {
+      width: 85%;
+    }
+
+    &-title {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 700;
+
+      @media (max-width: $media-tablet) {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @media (max-width: $media-mobile) {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+    &-description {
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    @media (max-width: $media-tablet) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 386px;
+    width: 100%;
+
+    &-img {
+      position: relative;
+      display: flex;
+      max-width: 177px;
+      width: 100%;
+      margin-right: 30px;
+      align-items: center;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      min-height: 140px;
+
+      @media (max-width: $media-tablet) {
+        margin-right: 0;
+      }
+
+      @media (max-width: $media-mobile) {
+        align-items: center;
+        justify-content: center;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $light;
+      }
+
+      &::before {
+        top: -3px;
+        right: 19px;
+        width: 135px;
+        height: 143px;
+      }
+
+      &::after {
+        top: 21px;
+        right: -2px;
+        width: 180px;
+        height: 97px;
+      }
+    }
+  }
+
+  &__img {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+    @media (max-width: $media-mobile) {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}

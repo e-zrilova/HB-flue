@@ -1,6 +1,6 @@
 header.header
   .container.header__wrapper
-    img.header__logo(src='assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
+    img.header__logo(src='./assets/images/Logo.png' width='100' height='97' alt='Логотип компании Дымоход.ру')
     include ../../components/humburger/humburger.pug
     include ../../components/navigation/navigation.pug
     +phone('header__phone', '', 'header__phone-number', '')
@@ -11,10 +11,10 @@ header.header
       +social('https://instagram.com/', 'instagram' , '')
       +social('https://whatsapp.com/', 'whatsapp' , '')
     .header__buttons
-      button.header__search(type='button')
+      button.header__search.default-icon-btn(type='button')
         +svg('loupe' ,'header__search-icon', '')
-      button.header__favourites(type='button')
+      a.header__favourites.default-icon-btn(href='#')
         +svg('heart' ,'header__favourites-icon', '')
-      button.header__shopping-cart(type='button')
+      a.header__shopping-cart.default-icon-btn(href='shopping-cart.html')
         +svg('shopping-cart' ,'header__shopping-cart-icon', '')
-        span.header__shopping-cart-count 10
+        span.header__shopping-cart-count.js-header__shopping-cart-count 0

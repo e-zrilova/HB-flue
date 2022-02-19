@@ -1,0 +1,10 @@
+extends ../layouts/default
+block content
+  section.catalog
+    .container.catalog__container
+      .catalog__wrapper
+        +title-category('Каталог товаров', 'title-category', '')
+      .breadcrumb-block
+        +breadcrumbs(['Главная'], 'Каталог')
+      include ../../components/catalog-grid/catalog-grid.pug
+block scripts

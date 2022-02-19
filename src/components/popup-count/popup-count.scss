@@ -1,0 +1,47 @@
+.popup-count {
+  display: none;
+  position: relative;
+
+  &.active {
+    display: block;
+    background: $light;
+    border: 1px solid $grey;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    padding-top: 100px;
+
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__close {
+    width: 30px;
+    height: 30px;
+  }
+}

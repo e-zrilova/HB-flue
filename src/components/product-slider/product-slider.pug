@@ -1,0 +1,8 @@
+section.product-slider
+  .container.product-slider__container
+    .product-slider__title-wrapper
+      +caption('Хиты продаж','product-slider__title')
+      .product-slider__btn-wrapper
+        +button-slider('product-slider__btn', 'product-slider__btn--prev','product-slider__btn--next')
+    include ../../components/_ui/product-carousel/product-carousel
+    include ../../components/popup-count/popup-count

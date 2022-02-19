@@ -1,0 +1,229 @@
+
+extends ../layouts/default
+
+block content
+  section.product-page
+    .container.product-page__container
+      .product-page__wrapper
+        +title-category('Каминная топка Kratki', 'title-category', '')
+      .breadcrumb-block
+        +breadcrumbs(['Главная', 'Каталог', 'Камины'], 'Камины облицовки')
+    .container.product-page-content
+      include ../../components/multilevel-menu/multilevel-menu
+      .product-content
+        .product-wrapper
+          .product-slider
+            .slider
+                .slider__flex
+                  .slider__images.js-slider__images
+                    .swiper-container.js-swiper-container
+                      .swiper-wrapper
+                        a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
+                          .slider__image
+                              img(src='./assets/images/item-1.png' alt='').panzoom__content
+                              +svg('zooming', 'zooming-plus-img')
+                        a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
+                          .slider__image
+                              img(src='./assets/images/item-1.png' alt='').panzoom__content
+                              +svg('zooming', 'zooming-plus-img')
+                        a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
+                          .slider__image
+                              img(src='./assets/images/item-1.png' alt='').panzoom__content
+                              +svg('zooming', 'zooming-plus-img')
+                        a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
+                          .slider__image
+                              img(src='./assets/images/item-1.png' alt='').panzoom__content
+                              +svg('zooming', 'zooming-plus-img')
+                        a(data-fancybox title="click to zoom-in" href="./assets/images/item-1.png").swiper-slide
+                          .slider__image
+                              img(src='./assets/images/item-1.png' alt='').panzoom__content
+                              +svg('zooming', 'zooming-plus-img')
+                    .swiper-pagination.slider__pagination
+                  .slider__col
+                    .slider__thumbs.js-slider__thumbs
+                      .swiper-container.js-swiper-container
+                        .swiper-wrapper
+                          .swiper-slide
+                            .slider__image
+                              img(src='./assets/images/item-1.png' alt='')
+                          .swiper-slide
+                            .slider__image
+                              img(src='./assets/images/item-1.png' alt='')
+                          .swiper-slide
+                            .slider__image
+                              img(src='./assets/images/item-1.png' alt='')
+                          .swiper-slide
+                            .slider__image
+                              img(src='./assets/images/item-1.png' alt='')
+                          .swiper-slide
+                            .slider__image
+                              img(src='./assets/images/item-1.png' alt='')
+
+          form.product-info
+            .product-info_item--1
+              span.product-info-number Артикул: 3242526
+            .product-info_item--2
+              span.product-info-status В наличии
+
+            .product-info_item--3
+              span.product-info__price-tag 160 490
+                +svg('ruble')
+            .product-info_item--4
+              p.product-info__price-delete
+                  s 160 490
+                  +svg('ruble', 'ruble--delete')
+            .product-info_item--5
+              span.product-info-title Марка стали
+              fieldset(id="group1")
+                div
+                  input(type="radio" id="contactChoice1" name="group1" value="value1" checked).radio-custom
+                  label(for="contactChoice1").radio-custom-label  Эконом 430
+                div
+                  input(type="radio" id="contactChoice2" name="group1" value="value2").radio-custom
+                  label(for="contactChoice2").radio-custom-label  Элит 321
+                div
+                  input(type="radio" id="contactChoice3" name="group1" value="value3").radio-custom
+                  label(for="contactChoice3").radio-custom-label  Оптимул 304
+            .product-info_item--6
+              span.product-info-title Длина дымохода
+              fieldset(id="group2")
+                div
+                  input(type="radio" id="contactChoice4" name="group2" value="value4" checked).radio-custom
+                  label(for="contactChoice4").radio-custom-label  1000 мм
+                div
+                  input(type="radio" id="contactChoice5" name="group2" value="value5").radio-custom
+                  label(for="contactChoice5").radio-custom-label  500 мм
+                div
+                  input(type="radio" id="contactChoice6" name="group2" value="value6").radio-custom
+                  label(for="contactChoice6").radio-custom-label  250 мм
+            .product-info_item--7
+              span.product-info-title Количество
+              div.product-info-wrapper
+                input(type="button" value="+").product-count.buttonCountPlus.js-buttonCountPlus
+                .product-btn.product-btn--mod.buttonCountNumber.js-buttonCountNumber 1
+                input(type="button" value="-").product-count.buttonCountMinus.js-buttonCountMinus
+                input(type="hidden" value="1" name="num").num.js-num
+            .product-info_item--8
+              button.product-btn.product-btn-heart.js-product-btn-heart(type="button")
+                +svg('product-heart')
+              button.product-btn.product-btn-balance.js-product-btn-balance(type="button")
+                +svg('product-balance')
+                span.tooltip-count 1
+                .tooltip
+                  a(href="#") Перейти к сравнению
+            .product-info_item--9
+              +button-link('#', 'в корзину', 'product-btn-link')
+              +button-link('#', 'купить в 1 клик', 'product-btn--primary')
+        .tabs.no-scroll-mb.js-tabs
+          ul.tabs__list.no-scroll-mb
+            li.tabs__item
+              button.tabs__btn.tabs__btn--active.js-tabs__btn--active.js-tabs__btn(data-tabs-path='description') Описание
+            li.tabs__item
+              button.tabs__btn.js-tabs__btn(data-tabs-path='specifications') Характеристики
+            li.tabs__item
+              button.tabs__btn.js-tabs__btn(data-tabs-path='payment-delivery') Оплата и доставка
+            li.tabs__item
+              button.tabs__btn.js-tabs__btn(data-tabs-path='reviews') Отзывы
+          .tabs__content.js-tabs__content.tabs__content--active(data-tabs-target='description')
+            .content
+              p Каминная облицовка Damask EW90C изготовлена из колотого песчаника и полированного мрамора Emperador.Данная модель устанавливается в угол. Подходит под любые каминные топки 700ой серии, но на заказ может быть изготовлена под любую топку. Свяжитесь с нами для уточнения деталей заказа.Верхняя балка сделана также из полированного мрамора Emperador.
+              p Каминная облицовка Damask EW90C изготовлена из колотого песчаника и полированного мрамора Emperador. Данная модель устанавливается в угол. Подходит под любые каминные топки 700ой серии, но на заказ может быть изготовлена под любую топку. Свяжитесь с нами для уточнения деталей заказа.Верхняя балка сделана также из полированного мрамора Emperador.
+              p Каминная облицовка Damask EW90C изготовлена из колотого песчаника и полированного мрамора Emperador.Данная модель устанавливается в угол. Подходит под любые каминные топки 700ой серии, но на заказ может быть изготовлена под любую топку. Свяжитесь с нами для уточнения деталей заказа.Верхняя балка сделана также из полированного мрамора Emperador.
+          .tabs__content(data-tabs-target='specifications')
+            .content
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Бренд
+                p.work__item-value.product__item-value Stimlex
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Страна
+                p.work__item-value.product__item-value Украина
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Гарантия
+                p.work__item-value.product__item-value 1 год
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Размеры, мм
+                p.work__item-value.product__item-value 1020х1710х1000
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Масса, кг
+                p.work__item-value.product__item-value 330
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Балка
+                p.work__item-value.product__item-value из камня
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Серия
+                p.work__item-value.product__item-value 700
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Расположение (облицовки)
+                p.work__item-value.product__item-value угловая
+              .work__item-features.product__item-features
+                p.work__item-name.product__item-name Материал облицовки
+                p.work__item-value.product__item-value из натурального камня
+          .tabs__content(data-tabs-target='payment-delivery')
+            .content
+            p Самостоятельно забрать товар вы можете из любого нашего из любого из наших магазинов. Адреса магазинов указаны
+              a(href='#') &nbsp;тут.
+            P При оформлении заказа выбирайте способ приобретения товара «самовывоз», далее указывайте удобный вам магазин. Заказ будет передан в указанный вами пункт, и в короткое время наш сотрудник свяжется с вами для уточнения деталей. При оформлении заказа выбирайте способ приобретения товара «самовывоз», далее указывайте удобный вам магазин. Заказ будет передан в указанный вами пункт, и в короткое время наш сотрудник свяжется с вами для уточнения деталей. При оформлении заказа выбирайте способ приобретения товара «самовывоз», далее указывайте удобный вам магазин. Заказ будет передан в указанный вами пункт, и в короткое время наш сотрудник свяжется с вами для уточнения деталей.
+            P Возможна доставка покупки на любую сумму.
+            P Услуга предоставляется с понедельника по пятницу с 11 до 18 часов*, оформляется минимум на день вперед. Водитель звонит за 2 часа до доставки
+            P Подробнее об условиях читайте в разделе
+              a(href='#')  &nbsp;“Доставка и оплата”.
+          .tabs__content(data-tabs-target='reviews')
+            .content
+              form.reviews-form(action='#')
+                div.reviews-form__wrapper
+                  div.input-wrapper
+                    +input('text','input-name', 'Ваше имя',  'reviews-form-name')
+                    +input('tel', 'input-phone','Ваш телефон',  'reviews-form-phone')
+                  div.form-wrapper
+                    +textarea('textarea-wrapper','textarea', 'textarea-1', '', '', 'Текст отзыва')
+                    .input-wrapper
+                      input(type="file" name="file" id="file").inputfile.input-def.real-file.js-real-file
+                      label(for="file").file-title.file-title_mod
+                        button(type="button").btn-icon.custom-button.js-custom-button.img
+                          +svg('add', 'reviews-ava-add')
+                          span.custom-button__text Ваше фото
+                +button('submit', 'оставить заявку', 'reviews-btn')
+                ul.reviews-list
+                  li.reviews-item
+                    .reviews__user-wrapper
+                      span.reviews__img
+                        img.reviews__avatar(src='assets/images/avatar-1.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+                      .reviews__user-info
+                        p.reviews__user Алёна Симонова
+                        p.reviews__user-date 20.11.2020
+                    .reviews-text
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  li.reviews-item
+                    .reviews__user-wrapper
+                      span.reviews__img
+                        img.reviews__avatar(src='assets/images/avatar-1.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+                      .reviews__user-info
+                        p.reviews__user Алёна Симонова
+                        p.reviews__user-date 20.11.2020
+                    .reviews-text
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  li.reviews-item
+                    .reviews__user-wrapper
+                      span.reviews__img
+                        img.reviews__avatar(src='assets/images/avatar-1.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+                      .reviews__user-info
+                        p.reviews__user Алёна Симонова
+                        p.reviews__user-date 20.11.2020
+                    .reviews-text
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  li.reviews-item
+                    .reviews__user-wrapper
+                      span.reviews__img
+                        img.reviews__avatar(src='assets/images/avatar-1.jpg' alt='Фотография Алёны Симоновой' width='172' height='256')
+                      .reviews__user-info
+                        p.reviews__user Алёна Симонова
+                        p.reviews__user-date 20.11.2020
+                    .reviews-text
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .slider-second
+          .product-slider__container
+            .product-slider__title-wrapper
+              +caption('С этим товаром покупают','product-slider__title')
+              .product-slider__btn-wrapper
+                +button-slider('product-slider__btn', 'product-slider__btn--prev','product-slider__btn--next')
+            include ../../components/_ui/product-carousel/product-carousel-card-3

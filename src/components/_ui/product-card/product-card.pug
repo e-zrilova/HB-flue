@@ -1,18 +1,18 @@
 mixin product-card(img, title, description, price, oldPrice)
-  li.swiper-slide.best-seller__slide
-    a.best-seller__link-img(href='#')
-      img.best-seller__slide-img(src= img width='213' height='213' alt= description)
-    .best-seller__btn-shop
-      span.best-seller__border
-      button.best-seller__card-btn(type='button')
-        +svg('shopping-cart' ,'best-seller__card-icon', '')
-    .best-seller__item
-      a.best-seller__link(href='#')
-        span.best-seller__item-title= title
+  li.swiper-slide.product-card__slide
+    a.product-card__link-img(href='#')
+      img.product-card__slide-img(src= img width='213' height='213' alt= description)
+    .product-card__btn-shop
+      span.product-card__border
+      button.product-card__card-btn(type='button')
+        +svg('shopping-cart' ,'product-card__card-icon', '')
+    .product-card__item
+      a.product-card__link(href='#')
+        span.product-card__item-title= title
       a(href='#')
-        p.best-seller__item-description=description
-      .best-seller__price-wrapper
-        span.best-seller__price-tag= price
-          p.best-seller__price-tag.best-seller__price-tag--bold  ₽
-        p.best-seller__price-delete
+        p.product-card__item-description=description
+      .product-card__price-wrapper
+        span.product-card__price-tag= price
+          span.product-card__price-tag.product-card__price-tag--bold  ₽
+        p.product-card__price-delete
           s= oldPrice

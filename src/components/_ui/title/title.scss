@@ -1,0 +1,27 @@
+.container-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  margin-top: 13px;
+
+  @media (max-width: $media-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (max-width: $media-mobile) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 74px;
+    height: 5px;
+    background-color: $primary;
+    left: 0;
+    top: -16px;
+  }
+}

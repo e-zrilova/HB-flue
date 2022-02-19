@@ -1,0 +1,11 @@
+mixin breadcrumbs(items, last)
+  .breadcrumb
+    each item in items
+        if (items.length === 1)
+            span.breadcrumb__item= item
+              +svg('bread', 'breadcrumb-icon', '')
+        else
+            a(href="#" title=item).breadcrumb__item= item
+              +svg('bread', 'breadcrumb-icon', '')
+    if last
+            span.breadcrumb__item.breadcrumb__item--last= last

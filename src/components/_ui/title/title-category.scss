@@ -1,0 +1,19 @@
+.title-category {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  margin-top: 0;
+
+  @media (max-width: $media-tablet) {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: $media-mobile) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 15px;
+  }
+}

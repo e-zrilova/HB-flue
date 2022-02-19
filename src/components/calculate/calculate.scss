@@ -1,0 +1,233 @@
+.calculate {
+  padding-bottom: 271px;
+
+  @media (max-width: $media-tablet) {
+    padding-bottom: 123px;
+  }
+
+  @media (max-width: $media-mobile) {
+    padding-top: 30px;
+    padding-bottom: 51px;
+  }
+
+  &__container {
+    display: flex;
+
+    &-left {
+      max-width: 629px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 47px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 600;
+    display: grid;
+
+    @media (max-width: $media-tablet) {
+      width: 90%;
+      font-size: 23px;
+      line-height: 32px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: $media-mobile) {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      width: 100%;
+      margin-top: 80px;
+    }
+  }
+
+  &__caption {
+    font-size: 50px;
+    line-height: 63px;
+    font-weight: 800;
+    color: $primary;
+    text-transform: uppercase;
+
+    @media (max-width: $media-tablet) {
+      font-size: 30px;
+      line-height: 32px;
+    }
+
+    @media (max-width: $media-mobile) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 30px;
+
+    @media (max-width: $media-tablet) {
+      width: 80%;
+    }
+
+    @media (max-width: $media-mobile) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  &__decor-img {
+    position: relative;
+    width: 50%;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      width: 40%;
+    }
+
+    @media (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    width: 665px;
+    height: 584px;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      width: 500px;
+      height: 500px;
+      left: -10px;
+    }
+
+    @media (max-width: $media-tablet) {
+      top: 100px;
+      left: -120px;
+      width: 352px;
+      height: 327px;
+    }
+
+    @media (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 302px;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      left: 80px;
+      width: 80%;
+    }
+
+    @media (max-width: $media-tablet) {
+      left: -50px;
+      top: 80px;
+    }
+
+    @media (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 93px;
+    max-width: 610px;
+
+    @media (max-width: $media-tablet) {
+      padding-top: 20px;
+      padding-bottom: 33px;
+      width: 70%;
+    }
+
+    @media (max-width: $media-mobile) {
+      width: 100%;
+      padding-top: 8px;
+      font-size: 14px;
+      line-height: 26px;
+      padding-bottom: 18px;
+    }
+  }
+
+  &__time {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $carrot;
+
+    @media (max-width: $media-mobile) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  &__item {
+    position: absolute;
+  }
+
+  &__item--1 {
+    top: -21px;
+    right: 177px;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      right: 250px;
+    }
+
+    @media (max-width: $media-tablet) {
+      width: 35px;
+      height: 146px;
+      right: 300px;
+      top: 50px;
+    }
+
+    @media (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__item--2 {
+    bottom: -130px;
+    right: -298px;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      right: -111px;
+      bottom: 0;
+    }
+
+    @media (max-width: $media-tablet) {
+      width: 35px;
+      height: 146px;
+      right: 40px;
+      bottom: -25px;
+    }
+
+    @media (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  &__item--3 {
+    bottom: 144px;
+    left: 85px;
+    width: 77px;
+    height: 22px;
+
+    @media (min-width: $media-tablet) and (max-width: 1740px) {
+      display: none;
+    }
+
+    @media (max-width: $media-tablet) {
+      display: none;
+    }
+  }
+
+  &__link {
+    @media (max-width: $media-mobile) {
+      margin-left: 25px;
+    }
+  }
+}
